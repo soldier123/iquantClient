@@ -1,0 +1,293 @@
+[ INFO] [2013-10-14 09:13:14]  [play.Logger] -Starting E:\iquant_ext\iquantClient
+[ INFO] [2013-10-14 09:13:17]  [play.Logger] -Module redis is available (E:\javaTools\play1\modules\redis-0.3)
+[ INFO] [2013-10-14 09:13:17]  [play.Logger] -Module excel is available (E:\javaTools\play1\modules\excel-1.2.3)
+[ INFO] [2013-10-14 09:13:17]  [play.Logger] -Module guice is available (E:\javaTools\play1\modules\guice-1.2)
+[ INFO] [2013-10-14 09:13:17]  [play.Logger] -Module iquantCommon is available (E:\iquant_ext\iquantClient\..\iquantCommon)
+[ WARN] [2013-10-14 09:13:19]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-10-14 09:13:19]  [play.Logger] -Listening for HTTP on port 9000 (Waiting a first request to start) ...
+[ INFO] [2013-10-14 09:15:42]  [play.Logger] -Starting E:\iquant_ext\iquantClient
+[ INFO] [2013-10-14 09:15:44]  [play.Logger] -Module redis is available (E:\javaTools\play1\modules\redis-0.3)
+[ INFO] [2013-10-14 09:15:44]  [play.Logger] -Module excel is available (E:\javaTools\play1\modules\excel-1.2.3)
+[ INFO] [2013-10-14 09:15:44]  [play.Logger] -Module guice is available (E:\javaTools\play1\modules\guice-1.2)
+[ INFO] [2013-10-14 09:15:44]  [play.Logger] -Module iquantCommon is available (E:\iquant_ext\iquantClient\..\iquantCommon)
+[ WARN] [2013-10-14 09:15:44]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-10-14 09:15:44]  [play.Logger] -Listening for HTTP on port 9000 (Waiting a first request to start) ...
+[ INFO] [2013-10-14 09:19:41]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[ERROR] [2013-10-14 09:19:42]  [play.Logger] -
+
+@6g0ka1oef
+Internal Server Error (500) for request GET /
+
+JPA error
+A JPA error occurred (Found Entity-class (models.iquantCommon.StockInfo) referring to none-existing JPAConfig. Is JPA properly configured?): 
+
+play.exceptions.JPAException: Found Entity-class (models.iquantCommon.StockInfo) referring to none-existing JPAConfig. Is JPA properly configured?
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:266)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:533)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at Invocation.HTTP Request(Play!)
+[ INFO] [2013-10-14 09:19:43]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[ERROR] [2013-10-14 09:19:43]  [play.Logger] -
+
+@6g0ka1oeg
+Internal Server Error (500) for request GET /
+
+JPA error
+A JPA error occurred (Found Entity-class (models.iquantCommon.StockInfo) referring to none-existing JPAConfig. Is JPA properly configured?): 
+
+play.exceptions.JPAException: Found Entity-class (models.iquantCommon.StockInfo) referring to none-existing JPAConfig. Is JPA properly configured?
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:266)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:533)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at Invocation.HTTP Request(Play!)
+[ INFO] [2013-10-14 09:21:04]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[ INFO] [2013-10-14 09:21:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-10-14 09:21:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-10-14 09:21:04]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-10-14 09:21:04]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-10-14 09:21:04]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-10-14 09:21:04]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-10-14 09:21:04]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-10-14 09:21:04]  [play.Logger] -sql==SET sql_mode='STRICT_TRANS_TABLES'
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SET sql_mode='STRICT_TRANS_TABLES'
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SET sql_mode='STRICT_TRANS_TABLES'
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SET sql_mode='STRICT_TRANS_TABLES'
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -Connected to jdbc:mysql://192.168.103.108/qic_db?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci&statementInterceptors=com.tom.mysql.ShowSqlStatementInterceptor
+[ INFO] [2013-10-14 09:21:05]  [play.Logger] -Connected to jdbc:mysql://192.168.103.108/qicore?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci
+[ INFO] [2013-10-14 09:21:05]  [org.hibernate.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[ INFO] [2013-10-14 09:21:05]  [org.hibernate.Version] -HHH000412: Hibernate Core {4.1.3.Final}
+[ INFO] [2013-10-14 09:21:05]  [org.hibernate.cfg.Environment] -HHH000206: hibernate.properties not found
+[ INFO] [2013-10-14 09:21:05]  [org.hibernate.cfg.Environment] -HHH000021: Bytecode provider name : javassist
+[ INFO] [2013-10-14 09:21:05]  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] -HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl
+[ INFO] [2013-10-14 09:21:05]  [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: play.db.jpa.MySQLDialect
+[ INFO] [2013-10-14 09:21:05]  [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] -HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[ INFO] [2013-10-14 09:21:05]  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] -HHH000399: Using default transaction strategy (direct JDBC transactions)
+[ INFO] [2013-10-14 09:21:05]  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] -HHH000397: Using ASTQueryTranslatorFactory
+[DEBUG] [2013-10-14 09:21:06]  [play.Logger] -Starting Guice modules scanning
+[DEBUG] [2013-10-14 09:21:06]  [play.Logger] -Guice modules cleared
+[ INFO] [2013-10-14 09:21:06]  [play.Logger] -Guice injector created with modules: 
+class binding.AppDefaultBindModule
+
+[ INFO] [2013-10-14 09:21:06]  [play.Logger] -Application 'iquantClient' is now started !
+[ERROR] [2013-10-14 09:21:07]  [play.Logger] -
+
+@6g0ka1oeh
+Error during job execution (job.ClearCacheJob)
+
+Execution exception (In /app/job/ClearCacheJob.java around line 24)
+JedisConnectionException occured : Could not get a resource from the pool
+
+play.exceptions.JavaExecutionException: Could not get a resource from the pool
+	at play.jobs.Job.call(Job.java:155)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22)
+	at play.modules.redis.RedisConnectionManager.getRawConnectionInternal(RedisConnectionManager.java:40)
+	at play.modules.redis.Redis.keys(Redis.java:501)
+	at job.ClearCacheJob.clearPrevilegeFromRedis(ClearCacheJob.java:24)
+	at job.ClearCacheJob.doJob(ClearCacheJob.java:19)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 7 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:124)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:54)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1657)
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:63)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:1158)
+	at redis.clients.util.Pool.getResource(Pool.java:20)
+	... 13 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:119)
+	... 18 more
+[ INFO] [2013-10-14 09:46:40]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[ERROR] [2013-10-14 09:46:40]  [play.Logger] -
+
+@6g0ka1oei
+Internal Server Error (500) for request GET /
+
+JPA error
+A JPA error occurred (Found Entity-class (models.iquantCommon.StockInfo) referring to none-existing JPAConfig. Is JPA properly configured?): 
+
+play.exceptions.JPAException: Found Entity-class (models.iquantCommon.StockInfo) referring to none-existing JPAConfig. Is JPA properly configured?
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:266)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:533)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at Invocation.HTTP Request(Play!)
+[ INFO] [2013-10-14 09:59:21]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[ERROR] [2013-10-14 09:59:21]  [play.Logger] -
+
+@6g0ka1oej
+Internal Server Error (500) for request GET /
+
+JPA error
+A JPA error occurred (Found Entity-class (models.iquantCommon.StockPool) referring to none-existing JPAConfig. Is JPA properly configured?): 
+
+play.exceptions.JPAException: Found Entity-class (models.iquantCommon.StockPool) referring to none-existing JPAConfig. Is JPA properly configured?
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:266)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:533)
+	at play.Play.detectChanges(Play.java:649)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at Invocation.HTTP Request(Play!)
+[ INFO] [2013-10-14 09:59:36]  [play.Logger] -Starting E:\iquant_ext\iquantClient
+[ INFO] [2013-10-14 09:59:38]  [play.Logger] -Module redis is available (E:\javaTools\play1\modules\redis-0.3)
+[ INFO] [2013-10-14 09:59:38]  [play.Logger] -Module excel is available (E:\javaTools\play1\modules\excel-1.2.3)
+[ INFO] [2013-10-14 09:59:38]  [play.Logger] -Module guice is available (E:\javaTools\play1\modules\guice-1.2)
+[ INFO] [2013-10-14 09:59:38]  [play.Logger] -Module iquantCommon is available (E:\iquant_ext\iquantClient\..\iquantCommon)
+[ WARN] [2013-10-14 09:59:39]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-10-14 09:59:39]  [play.Logger] -Listening for HTTP on port 9000 (Waiting a first request to start) ...
+[ INFO] [2013-10-14 09:59:48]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[ INFO] [2013-10-14 09:59:49]  [play.Logger] -Connected to jdbc:mysql://192.168.103.108/qicore?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci
+[ERROR] [2013-10-14 09:59:50]  [play.Logger] -
+
+@6g0kf8nmn
+Internal Server Error (500) for request GET /
+
+JPA error
+A JPA error occurred (Found Entity-class (models.iquantCommon.StockPool) referring to none-existing JPAConfig. Is JPA properly configured?): 
+
+play.exceptions.JPAException: Found Entity-class (models.iquantCommon.StockPool) referring to none-existing JPAConfig. Is JPA properly configured?
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:266)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:533)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at Invocation.HTTP Request(Play!)
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET sql_mode='STRICT_TRANS_TABLES'
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET sql_mode='STRICT_TRANS_TABLES'
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET sql_mode='STRICT_TRANS_TABLES'
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -Connected to jdbc:mysql://192.168.103.108/qic_db?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci&statementInterceptors=com.tom.mysql.ShowSqlStatementInterceptor
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SET sql_mode='STRICT_TRANS_TABLES'
+[ INFO] [2013-10-14 10:14:05]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-10-14 10:14:05]  [org.hibernate.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[ INFO] [2013-10-14 10:14:05]  [org.hibernate.Version] -HHH000412: Hibernate Core {4.1.3.Final}
+[ INFO] [2013-10-14 10:14:05]  [org.hibernate.cfg.Environment] -HHH000206: hibernate.properties not found
+[ INFO] [2013-10-14 10:14:05]  [org.hibernate.cfg.Environment] -HHH000021: Bytecode provider name : javassist
+[ INFO] [2013-10-14 10:14:05]  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] -HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl
+[ INFO] [2013-10-14 10:14:05]  [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: play.db.jpa.MySQLDialect
+[ INFO] [2013-10-14 10:14:05]  [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] -HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[ INFO] [2013-10-14 10:14:06]  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] -HHH000399: Using default transaction strategy (direct JDBC transactions)
+[ INFO] [2013-10-14 10:14:06]  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] -HHH000397: Using ASTQueryTranslatorFactory
+[DEBUG] [2013-10-14 10:14:06]  [play.Logger] -Starting Guice modules scanning
+[DEBUG] [2013-10-14 10:14:06]  [play.Logger] -Guice modules cleared
+[ INFO] [2013-10-14 10:14:06]  [play.Logger] -Guice injector created with modules: 
+class binding.AppDefaultBindModule
+
+[ INFO] [2013-10-14 10:14:06]  [play.Logger] -Application 'iquantClient' is now started !
+[ERROR] [2013-10-14 10:14:07]  [play.Logger] -
+
+@6g0kf8nmo
+Error during job execution (job.ClearCacheJob)
+
+Execution exception (In /app/job/ClearCacheJob.java around line 24)
+JedisConnectionException occured : Could not get a resource from the pool
+
+play.exceptions.JavaExecutionException: Could not get a resource from the pool
+	at play.jobs.Job.call(Job.java:155)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22)
+	at play.modules.redis.RedisConnectionManager.getRawConnectionInternal(RedisConnectionManager.java:40)
+	at play.modules.redis.Redis.keys(Redis.java:501)
+	at job.ClearCacheJob.clearPrevilegeFromRedis(ClearCacheJob.java:24)
+	at job.ClearCacheJob.doJob(ClearCacheJob.java:19)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 7 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:124)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:54)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1657)
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:63)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:1158)
+	at redis.clients.util.Pool.getResource(Pool.java:20)
+	... 13 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:119)
+	... 18 more

@@ -1,0 +1,208 @@
+[ INFO] [2013-10-10 14:14:50]  [play.Logger] -Starting E:\iquant_ext\iquantClient
+[ INFO] [2013-10-10 14:14:53]  [play.Logger] -Module redis is available (E:\javaTools\play1\modules\redis-0.3)
+[ INFO] [2013-10-10 14:14:53]  [play.Logger] -Module excel is available (E:\javaTools\play1\modules\excel-1.2.3)
+[ INFO] [2013-10-10 14:14:53]  [play.Logger] -Module guice is available (E:\javaTools\play1\modules\guice-1.2)
+[ INFO] [2013-10-10 14:14:53]  [play.Logger] -Module iquantCommon is available (E:\iquant_ext\iquantClient\..\iquantCommon)
+[ WARN] [2013-10-10 14:14:59]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-10-10 14:15:00]  [play.Logger] -Listening for HTTP on port 9000 (Waiting a first request to start) ...
+[ INFO] [2013-10-10 14:15:41]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET sql_mode='STRICT_TRANS_TABLES'
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET sql_mode='STRICT_TRANS_TABLES'
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET sql_mode='STRICT_TRANS_TABLES'
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -Connected to jdbc:mysql://192.168.103.108/qic_db?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci&statementInterceptors=com.tom.mysql.ShowSqlStatementInterceptor
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SET sql_mode='STRICT_TRANS_TABLES'
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-10-10 14:15:42]  [play.Logger] -Connected to jdbc:mysql://192.168.103.108/qicore?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci
+[ INFO] [2013-10-10 14:15:42]  [org.hibernate.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[ INFO] [2013-10-10 14:15:42]  [org.hibernate.Version] -HHH000412: Hibernate Core {4.1.3.Final}
+[ INFO] [2013-10-10 14:15:42]  [org.hibernate.cfg.Environment] -HHH000206: hibernate.properties not found
+[ INFO] [2013-10-10 14:15:42]  [org.hibernate.cfg.Environment] -HHH000021: Bytecode provider name : javassist
+[ INFO] [2013-10-10 14:15:43]  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] -HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl
+[ INFO] [2013-10-10 14:15:43]  [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: play.db.jpa.MySQLDialect
+[ INFO] [2013-10-10 14:15:43]  [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] -HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[ INFO] [2013-10-10 14:15:43]  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] -HHH000399: Using default transaction strategy (direct JDBC transactions)
+[ INFO] [2013-10-10 14:15:43]  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] -HHH000397: Using ASTQueryTranslatorFactory
+[DEBUG] [2013-10-10 14:15:43]  [play.Logger] -Starting Guice modules scanning
+[DEBUG] [2013-10-10 14:15:43]  [play.Logger] -Guice modules cleared
+[ INFO] [2013-10-10 14:15:44]  [play.Logger] -Guice injector created with modules: 
+class binding.AppDefaultBindModule
+
+[ INFO] [2013-10-10 14:15:44]  [play.Logger] -Application 'iquantClient' is now started !
+[ERROR] [2013-10-10 14:15:45]  [play.Logger] -
+
+@6fpikhbdc
+Error during job execution (job.ClearCacheJob)
+
+Execution exception (In /app/job/ClearCacheJob.java around line 24)
+JedisConnectionException occured : Could not get a resource from the pool
+
+play.exceptions.JavaExecutionException: Could not get a resource from the pool
+	at play.jobs.Job.call(Job.java:155)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22)
+	at play.modules.redis.RedisConnectionManager.getRawConnectionInternal(RedisConnectionManager.java:40)
+	at play.modules.redis.Redis.keys(Redis.java:501)
+	at job.ClearCacheJob.clearPrevilegeFromRedis(ClearCacheJob.java:24)
+	at job.ClearCacheJob.doJob(ClearCacheJob.java:19)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 7 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:124)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:54)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1657)
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:63)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:1158)
+	at redis.clients.util.Pool.getResource(Pool.java:20)
+	... 13 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:119)
+	... 18 more
+[DEBUG] [2013-10-10 14:15:49]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=admin&p=123456&mac=123&pid=2
+[DEBUG] [2013-10-10 14:15:51]  [play.Logger] -get响应数据:：{"type":"play.exceptions.JavaExecutionException","message":"Could not get a resource from the pool"}
+[ERROR] [2013-10-10 14:15:52]  [play.Logger] -
+
+@6fpikhbdd
+Internal Server Error (500) for request POST /userct/login?x-http-method-override=POST
+
+Execution exception (In /app/bussiness/UserService.java around line 51)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at bussiness.UserService.validateLogin(UserService.java:51)
+	at controllers.UserCt.login(UserCt.java:47)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-10-10 14:16:05]  [play.Logger] -没有取到客户端ip, 给个默认值:256
+[DEBUG] [2013-10-10 14:16:05]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=&p=&mac=E06F05EA4E53&pid=2
+[DEBUG] [2013-10-10 14:16:05]  [play.Logger] -get响应数据:：{"validateErrors":[{"key":"u","msg":"valid.username.required"},{"key":"p","msg":"valid.pid.required"}]}
+[ERROR] [2013-10-10 14:16:05]  [play.Logger] -
+
+@6fpikhbde
+Internal Server Error (500) for request POST /userct/login?x-http-method-override=POST
+
+Execution exception (In /app/bussiness/UserService.java around line 51)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at bussiness.UserService.validateLogin(UserService.java:51)
+	at controllers.UserCt.login(UserCt.java:47)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[DEBUG] [2013-10-10 14:16:14]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=admin&p=123456&mac=123&pid=2
+[DEBUG] [2013-10-10 14:16:14]  [play.Logger] -get响应数据:：{"success":true,"token":"5d0498ec5a375776f7b450117f2cda95b9c328ea914ce2e3178fe2721a705b0729a7519fecb52868fb20881e2e9aa9b4"}
+[ INFO] [2013-10-10 14:16:17]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-10-10 14:16:17]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-10-10 14:16:17]  [play.Logger] -post with body 请求url：http://localhost:9100/UserInfoCt/activateUsersList?pageNo=0,请求数据:
+{"saleId":0,"orderFlag":0,"status":0,"flag":1}
+[DEBUG] [2013-10-10 14:16:17]  [play.Logger] -post with body 响应数据:：{"data":[{"id":"895","account":"panzhiwei","name":"pzw","idCard":"","phone":"","saleName":"营业部","capitalAccount":"","applyDate":"2013-09-29","status":2},{"id":"897","account":"liuhj12","name":"liuhj","idCard":"","phone":"","saleName":"营业部","capitalAccount":"","applyDate":"2013-09-29","status":2},{"id":"898","account":"admin111","name":"tttttt","idCard":"","phone":"","saleName":"营业部","capitalAccount":"","applyDate":"2013-09-29","status":2},{"id":"899","account":"ggggg","name":"gg","idCard":"","phone":"","saleName":"营业部","capitalAccount":"","applyDate":"2013-09-29","status":2},{"id":"900","account":"tttttt","name":"qq","idCard":"","phone":"","saleName":"营业部","capitalAccount":"","applyDate":"2013-09-29","status":2}],"status":0,"rowTotal":5,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-10-10 14:16:17]  [play.Logger] -get请求url：http://localhost:9100/UserInfoCt/findAllDepartment
+[DEBUG] [2013-10-10 14:16:17]  [play.Logger] -get响应数据:：{"data":[{"name":"营业部","id":1}],"status":0}
+[DEBUG] [2013-10-10 14:16:17]  [play.Logger] -get请求url：http://localhost:9100/RoleInfoCt/findAllRole
+[DEBUG] [2013-10-10 14:16:17]  [play.Logger] -get响应数据:：{"data":[{"id":3,"name":"大赛用户"},{"id":2,"name":"所有权限"},{"id":1,"name":"系统管理员"}],"status":0}
+[DEBUG] [2013-10-10 14:16:17]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=user.excel.template.dir
+[DEBUG] [2013-10-10 14:16:17]  [play.Logger] -get响应数据:：{"data":"public/attachment/template.xls","status":0}
+[ INFO] [2013-10-10 14:16:20]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-10-10 14:16:20]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-10-10 14:16:20]  [play.Logger] -post with body 请求url：http://localhost:9100/UserInfoCt/usersList?pageNo=0,请求数据:
+{"saleId":0,"orderFlag":0,"status":0,"roleId":0,"flag":2}
+[DEBUG] [2013-10-10 14:16:20]  [play.Logger] -post with body 响应数据:：{"data":[{"id":"1","account":"admin","name":"管理员","idCard":"","phone":"","saleName":"营业部","capitalAccount":"","applyDate":"2013-03-01","status":10,"roleName":"系统管理员","startDate":"2013-03-01","endDate":"2099-01-01"},{"id":"885","account":"tom12345","name":"tom","idCard":"","phone":"123","applyDate":"2013-09-28","status":10,"roleName":"所有权限,大赛用户","startDate":"2013-09-28","endDate":"2013-10-18"},{"id":"886","account":"tom2222","name":"tommmm","idCard":"","phone":"23","applyDate":"2013-09-28","status":10,"roleName":"所有权限","startDate":"2013-09-28","endDate":"2015-09-03"},{"id":"894","account":"csmarapi","name":"csmarapi","idCard":"436879878747848574","phone":"13725484787","applyDate":"2013-09-29","status":10,"roleName":"大赛用户","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"901","account":"liddd","name":"liC","idCard":"","phone":"ss","applyDate":"2013-09-29","status":10,"roleName":"所有权限","startDate":"2013-09-29","endDate":"2013-10-12"}],"status":0,"rowTotal":5,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-10-10 14:16:20]  [play.Logger] -get请求url：http://localhost:9100/UserInfoCt/findAllDepartment
+[DEBUG] [2013-10-10 14:16:20]  [play.Logger] -get响应数据:：{"data":[{"name":"营业部","id":1}],"status":0}
+[DEBUG] [2013-10-10 14:16:20]  [play.Logger] -get请求url：http://localhost:9100/RoleInfoCt/findAllRole
+[DEBUG] [2013-10-10 14:16:20]  [play.Logger] -get响应数据:：{"data":[{"id":3,"name":"大赛用户"},{"id":2,"name":"所有权限"},{"id":1,"name":"系统管理员"}],"status":0}
+[ INFO] [2013-10-10 14:16:22]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-10-10 14:16:22]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-10-10 14:16:22]  [play.Logger] -post with body 请求url：http://localhost:9100/UserInfoCt/activateUsersList?pageNo=0,请求数据:
+{"saleId":0,"orderFlag":0,"status":0,"flag":1}
+[DEBUG] [2013-10-10 14:16:22]  [play.Logger] -post with body 响应数据:：{"data":[{"id":"895","account":"panzhiwei","name":"pzw","idCard":"","phone":"","saleName":"营业部","capitalAccount":"","applyDate":"2013-09-29","status":2},{"id":"897","account":"liuhj12","name":"liuhj","idCard":"","phone":"","saleName":"营业部","capitalAccount":"","applyDate":"2013-09-29","status":2},{"id":"898","account":"admin111","name":"tttttt","idCard":"","phone":"","saleName":"营业部","capitalAccount":"","applyDate":"2013-09-29","status":2},{"id":"899","account":"ggggg","name":"gg","idCard":"","phone":"","saleName":"营业部","capitalAccount":"","applyDate":"2013-09-29","status":2},{"id":"900","account":"tttttt","name":"qq","idCard":"","phone":"","saleName":"营业部","capitalAccount":"","applyDate":"2013-09-29","status":2}],"status":0,"rowTotal":5,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-10-10 14:16:22]  [play.Logger] -get请求url：http://localhost:9100/UserInfoCt/findAllDepartment
+[DEBUG] [2013-10-10 14:16:22]  [play.Logger] -get响应数据:：{"data":[{"name":"营业部","id":1}],"status":0}
+[DEBUG] [2013-10-10 14:16:22]  [play.Logger] -get请求url：http://localhost:9100/RoleInfoCt/findAllRole
+[DEBUG] [2013-10-10 14:16:22]  [play.Logger] -get响应数据:：{"data":[{"id":3,"name":"大赛用户"},{"id":2,"name":"所有权限"},{"id":1,"name":"系统管理员"}],"status":0}
+[DEBUG] [2013-10-10 14:16:22]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=user.excel.template.dir
+[DEBUG] [2013-10-10 14:16:22]  [play.Logger] -get响应数据:：{"data":"public/attachment/template.xls","status":0}
+[ INFO] [2013-10-10 14:16:24]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-10-10 14:16:24]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-10-10 14:16:24]  [play.Logger] -post with body 请求url：http://localhost:9100/UserInfoCt/usersList?pageNo=0,请求数据:
+{"saleId":0,"orderFlag":0,"status":0,"roleId":0,"flag":2}
+[DEBUG] [2013-10-10 14:16:24]  [play.Logger] -post with body 响应数据:：{"data":[{"id":"1","account":"admin","name":"管理员","idCard":"","phone":"","saleName":"营业部","capitalAccount":"","applyDate":"2013-03-01","status":10,"roleName":"系统管理员","startDate":"2013-03-01","endDate":"2099-01-01"},{"id":"885","account":"tom12345","name":"tom","idCard":"","phone":"123","applyDate":"2013-09-28","status":10,"roleName":"所有权限,大赛用户","startDate":"2013-09-28","endDate":"2013-10-18"},{"id":"886","account":"tom2222","name":"tommmm","idCard":"","phone":"23","applyDate":"2013-09-28","status":10,"roleName":"所有权限","startDate":"2013-09-28","endDate":"2015-09-03"},{"id":"894","account":"csmarapi","name":"csmarapi","idCard":"436879878747848574","phone":"13725484787","applyDate":"2013-09-29","status":10,"roleName":"大赛用户","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"901","account":"liddd","name":"liC","idCard":"","phone":"ss","applyDate":"2013-09-29","status":10,"roleName":"所有权限","startDate":"2013-09-29","endDate":"2013-10-12"}],"status":0,"rowTotal":5,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-10-10 14:16:24]  [play.Logger] -get请求url：http://localhost:9100/UserInfoCt/findAllDepartment
+[DEBUG] [2013-10-10 14:16:24]  [play.Logger] -get响应数据:：{"data":[{"name":"营业部","id":1}],"status":0}
+[DEBUG] [2013-10-10 14:16:24]  [play.Logger] -get请求url：http://localhost:9100/RoleInfoCt/findAllRole
+[DEBUG] [2013-10-10 14:16:24]  [play.Logger] -get响应数据:：{"data":[{"id":3,"name":"大赛用户"},{"id":2,"name":"所有权限"},{"id":1,"name":"系统管理员"}],"status":0}
+[ INFO] [2013-10-10 14:16:28]  [play.Logger] -fetchTradeAccount 要操作的opUid为[885]
+[DEBUG] [2013-10-10 14:16:28]  [play.Logger] -get请求url：http://localhost:9100/productCt/fetchTradeAccountList?ntToken=5d0498ec5a375776f7b450117f2cda95b9c328ea914ce2e3178fe2721a705b0729a7519fecb52868fb20881e2e9aa9b4&__opUid=885
+[DEBUG] [2013-10-10 14:16:28]  [play.Logger] -get响应数据:：{"data":[{"name":"123","account":"123","password":"123","used":0,"type":0,"clientId":"234","targetCompId":"232","hedgeType":0,"id":478},{"name":"ss","account":"ss","password":"ss","used":0,"type":0,"clientId":"","targetCompId":"","hedgeType":0,"id":482},{"name":"sa","account":"s","password":"s","used":0,"type":0,"clientId":"s","targetCompId":"s","hedgeType":0,"id":489}],"status":0}
+[ INFO] [2013-10-10 14:16:35]  [play.Logger] -fetchTradeAccount 要操作的opUid为[885]
+[DEBUG] [2013-10-10 14:16:35]  [play.Logger] -get请求url：http://localhost:9100/productCt/verifyTradeAccountisExist?ntToken=5d0498ec5a375776f7b450117f2cda95b9c328ea914ce2e3178fe2721a705b0729a7519fecb52868fb20881e2e9aa9b4&__opUid=885&accountName=gta00
+[DEBUG] [2013-10-10 14:16:35]  [play.Logger] -get响应数据:：{"data":false,"status":0}
+[ INFO] [2013-10-10 14:16:56]  [play.Logger] -fetchTradeAccount 要操作的opUid为[885]
+[DEBUG] [2013-10-10 14:16:56]  [play.Logger] -get请求url：http://localhost:9100/productCt/fetchTradeAccountList?ntToken=5d0498ec5a375776f7b450117f2cda95b9c328ea914ce2e3178fe2721a705b0729a7519fecb52868fb20881e2e9aa9b4&__opUid=885
+[DEBUG] [2013-10-10 14:16:56]  [play.Logger] -get响应数据:：{"data":[{"name":"123","account":"123","password":"123","used":0,"type":0,"clientId":"234","targetCompId":"232","hedgeType":0,"id":478},{"name":"ss","account":"ss","password":"ss","used":0,"type":0,"clientId":"","targetCompId":"","hedgeType":0,"id":482},{"name":"sa","account":"s","password":"s","used":0,"type":0,"clientId":"s","targetCompId":"s","hedgeType":0,"id":489}],"status":0}
+[ INFO] [2013-10-10 14:17:44]  [play.Logger] -fetchTradeAccount 要操作的opUid为[886]
+[DEBUG] [2013-10-10 14:17:44]  [play.Logger] -get请求url：http://localhost:9100/productCt/fetchTradeAccountList?ntToken=5d0498ec5a375776f7b450117f2cda95b9c328ea914ce2e3178fe2721a705b0729a7519fecb52868fb20881e2e9aa9b4&__opUid=886
+[DEBUG] [2013-10-10 14:17:44]  [play.Logger] -get响应数据:：{"data":[{"name":"23","account":"23","password":"23","used":0,"type":0,"clientId":"23","targetCompId":"23","hedgeType":0,"id":479},{"name":"去人343434434343","account":"23233232","password":"23423","used":0,"type":0,"clientId":"2333","targetCompId":"23","hedgeType":1,"id":480},{"name":"s","account":"s","password":"s","used":0,"type":0,"clientId":"","targetCompId":"","hedgeType":0,"id":490}],"status":0}
+[ INFO] [2013-10-10 14:17:49]  [play.Logger] -fetchTradeAccount 要操作的opUid为[894]
+[DEBUG] [2013-10-10 14:17:49]  [play.Logger] -get请求url：http://localhost:9100/productCt/fetchTradeAccountList?ntToken=5d0498ec5a375776f7b450117f2cda95b9c328ea914ce2e3178fe2721a705b0729a7519fecb52868fb20881e2e9aa9b4&__opUid=894
+[DEBUG] [2013-10-10 14:17:49]  [play.Logger] -get响应数据:：{"data":[],"status":0}
+[ INFO] [2013-10-10 14:17:53]  [play.Logger] -fetchTradeAccount 要操作的opUid为[901]
+[DEBUG] [2013-10-10 14:17:53]  [play.Logger] -get请求url：http://localhost:9100/productCt/fetchTradeAccountList?ntToken=5d0498ec5a375776f7b450117f2cda95b9c328ea914ce2e3178fe2721a705b0729a7519fecb52868fb20881e2e9aa9b4&__opUid=901
+[DEBUG] [2013-10-10 14:17:53]  [play.Logger] -get响应数据:：{"data":[{"name":"a","account":"b","password":"c","used":0,"type":0,"clientId":"","targetCompId":"","hedgeType":0,"id":487}],"status":0}

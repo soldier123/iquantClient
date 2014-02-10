@@ -1,0 +1,161 @@
+[ERROR] [2013-10-14 09:19:42]  [play.Logger] -
+
+@6g0ka1oef
+Internal Server Error (500) for request GET /
+
+JPA error
+A JPA error occurred (Found Entity-class (models.iquantCommon.StockInfo) referring to none-existing JPAConfig. Is JPA properly configured?): 
+
+play.exceptions.JPAException: Found Entity-class (models.iquantCommon.StockInfo) referring to none-existing JPAConfig. Is JPA properly configured?
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:266)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:533)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at Invocation.HTTP Request(Play!)
+[ERROR] [2013-10-14 09:19:43]  [play.Logger] -
+
+@6g0ka1oeg
+Internal Server Error (500) for request GET /
+
+JPA error
+A JPA error occurred (Found Entity-class (models.iquantCommon.StockInfo) referring to none-existing JPAConfig. Is JPA properly configured?): 
+
+play.exceptions.JPAException: Found Entity-class (models.iquantCommon.StockInfo) referring to none-existing JPAConfig. Is JPA properly configured?
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:266)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:533)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at Invocation.HTTP Request(Play!)
+[ERROR] [2013-10-14 09:21:07]  [play.Logger] -
+
+@6g0ka1oeh
+Error during job execution (job.ClearCacheJob)
+
+Execution exception (In /app/job/ClearCacheJob.java around line 24)
+JedisConnectionException occured : Could not get a resource from the pool
+
+play.exceptions.JavaExecutionException: Could not get a resource from the pool
+	at play.jobs.Job.call(Job.java:155)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22)
+	at play.modules.redis.RedisConnectionManager.getRawConnectionInternal(RedisConnectionManager.java:40)
+	at play.modules.redis.Redis.keys(Redis.java:501)
+	at job.ClearCacheJob.clearPrevilegeFromRedis(ClearCacheJob.java:24)
+	at job.ClearCacheJob.doJob(ClearCacheJob.java:19)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 7 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:124)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:54)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1657)
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:63)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:1158)
+	at redis.clients.util.Pool.getResource(Pool.java:20)
+	... 13 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:119)
+	... 18 more
+[ERROR] [2013-10-14 09:46:40]  [play.Logger] -
+
+@6g0ka1oei
+Internal Server Error (500) for request GET /
+
+JPA error
+A JPA error occurred (Found Entity-class (models.iquantCommon.StockInfo) referring to none-existing JPAConfig. Is JPA properly configured?): 
+
+play.exceptions.JPAException: Found Entity-class (models.iquantCommon.StockInfo) referring to none-existing JPAConfig. Is JPA properly configured?
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:266)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:533)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at Invocation.HTTP Request(Play!)
+[ERROR] [2013-10-14 09:59:21]  [play.Logger] -
+
+@6g0ka1oej
+Internal Server Error (500) for request GET /
+
+JPA error
+A JPA error occurred (Found Entity-class (models.iquantCommon.StockPool) referring to none-existing JPAConfig. Is JPA properly configured?): 
+
+play.exceptions.JPAException: Found Entity-class (models.iquantCommon.StockPool) referring to none-existing JPAConfig. Is JPA properly configured?
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:266)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:533)
+	at play.Play.detectChanges(Play.java:649)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at Invocation.HTTP Request(Play!)
+[ERROR] [2013-10-14 09:59:50]  [play.Logger] -
+
+@6g0kf8nmn
+Internal Server Error (500) for request GET /
+
+JPA error
+A JPA error occurred (Found Entity-class (models.iquantCommon.StockPool) referring to none-existing JPAConfig. Is JPA properly configured?): 
+
+play.exceptions.JPAException: Found Entity-class (models.iquantCommon.StockPool) referring to none-existing JPAConfig. Is JPA properly configured?
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:266)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:533)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at Invocation.HTTP Request(Play!)
+[ERROR] [2013-10-14 10:14:07]  [play.Logger] -
+
+@6g0kf8nmo
+Error during job execution (job.ClearCacheJob)
+
+Execution exception (In /app/job/ClearCacheJob.java around line 24)
+JedisConnectionException occured : Could not get a resource from the pool
+
+play.exceptions.JavaExecutionException: Could not get a resource from the pool
+	at play.jobs.Job.call(Job.java:155)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22)
+	at play.modules.redis.RedisConnectionManager.getRawConnectionInternal(RedisConnectionManager.java:40)
+	at play.modules.redis.Redis.keys(Redis.java:501)
+	at job.ClearCacheJob.clearPrevilegeFromRedis(ClearCacheJob.java:24)
+	at job.ClearCacheJob.doJob(ClearCacheJob.java:19)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 7 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:124)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:54)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1657)
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:63)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:1158)
+	at redis.clients.util.Pool.getResource(Pool.java:20)
+	... 13 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:119)
+	... 18 more

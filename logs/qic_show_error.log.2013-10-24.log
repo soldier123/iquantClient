@@ -1,0 +1,225 @@
+[ERROR] [2013-10-24 16:29:16]  [play.Logger] -
+
+@6g3h748ml
+Error during job execution (job.ClearCacheJob)
+
+Execution exception (In /app/job/ClearCacheJob.java around line 24)
+JedisConnectionException occured : Could not get a resource from the pool
+
+play.exceptions.JavaExecutionException: Could not get a resource from the pool
+	at play.jobs.Job.call(Job.java:155)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22)
+	at play.modules.redis.RedisConnectionManager.getRawConnectionInternal(RedisConnectionManager.java:40)
+	at play.modules.redis.Redis.keys(Redis.java:501)
+	at job.ClearCacheJob.clearPrevilegeFromRedis(ClearCacheJob.java:24)
+	at job.ClearCacheJob.doJob(ClearCacheJob.java:19)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 6 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:124)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:54)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1657)
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:63)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:1158)
+	at redis.clients.util.Pool.getResource(Pool.java:20)
+	... 12 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:119)
+	... 17 more
+[ERROR] [2013-10-24 16:30:40]  [play.Logger] -
+
+@6g3h748mm
+smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png action not found
+
+Action not found
+Action smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png could not be found. Error raised is Controller controllers.smallImages.st_ce3bab03ef1447b48bc5bccdd5867551 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ce3bab03ef1447b48bc5bccdd5867551 not found
+	... 3 more
+[ERROR] [2013-10-24 16:30:40]  [play.Logger] -
+
+@6g3h748mn
+smallImages.st_79661f6c56434089a576668756ed440b.png action not found
+
+Action not found
+Action smallImages.st_79661f6c56434089a576668756ed440b.png could not be found. Error raised is Controller controllers.smallImages.st_79661f6c56434089a576668756ed440b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_79661f6c56434089a576668756ed440b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_79661f6c56434089a576668756ed440b not found
+	... 3 more
+[ERROR] [2013-10-24 16:30:40]  [play.Logger] -
+
+@6g3h748mo
+smallImages.st_20121101Test.png action not found
+
+Action not found
+Action smallImages.st_20121101Test.png could not be found. Error raised is Controller controllers.smallImages.st_20121101Test not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_20121101Test.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_20121101Test not found
+	... 3 more
+[ERROR] [2013-10-24 16:30:40]  [play.Logger] -
+
+@6g3h748mp
+smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png action not found
+
+Action not found
+Action smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png could not be found. Error raised is Controller controllers.smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e not found
+	... 3 more
+[ERROR] [2013-10-24 16:30:40]  [play.Logger] -
+
+@6g3h748n0
+smallImages.st_83a3ce09b5424db396f15012a7075b9e.png action not found
+
+Action not found
+Action smallImages.st_83a3ce09b5424db396f15012a7075b9e.png could not be found. Error raised is Controller controllers.smallImages.st_83a3ce09b5424db396f15012a7075b9e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_83a3ce09b5424db396f15012a7075b9e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_83a3ce09b5424db396f15012a7075b9e not found
+	... 3 more
+[ERROR] [2013-10-24 16:30:40]  [play.Logger] -
+
+@6g3h748n1
+smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png action not found
+
+Action not found
+Action smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png could not be found. Error raised is Controller controllers.smallImages.st_5911f2682a914fc892b72cb8497ae0a1 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_5911f2682a914fc892b72cb8497ae0a1 not found
+	... 3 more
+[ERROR] [2013-10-24 16:30:40]  [play.Logger] -
+
+@6g3h748n2
+smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png action not found
+
+Action not found
+Action smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png could not be found. Error raised is Controller controllers.smallImages.st_bed4f5b554b44d03bfd5a311b412c008 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_bed4f5b554b44d03bfd5a311b412c008 not found
+	... 3 more
+[ERROR] [2013-10-24 16:30:40]  [play.Logger] -
+
+@6g3h748n3
+smallImages.st_332837d06c86448b9ccbcc8064bab40c.png action not found
+
+Action not found
+Action smallImages.st_332837d06c86448b9ccbcc8064bab40c.png could not be found. Error raised is Controller controllers.smallImages.st_332837d06c86448b9ccbcc8064bab40c not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_332837d06c86448b9ccbcc8064bab40c.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_332837d06c86448b9ccbcc8064bab40c not found
+	... 3 more
+[ERROR] [2013-10-24 16:30:41]  [play.Logger] -
+
+@6g3h748n4
+smallImages.st_b4028fda35e44105981421e892d5e52e.png action not found
+
+Action not found
+Action smallImages.st_b4028fda35e44105981421e892d5e52e.png could not be found. Error raised is Controller controllers.smallImages.st_b4028fda35e44105981421e892d5e52e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_b4028fda35e44105981421e892d5e52e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_b4028fda35e44105981421e892d5e52e not found
+	... 3 more
+[ERROR] [2013-10-24 16:30:41]  [play.Logger] -
+
+@6g3h748n5
+smallImages.st_c10e41ae857d4310b4801690a6815e9f.png action not found
+
+Action not found
+Action smallImages.st_c10e41ae857d4310b4801690a6815e9f.png could not be found. Error raised is Controller controllers.smallImages.st_c10e41ae857d4310b4801690a6815e9f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_c10e41ae857d4310b4801690a6815e9f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_c10e41ae857d4310b4801690a6815e9f not found
+	... 3 more
+[ERROR] [2013-10-24 16:30:41]  [play.Logger] -
+
+@6g3h748n6
+smallImages.st_3bcdc46075b94ed58c004109556eab40.png action not found
+
+Action not found
+Action smallImages.st_3bcdc46075b94ed58c004109556eab40.png could not be found. Error raised is Controller controllers.smallImages.st_3bcdc46075b94ed58c004109556eab40 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_3bcdc46075b94ed58c004109556eab40.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_3bcdc46075b94ed58c004109556eab40 not found
+	... 3 more
+[ERROR] [2013-10-24 16:30:41]  [play.Logger] -
+
+@6g3h748n7
+smallImages.st_f04217f7f75b46c785dba615f3694316.png action not found
+
+Action not found
+Action smallImages.st_f04217f7f75b46c785dba615f3694316.png could not be found. Error raised is Controller controllers.smallImages.st_f04217f7f75b46c785dba615f3694316 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_f04217f7f75b46c785dba615f3694316.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_f04217f7f75b46c785dba615f3694316 not found
+	... 3 more
+[ERROR] [2013-10-24 16:30:41]  [play.Logger] -
+
+@6g3h748n8
+smallImages.st_1ac568c68c0e4b1aac5bcbe5147a9a11.png action not found
+
+Action not found
+Action smallImages.st_1ac568c68c0e4b1aac5bcbe5147a9a11.png could not be found. Error raised is Controller controllers.smallImages.st_1ac568c68c0e4b1aac5bcbe5147a9a11 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_1ac568c68c0e4b1aac5bcbe5147a9a11.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_1ac568c68c0e4b1aac5bcbe5147a9a11 not found
+	... 3 more

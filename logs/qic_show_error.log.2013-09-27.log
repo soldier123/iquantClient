@@ -1,0 +1,216 @@
+[ERROR] [2013-09-27 16:38:34]  [play.Logger] -
+
+@6fm2pdgmj
+Internal Server Error (500) for request POST /backtestservers/getservers?type=2&eId=2
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.BackTestService.findServerByTypeAndEngineeId(BackTestService.java:103)
+	at controllers.BackTestServers.getServers(BackTestServers.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 10 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 12 more
+[ERROR] [2013-09-27 16:40:43]  [play.Logger] -
+
+@6fm2pdgmk
+Internal Server Error (500) for request POST /backtestservers/getservers?type=2&eId=2
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.BackTestService.findServerByTypeAndEngineeId(BackTestService.java:103)
+	at controllers.BackTestServers.getServers(BackTestServers.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 10 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 12 more
+[ERROR] [2013-09-27 16:42:19]  [play.Logger] -
+
+@6fm2pdgml
+Internal Server Error (500) for request POST /backtestservers/getservers?type=2&eId=2
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.BackTestService.findServerByTypeAndEngineeId(BackTestService.java:103)
+	at controllers.BackTestServers.getServers(BackTestServers.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 10 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 12 more
+[ERROR] [2013-09-27 18:01:38]  [play.Logger] -
+
+@6fm3ab4m5
+Error during job execution (job.ClearCacheJob)
+
+Execution exception (In /app/job/ClearCacheJob.java around line 31)
+JedisConnectionException occured : java.net.SocketTimeoutException: Read timed out
+
+play.exceptions.JavaExecutionException: java.net.SocketTimeoutException: Read timed out
+	at play.jobs.Job.call(Job.java:155)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.jedis.Protocol.process(Protocol.java:74)
+	at redis.clients.jedis.Protocol.read(Protocol.java:122)
+	at redis.clients.jedis.Connection.getIntegerReply(Connection.java:178)
+	at redis.clients.jedis.Jedis.del(Jedis.java:107)
+	at play.modules.redis.Redis.del(Redis.java:185)
+	at job.ClearCacheJob.clearPrevilegeFromRedis(ClearCacheJob.java:31)
+	at job.ClearCacheJob.doJob(ClearCacheJob.java:19)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 7 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at redis.clients.util.RedisInputStream.fill(RedisInputStream.java:110)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:46)
+	at redis.clients.jedis.Protocol.process(Protocol.java:59)
+	... 15 more
+[ERROR] [2013-09-27 18:01:51]  [play.Logger] -
+
+@6fm3ab4m6
+Internal Server Error (500) for request GET /strategys/strategylist
+
+Execution exception (In /app/bussiness/UserInfoBaseService.java around line 167)
+UncheckedExecutionException occured : java.lang.ClassCastException: java.lang.Long cannot be cast to [B
+
+play.exceptions.JavaExecutionException: java.lang.ClassCastException: java.lang.Long cannot be cast to [B
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: com.google.common.util.concurrent.UncheckedExecutionException: java.lang.ClassCastException: java.lang.Long cannot be cast to [B
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2263)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4000)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache.getUserRoles(UserInfoBaseService.java:167)
+	at bussiness.UserInfoBaseService.getUserFunctionInfo(UserInfoBaseService.java:39)
+	at util.SimpleFunctionAuth.hasPrivilege(SimpleFunctionAuth.java:29)
+	at util.FunctionAuthManager.auth(FunctionAuthManager.java:20)
+	at controllers.FunctionInterceptor.doAuth(FunctionInterceptor.java:27)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:510)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.handleBefores(ActionInvoker.java:328)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:142)
+	... 1 more
+Caused by: java.lang.ClassCastException: java.lang.Long cannot be cast to [B
+	at redis.clients.jedis.Connection.getBinaryBulkReply(Connection.java:172)
+	at redis.clients.jedis.Connection.getBulkReply(Connection.java:161)
+	at redis.clients.jedis.Jedis.get(Jedis.java:65)
+	at play.modules.redis.Redis.get(Redis.java:268)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache$1.load(UserInfoBaseService.java:111)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache$1.load(UserInfoBaseService.java:1)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	... 14 more
+[ERROR] [2013-09-27 18:02:38]  [play.Logger] -
+
+@6fm3ab4m7
+Internal Server Error (500) for request GET /strategys/strategylist
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at controllers.Strategys.strategyList(Strategys.java:53)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 8 more
+[ERROR] [2013-09-27 18:03:35]  [play.Logger] -
+
+@6fm3ab4m8
+Internal Server Error (500) for request GET /strategys/strategylist
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at controllers.Strategys.strategyList(Strategys.java:53)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 8 more

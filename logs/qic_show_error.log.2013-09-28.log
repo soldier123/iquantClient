@@ -1,0 +1,3358 @@
+[ERROR] [2013-09-28 09:42:25]  [play.Logger] -
+
+@6fm83ol6h
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:27]  [play.Logger] -
+
+@6fm83ol6i
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:27]  [play.Logger] -
+
+@6fm83ol6i
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:27]  [play.Logger] -
+
+@6fm83ol6h
+Internal Server Error (500) for request GET /
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:27]  [play.Logger] -
+
+@6fm83ol6j
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:27]  [play.Logger] -
+
+@6fm83ol6j
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:28]  [play.Logger] -
+
+@6fm83ol6k
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:28]  [play.Logger] -
+
+@6fm83ol6k
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:29]  [play.Logger] -
+
+@6fm83ol6l
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:29]  [play.Logger] -
+
+@6fm83ol6l
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:29]  [play.Logger] -
+
+@6fm83ol6m
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:29]  [play.Logger] -
+
+@6fm83ol6m
+Internal Server Error (500) for request GET /
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:30]  [play.Logger] -
+
+@6fm83ol6n
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:30]  [play.Logger] -
+
+@6fm83ol6n
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:30]  [play.Logger] -
+
+@6fm83ol6o
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:30]  [play.Logger] -
+
+@6fm83ol6o
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:31]  [play.Logger] -
+
+@6fm83ol6p
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:31]  [play.Logger] -
+
+@6fm83ol6p
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:31]  [play.Logger] -
+
+@6fm83ol70
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:31]  [play.Logger] -
+
+@6fm83ol70
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:32]  [play.Logger] -
+
+@6fm83ol71
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:32]  [play.Logger] -
+
+@6fm83ol71
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:32]  [play.Logger] -
+
+@6fm83ol72
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:32]  [play.Logger] -
+
+@6fm83ol72
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:33]  [play.Logger] -
+
+@6fm83ol73
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:33]  [play.Logger] -
+
+@6fm83ol73
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:34]  [play.Logger] -
+
+@6fm83ol74
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:34]  [play.Logger] -
+
+@6fm83ol74
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:34]  [play.Logger] -
+
+@6fm83ol75
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:34]  [play.Logger] -
+
+@6fm83ol75
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:36]  [play.Logger] -
+
+@6fm83ol76
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:36]  [play.Logger] -
+
+@6fm83ol76
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:37]  [play.Logger] -
+
+@6fm83ol77
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:37]  [play.Logger] -
+
+@6fm83ol77
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:37]  [play.Logger] -
+
+@6fm83ol78
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:37]  [play.Logger] -
+
+@6fm83ol78
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:39]  [play.Logger] -
+
+@6fm83ol79
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:39]  [play.Logger] -
+
+@6fm83ol79
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:39]  [play.Logger] -
+
+@6fm83ol7a
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:39]  [play.Logger] -
+
+@6fm83ol7a
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:40]  [play.Logger] -
+
+@6fm83ol7b
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:40]  [play.Logger] -
+
+@6fm83ol7b
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:40]  [play.Logger] -
+
+@6fm83ol7c
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:40]  [play.Logger] -
+
+@6fm83ol7c
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:41]  [play.Logger] -
+
+@6fm83ol7d
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:41]  [play.Logger] -
+
+@6fm83ol7d
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:41]  [play.Logger] -
+
+@6fm83ol7e
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:41]  [play.Logger] -
+
+@6fm83ol7e
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:42]  [play.Logger] -
+
+@6fm83ol7f
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:42]  [play.Logger] -
+
+@6fm83ol7f
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:45]  [play.Logger] -
+
+@6fm83ol7g
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:45]  [play.Logger] -
+
+@6fm83ol7g
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:46]  [play.Logger] -
+
+@6fm83ol7h
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:46]  [play.Logger] -
+
+@6fm83ol7h
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:48]  [play.Logger] -
+
+@6fm83ol7i
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:48]  [play.Logger] -
+
+@6fm83ol7i
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:51]  [play.Logger] -
+
+@6fm83ol7j
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:51]  [play.Logger] -
+
+@6fm83ol7j
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 09:42:53]  [play.Logger] -
+
+@6fm83ol7k
+Error during job execution (job.ClearCacheJob)
+
+Oops: OutOfMemoryError
+An unexpected error occured caused by exception OutOfMemoryError: PermGen space
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Invoker$Invocation.onException(Invoker.java:242)
+	at play.jobs.Job.onException(Job.java:124)
+	at play.jobs.Job.call(Job.java:163)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.OutOfMemoryError: PermGen space
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(Unknown Source)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:152)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:429)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:649)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at play.jobs.Job.call(Job.java:138)
+	... 7 more
+[ERROR] [2013-09-28 09:42:54]  [play.Logger] -
+
+@6fm83ol7l
+Error during job execution (job.ClearCacheJob)
+
+Oops: OutOfMemoryError
+An unexpected error occured caused by exception OutOfMemoryError: PermGen space
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Invoker$Invocation.onException(Invoker.java:242)
+	at play.jobs.Job.onException(Job.java:124)
+	at play.jobs.Job.call(Job.java:163)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.OutOfMemoryError: PermGen space
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(Unknown Source)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:152)
+	at play.classloading.ApplicationClassloader.loadClass(ApplicationClassloader.java:82)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(Unknown Source)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:152)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:429)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:649)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at play.jobs.Job.call(Job.java:138)
+	... 7 more
+[ERROR] [2013-09-28 09:43:20]  [play.Logger] -
+
+@6fm83ol7m
+Internal Server Error (500) for request GET /
+
+Oops: OutOfMemoryError
+An unexpected error occured caused by exception OutOfMemoryError: PermGen space
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Invoker$Invocation.onException(Invoker.java:242)
+	at play.Invoker$Invocation.run(Invoker.java:284)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.OutOfMemoryError: PermGen space
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(Unknown Source)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:152)
+	at play.classloading.ApplicationClassloader.loadClass(ApplicationClassloader.java:82)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(Unknown Source)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:152)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:429)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:649)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	... 1 more
+[ERROR] [2013-09-28 09:43:20]  [play.Logger] -Error during the 500 response generation
+java.lang.OutOfMemoryError: PermGen space
+	at sun.misc.Unsafe.defineClass(Native Method)
+	at sun.reflect.ClassDefiner.defineClass(Unknown Source)
+	at sun.reflect.MethodAccessorGenerator$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.reflect.MethodAccessorGenerator.generate(Unknown Source)
+	at sun.reflect.MethodAccessorGenerator.generateSerializationConstructor(Unknown Source)
+	at sun.reflect.ReflectionFactory.newConstructorForSerialization(Unknown Source)
+	at java.io.ObjectStreamClass.getSerializableConstructor(Unknown Source)
+	at java.io.ObjectStreamClass.access$1500(Unknown Source)
+	at java.io.ObjectStreamClass$2.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.io.ObjectStreamClass.<init>(Unknown Source)
+	at java.io.ObjectStreamClass.lookup(Unknown Source)
+	at java.io.ObjectStreamClass.initNonProxy(Unknown Source)
+	at java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.io.ObjectInputStream.readNonProxyDesc(Unknown Source)
+	at java.io.ObjectInputStream.readClassDesc(Unknown Source)
+	at java.io.ObjectInputStream.readOrdinaryObject(Unknown Source)
+	at java.io.ObjectInputStream.readObject0(Unknown Source)
+	at java.io.ObjectInputStream.readObject(Unknown Source)
+	at java.util.HashMap.readObject(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at java.io.ObjectStreamClass.invokeReadObject(Unknown Source)
+	at java.io.ObjectInputStream.readSerialData(Unknown Source)
+	at java.io.ObjectInputStream.readOrdinaryObject(Unknown Source)
+	at java.io.ObjectInputStream.readObject0(Unknown Source)
+	at java.io.ObjectInputStream.readObject(Unknown Source)
+	at play.utils.Java.deserialize(Java.java:336)
+[ERROR] [2013-09-28 09:45:24]  [play.Logger] - error adding play.server.FlashPolicyHandler
+[ERROR] [2013-09-28 09:45:27]  [play.Logger] -
+
+@6fm83ol7n
+Internal Server Error (500) for request GET /
+
+Oops: OutOfMemoryError
+An unexpected error occured caused by exception OutOfMemoryError: PermGen space
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Invoker$Invocation.onException(Invoker.java:242)
+	at play.Invoker$Invocation.run(Invoker.java:284)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.OutOfMemoryError: PermGen space
+[ERROR] [2013-09-28 09:45:28]  [play.Logger] -Error during the 500 response generation
+java.lang.RuntimeException: java.lang.OutOfMemoryError: PermGen space
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:93)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:272)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.server.PlayHandler.serve500(PlayHandler.java:755)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.OutOfMemoryError: PermGen space
+[ERROR] [2013-09-28 09:46:25]  [play.Logger] -Oops. Error in Logger !
+java.lang.OutOfMemoryError: PermGen space
+[ERROR] [2013-09-28 09:46:25]  [play.Logger] -Error during the 500 response generation
+java.lang.OutOfMemoryError: PermGen space
+[ERROR] [2013-09-28 09:47:17]  [play.Logger] -Oops. Error in Logger !
+java.lang.OutOfMemoryError: PermGen space
+[ERROR] [2013-09-28 09:47:18]  [play.Logger] -Error during the 500 response generation
+java.lang.OutOfMemoryError: PermGen space
+[ERROR] [2013-09-28 09:47:41]  [play.Logger] -Oops. Error in Logger !
+java.lang.OutOfMemoryError: PermGen space
+[ERROR] [2013-09-28 09:47:42]  [play.Logger] -Error during the 500 response generation
+java.lang.OutOfMemoryError: PermGen space
+[ERROR] [2013-09-28 09:49:27]  [play.Logger] -Oops. Error in Logger !
+java.lang.OutOfMemoryError: PermGen space
+[ERROR] [2013-09-28 09:49:28]  [play.Logger] -Error during the 500 response generation
+java.lang.OutOfMemoryError: PermGen space
+[ERROR] [2013-09-28 09:53:03]  [play.Logger] -Oops. Error in Logger !
+java.lang.OutOfMemoryError: PermGen space
+[ERROR] [2013-09-28 09:53:03]  [play.Logger] -Error during the 500 response generation
+java.lang.OutOfMemoryError: PermGen space
+[ERROR] [2013-09-28 09:56:53]  [play.Logger] -Oops. Error in Logger !
+java.lang.OutOfMemoryError: PermGen space
+[ERROR] [2013-09-28 09:56:53]  [play.Logger] -Error during the 500 response generation
+java.lang.OutOfMemoryError: PermGen space
+[ERROR] [2013-09-28 10:07:07]  [play.Logger] -
+
+@6fm8753po
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:08]  [play.Logger] -
+
+@6fm8753po
+Internal Server Error (500) for request GET /strategys/strategylist
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:08]  [play.Logger] -
+
+@6fm8753pp
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:08]  [play.Logger] -
+
+@6fm8753pp
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:09]  [play.Logger] -
+
+@6fm875400
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:09]  [play.Logger] -
+
+@6fm875400
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:09]  [play.Logger] -
+
+@6fm875401
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:09]  [play.Logger] -
+
+@6fm875401
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:10]  [play.Logger] -
+
+@6fm875402
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:10]  [play.Logger] -
+
+@6fm875402
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:10]  [play.Logger] -
+
+@6fm875403
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:10]  [play.Logger] -
+
+@6fm875403
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:11]  [play.Logger] -
+
+@6fm875404
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:11]  [play.Logger] -
+
+@6fm875404
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:11]  [play.Logger] -
+
+@6fm875405
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:11]  [play.Logger] -
+
+@6fm875405
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:12]  [play.Logger] -
+
+@6fm875406
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:12]  [play.Logger] -
+
+@6fm875406
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:13]  [play.Logger] -
+
+@6fm875407
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:13]  [play.Logger] -
+
+@6fm875407
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:13]  [play.Logger] -
+
+@6fm875408
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:13]  [play.Logger] -
+
+@6fm875408
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:13]  [play.Logger] -
+
+@6fm875409
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:13]  [play.Logger] -
+
+@6fm875409
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:14]  [play.Logger] -
+
+@6fm87540a
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:14]  [play.Logger] -
+
+@6fm87540a
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:15]  [play.Logger] -
+
+@6fm87540b
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:16]  [play.Logger] -
+
+@6fm87540b
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:18]  [play.Logger] -
+
+@6fm87540c
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:18]  [play.Logger] -
+
+@6fm87540c
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:22]  [play.Logger] -
+
+@6fm87540d
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:07:22]  [play.Logger] -
+
+@6fm87540d
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:09:18]  [play.Logger] -
+
+@6fm87540e
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:09:19]  [play.Logger] -
+
+@6fm87540e
+Internal Server Error (500) for request GET /strategys/strategylist
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:09:20]  [play.Logger] -
+
+@6fm87540f
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:09:20]  [play.Logger] -
+
+@6fm87540f
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:09:24]  [play.Logger] -
+
+@6fm87540g
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:09:24]  [play.Logger] -
+
+@6fm87540g
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:09:26]  [play.Logger] -
+
+@6fm87540h
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:09:26]  [play.Logger] -
+
+@6fm87540h
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:09:28]  [play.Logger] -
+
+@6fm87540i
+Error during job execution (job.FetchStrategyPictureJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 10:09:28]  [play.Logger] -
+
+@6fm87540i
+Error during job execution (job.ClearCacheJob)
+
+Oops: FileNotFoundException
+An unexpected error occured caused by exception FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.libs.IO.copyDirectory(IO.java:363)
+	at play.libs.IO.copyDirectory(IO.java:357)
+	at job.FetchStrategyPictureJob.fetchStrategyPicture(FetchStrategyPictureJob.java:37)
+	at job.FetchStrategyPictureJob.doJob(FetchStrategyPictureJob.java:24)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	at Invocation.Job(Play!)
+Caused by: java.io.FileNotFoundException: \public\smallImages\st_02e647b26f974b07b58d78e0db304524.png (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at play.libs.IO.copyDirectory(IO.java:361)
+	... 6 more
+[ERROR] [2013-09-28 13:35:02]  [play.Logger] -
+
+@6fm87540j
+Internal Server Error (500) for request GET /strategys/strategylist
+
+Template execution error (In /app/views/Strategys/strategyList.html around line 168)
+Execution error occured in template /app/views/Strategys/strategyList.html. Exception raised was OutOfMemoryError : PermGen space.
+
+play.exceptions.TemplateExecutionException: PermGen space
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:272)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:661)
+	at play.mvc.Controller.renderTemplate(Controller.java:641)
+	at play.mvc.Controller.render(Controller.java:698)
+	at controllers.Strategys.strategyList(Strategys.java:57)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.OutOfMemoryError: PermGen space
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(Unknown Source)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at play.templates.GroovyTemplate$TClassLoader.defineTemplate(GroovyTemplate.java:95)
+	at play.templates.GroovyTemplate.directLoad(GroovyTemplate.java:108)
+	at play.templates.BaseTemplate.loadFromCache(BaseTemplate.java:56)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:79)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:172)
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:370)
+	at /app/views/Strategys/strategyList.html.(line:168)
+[ERROR] [2013-09-28 13:43:35]  [play.Logger] -
+
+@6fm87540k
+Internal Server Error (500) for request GET /strategys/strategylist
+
+Oops: OutOfMemoryError
+An unexpected error occured caused by exception OutOfMemoryError: PermGen space
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Invoker$Invocation.onException(Invoker.java:242)
+	at play.Invoker$Invocation.run(Invoker.java:284)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.OutOfMemoryError: PermGen space
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(Unknown Source)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:152)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:429)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:649)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	... 1 more
+[ERROR] [2013-09-28 14:48:26]  [play.Logger] -
+
+@6fm9i3chn
+Error during job execution (job.ClearCacheJob)
+
+Execution exception (In /app/job/ClearCacheJob.java around line 24)
+JedisConnectionException occured : Could not get a resource from the pool
+
+play.exceptions.JavaExecutionException: Could not get a resource from the pool
+	at play.jobs.Job.call(Job.java:155)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22)
+	at play.modules.redis.RedisConnectionManager.getRawConnectionInternal(RedisConnectionManager.java:40)
+	at play.modules.redis.Redis.keys(Redis.java:501)
+	at job.ClearCacheJob.clearPrevilegeFromRedis(ClearCacheJob.java:24)
+	at job.ClearCacheJob.doJob(ClearCacheJob.java:19)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 7 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:124)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:54)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1657)
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:63)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:1158)
+	at redis.clients.util.Pool.getResource(Pool.java:20)
+	... 13 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:119)
+	... 18 more
+[ERROR] [2013-09-28 14:49:33]  [play.Logger] -
+
+@6fm9i77om
+Error during job execution (job.ClearCacheJob)
+
+Execution exception (In /app/job/ClearCacheJob.java around line 24)
+JedisConnectionException occured : Could not get a resource from the pool
+
+play.exceptions.JavaExecutionException: Could not get a resource from the pool
+	at play.jobs.Job.call(Job.java:155)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22)
+	at play.modules.redis.RedisConnectionManager.getRawConnectionInternal(RedisConnectionManager.java:40)
+	at play.modules.redis.Redis.keys(Redis.java:501)
+	at job.ClearCacheJob.clearPrevilegeFromRedis(ClearCacheJob.java:24)
+	at job.ClearCacheJob.doJob(ClearCacheJob.java:19)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 7 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:124)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:54)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1657)
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:63)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:1158)
+	at redis.clients.util.Pool.getResource(Pool.java:20)
+	... 13 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:119)
+	... 18 more
+[ERROR] [2013-09-28 17:32:58]  [play.Logger] -
+
+@6fmadj4jd
+smallImages.st_79661f6c56434089a576668756ed440b.png action not found
+
+Action not found
+Action smallImages.st_79661f6c56434089a576668756ed440b.png could not be found. Error raised is Controller controllers.smallImages.st_79661f6c56434089a576668756ed440b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_79661f6c56434089a576668756ed440b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_79661f6c56434089a576668756ed440b not found
+	... 3 more
+[ERROR] [2013-09-28 17:32:58]  [play.Logger] -
+
+@6fmadj4je
+smallImages.st_20121101Test.png action not found
+
+Action not found
+Action smallImages.st_20121101Test.png could not be found. Error raised is Controller controllers.smallImages.st_20121101Test not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_20121101Test.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_20121101Test not found
+	... 3 more
+[ERROR] [2013-09-28 17:32:58]  [play.Logger] -
+
+@6fmadj4jf
+smallImages.st_83a3ce09b5424db396f15012a7075b9e.png action not found
+
+Action not found
+Action smallImages.st_83a3ce09b5424db396f15012a7075b9e.png could not be found. Error raised is Controller controllers.smallImages.st_83a3ce09b5424db396f15012a7075b9e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_83a3ce09b5424db396f15012a7075b9e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_83a3ce09b5424db396f15012a7075b9e not found
+	... 3 more
+[ERROR] [2013-09-28 17:32:58]  [play.Logger] -
+
+@6fmadj4jg
+smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png action not found
+
+Action not found
+Action smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png could not be found. Error raised is Controller controllers.smallImages.st_ce3bab03ef1447b48bc5bccdd5867551 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ce3bab03ef1447b48bc5bccdd5867551 not found
+	... 3 more
+[ERROR] [2013-09-28 17:32:58]  [play.Logger] -
+
+@6fmadj4jh
+smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png action not found
+
+Action not found
+Action smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png could not be found. Error raised is Controller controllers.smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e not found
+	... 3 more
+[ERROR] [2013-09-28 17:32:58]  [play.Logger] -
+
+@6fmadj4ji
+smallImages.st_b4028fda35e44105981421e892d5e52e.png action not found
+
+Action not found
+Action smallImages.st_b4028fda35e44105981421e892d5e52e.png could not be found. Error raised is Controller controllers.smallImages.st_b4028fda35e44105981421e892d5e52e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_b4028fda35e44105981421e892d5e52e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_b4028fda35e44105981421e892d5e52e not found
+	... 3 more
+[ERROR] [2013-09-28 17:32:59]  [play.Logger] -
+
+@6fmadj4jj
+smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png action not found
+
+Action not found
+Action smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png could not be found. Error raised is Controller controllers.smallImages.st_5911f2682a914fc892b72cb8497ae0a1 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_5911f2682a914fc892b72cb8497ae0a1 not found
+	... 3 more
+[ERROR] [2013-09-28 17:32:59]  [play.Logger] -
+
+@6fmadj4jk
+smallImages.st_c10e41ae857d4310b4801690a6815e9f.png action not found
+
+Action not found
+Action smallImages.st_c10e41ae857d4310b4801690a6815e9f.png could not be found. Error raised is Controller controllers.smallImages.st_c10e41ae857d4310b4801690a6815e9f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_c10e41ae857d4310b4801690a6815e9f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_c10e41ae857d4310b4801690a6815e9f not found
+	... 3 more
+[ERROR] [2013-09-28 17:32:59]  [play.Logger] -
+
+@6fmadj4jl
+smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png action not found
+
+Action not found
+Action smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png could not be found. Error raised is Controller controllers.smallImages.st_bed4f5b554b44d03bfd5a311b412c008 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_bed4f5b554b44d03bfd5a311b412c008 not found
+	... 3 more
+[ERROR] [2013-09-28 17:32:59]  [play.Logger] -
+
+@6fmadj4jm
+smallImages.st_3bcdc46075b94ed58c004109556eab40.png action not found
+
+Action not found
+Action smallImages.st_3bcdc46075b94ed58c004109556eab40.png could not be found. Error raised is Controller controllers.smallImages.st_3bcdc46075b94ed58c004109556eab40 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_3bcdc46075b94ed58c004109556eab40.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_3bcdc46075b94ed58c004109556eab40 not found
+	... 3 more
+[ERROR] [2013-09-28 17:32:59]  [play.Logger] -
+
+@6fmadj4jn
+smallImages.st_f04217f7f75b46c785dba615f3694316.png action not found
+
+Action not found
+Action smallImages.st_f04217f7f75b46c785dba615f3694316.png could not be found. Error raised is Controller controllers.smallImages.st_f04217f7f75b46c785dba615f3694316 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_f04217f7f75b46c785dba615f3694316.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_f04217f7f75b46c785dba615f3694316 not found
+	... 3 more
+[ERROR] [2013-09-28 17:32:59]  [play.Logger] -
+
+@6fmadj4jo
+smallImages.st_332837d06c86448b9ccbcc8064bab40c.png action not found
+
+Action not found
+Action smallImages.st_332837d06c86448b9ccbcc8064bab40c.png could not be found. Error raised is Controller controllers.smallImages.st_332837d06c86448b9ccbcc8064bab40c not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_332837d06c86448b9ccbcc8064bab40c.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_332837d06c86448b9ccbcc8064bab40c not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:24]  [play.Logger] -
+
+@6fmadj4jp
+smallImages.st_79661f6c56434089a576668756ed440b.png action not found
+
+Action not found
+Action smallImages.st_79661f6c56434089a576668756ed440b.png could not be found. Error raised is Controller controllers.smallImages.st_79661f6c56434089a576668756ed440b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_79661f6c56434089a576668756ed440b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_79661f6c56434089a576668756ed440b not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:24]  [play.Logger] -
+
+@6fmadj4k0
+smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png action not found
+
+Action not found
+Action smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png could not be found. Error raised is Controller controllers.smallImages.st_ce3bab03ef1447b48bc5bccdd5867551 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ce3bab03ef1447b48bc5bccdd5867551 not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:24]  [play.Logger] -
+
+@6fmadj4k1
+smallImages.st_83a3ce09b5424db396f15012a7075b9e.png action not found
+
+Action not found
+Action smallImages.st_83a3ce09b5424db396f15012a7075b9e.png could not be found. Error raised is Controller controllers.smallImages.st_83a3ce09b5424db396f15012a7075b9e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_83a3ce09b5424db396f15012a7075b9e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_83a3ce09b5424db396f15012a7075b9e not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:24]  [play.Logger] -
+
+@6fmadj4k2
+smallImages.st_20121101Test.png action not found
+
+Action not found
+Action smallImages.st_20121101Test.png could not be found. Error raised is Controller controllers.smallImages.st_20121101Test not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_20121101Test.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_20121101Test not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:24]  [play.Logger] -
+
+@6fmadj4k3
+smallImages.st_b4028fda35e44105981421e892d5e52e.png action not found
+
+Action not found
+Action smallImages.st_b4028fda35e44105981421e892d5e52e.png could not be found. Error raised is Controller controllers.smallImages.st_b4028fda35e44105981421e892d5e52e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_b4028fda35e44105981421e892d5e52e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_b4028fda35e44105981421e892d5e52e not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:24]  [play.Logger] -
+
+@6fmadj4k4
+smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png action not found
+
+Action not found
+Action smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png could not be found. Error raised is Controller controllers.smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:24]  [play.Logger] -
+
+@6fmadj4k5
+smallImages.st_332837d06c86448b9ccbcc8064bab40c.png action not found
+
+Action not found
+Action smallImages.st_332837d06c86448b9ccbcc8064bab40c.png could not be found. Error raised is Controller controllers.smallImages.st_332837d06c86448b9ccbcc8064bab40c not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_332837d06c86448b9ccbcc8064bab40c.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_332837d06c86448b9ccbcc8064bab40c not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:24]  [play.Logger] -
+
+@6fmadj4k6
+smallImages.st_f04217f7f75b46c785dba615f3694316.png action not found
+
+Action not found
+Action smallImages.st_f04217f7f75b46c785dba615f3694316.png could not be found. Error raised is Controller controllers.smallImages.st_f04217f7f75b46c785dba615f3694316 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_f04217f7f75b46c785dba615f3694316.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_f04217f7f75b46c785dba615f3694316 not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:24]  [play.Logger] -
+
+@6fmadj4k7
+smallImages.st_3bcdc46075b94ed58c004109556eab40.png action not found
+
+Action not found
+Action smallImages.st_3bcdc46075b94ed58c004109556eab40.png could not be found. Error raised is Controller controllers.smallImages.st_3bcdc46075b94ed58c004109556eab40 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_3bcdc46075b94ed58c004109556eab40.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_3bcdc46075b94ed58c004109556eab40 not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:24]  [play.Logger] -
+
+@6fmadj4k8
+smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png action not found
+
+Action not found
+Action smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png could not be found. Error raised is Controller controllers.smallImages.st_bed4f5b554b44d03bfd5a311b412c008 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_bed4f5b554b44d03bfd5a311b412c008 not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:25]  [play.Logger] -
+
+@6fmadj4k9
+smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png action not found
+
+Action not found
+Action smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png could not be found. Error raised is Controller controllers.smallImages.st_5911f2682a914fc892b72cb8497ae0a1 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_5911f2682a914fc892b72cb8497ae0a1 not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:25]  [play.Logger] -
+
+@6fmadj4ka
+smallImages.st_c10e41ae857d4310b4801690a6815e9f.png action not found
+
+Action not found
+Action smallImages.st_c10e41ae857d4310b4801690a6815e9f.png could not be found. Error raised is Controller controllers.smallImages.st_c10e41ae857d4310b4801690a6815e9f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_c10e41ae857d4310b4801690a6815e9f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_c10e41ae857d4310b4801690a6815e9f not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:29]  [play.Logger] -
+
+@6fmadj4kb
+smallImages.st_b4028fda35e44105981421e892d5e52e.png action not found
+
+Action not found
+Action smallImages.st_b4028fda35e44105981421e892d5e52e.png could not be found. Error raised is Controller controllers.smallImages.st_b4028fda35e44105981421e892d5e52e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_b4028fda35e44105981421e892d5e52e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_b4028fda35e44105981421e892d5e52e not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:29]  [play.Logger] -
+
+@6fmadj4kc
+smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png action not found
+
+Action not found
+Action smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png could not be found. Error raised is Controller controllers.smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:29]  [play.Logger] -
+
+@6fmadj4kd
+smallImages.st_79661f6c56434089a576668756ed440b.png action not found
+
+Action not found
+Action smallImages.st_79661f6c56434089a576668756ed440b.png could not be found. Error raised is Controller controllers.smallImages.st_79661f6c56434089a576668756ed440b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_79661f6c56434089a576668756ed440b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_79661f6c56434089a576668756ed440b not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:29]  [play.Logger] -
+
+@6fmadj4ke
+smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png action not found
+
+Action not found
+Action smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png could not be found. Error raised is Controller controllers.smallImages.st_ce3bab03ef1447b48bc5bccdd5867551 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ce3bab03ef1447b48bc5bccdd5867551 not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:29]  [play.Logger] -
+
+@6fmadj4kf
+smallImages.st_20121101Test.png action not found
+
+Action not found
+Action smallImages.st_20121101Test.png could not be found. Error raised is Controller controllers.smallImages.st_20121101Test not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_20121101Test.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_20121101Test not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:29]  [play.Logger] -
+
+@6fmadj4kg
+smallImages.st_83a3ce09b5424db396f15012a7075b9e.png action not found
+
+Action not found
+Action smallImages.st_83a3ce09b5424db396f15012a7075b9e.png could not be found. Error raised is Controller controllers.smallImages.st_83a3ce09b5424db396f15012a7075b9e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_83a3ce09b5424db396f15012a7075b9e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_83a3ce09b5424db396f15012a7075b9e not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:29]  [play.Logger] -
+
+@6fmadj4kh
+smallImages.st_332837d06c86448b9ccbcc8064bab40c.png action not found
+
+Action not found
+Action smallImages.st_332837d06c86448b9ccbcc8064bab40c.png could not be found. Error raised is Controller controllers.smallImages.st_332837d06c86448b9ccbcc8064bab40c not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_332837d06c86448b9ccbcc8064bab40c.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_332837d06c86448b9ccbcc8064bab40c not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:29]  [play.Logger] -
+
+@6fmadj4ki
+smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png action not found
+
+Action not found
+Action smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png could not be found. Error raised is Controller controllers.smallImages.st_5911f2682a914fc892b72cb8497ae0a1 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_5911f2682a914fc892b72cb8497ae0a1 not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:29]  [play.Logger] -
+
+@6fmadj4kj
+smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png action not found
+
+Action not found
+Action smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png could not be found. Error raised is Controller controllers.smallImages.st_bed4f5b554b44d03bfd5a311b412c008 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_bed4f5b554b44d03bfd5a311b412c008 not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:29]  [play.Logger] -
+
+@6fmadj4kk
+smallImages.st_c10e41ae857d4310b4801690a6815e9f.png action not found
+
+Action not found
+Action smallImages.st_c10e41ae857d4310b4801690a6815e9f.png could not be found. Error raised is Controller controllers.smallImages.st_c10e41ae857d4310b4801690a6815e9f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_c10e41ae857d4310b4801690a6815e9f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_c10e41ae857d4310b4801690a6815e9f not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:30]  [play.Logger] -
+
+@6fmadj4kl
+smallImages.st_f04217f7f75b46c785dba615f3694316.png action not found
+
+Action not found
+Action smallImages.st_f04217f7f75b46c785dba615f3694316.png could not be found. Error raised is Controller controllers.smallImages.st_f04217f7f75b46c785dba615f3694316 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_f04217f7f75b46c785dba615f3694316.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_f04217f7f75b46c785dba615f3694316 not found
+	... 3 more
+[ERROR] [2013-09-28 17:33:30]  [play.Logger] -
+
+@6fmadj4km
+smallImages.st_3bcdc46075b94ed58c004109556eab40.png action not found
+
+Action not found
+Action smallImages.st_3bcdc46075b94ed58c004109556eab40.png could not be found. Error raised is Controller controllers.smallImages.st_3bcdc46075b94ed58c004109556eab40 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_3bcdc46075b94ed58c004109556eab40.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_3bcdc46075b94ed58c004109556eab40 not found
+	... 3 more
+[ERROR] [2013-09-28 17:39:00]  [play.Logger] -
+
+@6fmadj4kn
+smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png action not found
+
+Action not found
+Action smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png could not be found. Error raised is Controller controllers.smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e not found
+	... 3 more
+[ERROR] [2013-09-28 17:39:00]  [play.Logger] -
+
+@6fmadj4ko
+smallImages.st_20121101Test.png action not found
+
+Action not found
+Action smallImages.st_20121101Test.png could not be found. Error raised is Controller controllers.smallImages.st_20121101Test not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_20121101Test.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_20121101Test not found
+	... 3 more
+[ERROR] [2013-09-28 17:39:00]  [play.Logger] -
+
+@6fmadj4kp
+smallImages.st_79661f6c56434089a576668756ed440b.png action not found
+
+Action not found
+Action smallImages.st_79661f6c56434089a576668756ed440b.png could not be found. Error raised is Controller controllers.smallImages.st_79661f6c56434089a576668756ed440b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_79661f6c56434089a576668756ed440b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_79661f6c56434089a576668756ed440b not found
+	... 3 more
+[ERROR] [2013-09-28 17:39:00]  [play.Logger] -
+
+@6fmadj4l0
+smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png action not found
+
+Action not found
+Action smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png could not be found. Error raised is Controller controllers.smallImages.st_ce3bab03ef1447b48bc5bccdd5867551 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ce3bab03ef1447b48bc5bccdd5867551 not found
+	... 3 more
+[ERROR] [2013-09-28 17:39:00]  [play.Logger] -
+
+@6fmadj4l1
+smallImages.st_b4028fda35e44105981421e892d5e52e.png action not found
+
+Action not found
+Action smallImages.st_b4028fda35e44105981421e892d5e52e.png could not be found. Error raised is Controller controllers.smallImages.st_b4028fda35e44105981421e892d5e52e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_b4028fda35e44105981421e892d5e52e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_b4028fda35e44105981421e892d5e52e not found
+	... 3 more
+[ERROR] [2013-09-28 17:39:00]  [play.Logger] -
+
+@6fmadj4l2
+smallImages.st_83a3ce09b5424db396f15012a7075b9e.png action not found
+
+Action not found
+Action smallImages.st_83a3ce09b5424db396f15012a7075b9e.png could not be found. Error raised is Controller controllers.smallImages.st_83a3ce09b5424db396f15012a7075b9e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_83a3ce09b5424db396f15012a7075b9e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_83a3ce09b5424db396f15012a7075b9e not found
+	... 3 more
+[ERROR] [2013-09-28 17:39:00]  [play.Logger] -
+
+@6fmadj4l3
+smallImages.st_332837d06c86448b9ccbcc8064bab40c.png action not found
+
+Action not found
+Action smallImages.st_332837d06c86448b9ccbcc8064bab40c.png could not be found. Error raised is Controller controllers.smallImages.st_332837d06c86448b9ccbcc8064bab40c not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_332837d06c86448b9ccbcc8064bab40c.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_332837d06c86448b9ccbcc8064bab40c not found
+	... 3 more
+[ERROR] [2013-09-28 17:39:00]  [play.Logger] -
+
+@6fmadj4l4
+smallImages.st_f04217f7f75b46c785dba615f3694316.png action not found
+
+Action not found
+Action smallImages.st_f04217f7f75b46c785dba615f3694316.png could not be found. Error raised is Controller controllers.smallImages.st_f04217f7f75b46c785dba615f3694316 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_f04217f7f75b46c785dba615f3694316.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_f04217f7f75b46c785dba615f3694316 not found
+	... 3 more
+[ERROR] [2013-09-28 17:39:00]  [play.Logger] -
+
+@6fmadj4l5
+smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png action not found
+
+Action not found
+Action smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png could not be found. Error raised is Controller controllers.smallImages.st_5911f2682a914fc892b72cb8497ae0a1 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_5911f2682a914fc892b72cb8497ae0a1 not found
+	... 3 more
+[ERROR] [2013-09-28 17:39:00]  [play.Logger] -
+
+@6fmadj4l6
+smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png action not found
+
+Action not found
+Action smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png could not be found. Error raised is Controller controllers.smallImages.st_bed4f5b554b44d03bfd5a311b412c008 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_bed4f5b554b44d03bfd5a311b412c008 not found
+	... 3 more
+[ERROR] [2013-09-28 17:39:00]  [play.Logger] -
+
+@6fmadj4l7
+smallImages.st_3bcdc46075b94ed58c004109556eab40.png action not found
+
+Action not found
+Action smallImages.st_3bcdc46075b94ed58c004109556eab40.png could not be found. Error raised is Controller controllers.smallImages.st_3bcdc46075b94ed58c004109556eab40 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_3bcdc46075b94ed58c004109556eab40.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_3bcdc46075b94ed58c004109556eab40 not found
+	... 3 more
+[ERROR] [2013-09-28 17:39:00]  [play.Logger] -
+
+@6fmadj4l8
+smallImages.st_c10e41ae857d4310b4801690a6815e9f.png action not found
+
+Action not found
+Action smallImages.st_c10e41ae857d4310b4801690a6815e9f.png could not be found. Error raised is Controller controllers.smallImages.st_c10e41ae857d4310b4801690a6815e9f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_c10e41ae857d4310b4801690a6815e9f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_c10e41ae857d4310b4801690a6815e9f not found
+	... 3 more
+[ERROR] [2013-09-28 17:59:59]  [play.Logger] -
+
+@6fmadj4l9
+smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png action not found
+
+Action not found
+Action smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png could not be found. Error raised is Controller controllers.smallImages.st_ce3bab03ef1447b48bc5bccdd5867551 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ce3bab03ef1447b48bc5bccdd5867551.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ce3bab03ef1447b48bc5bccdd5867551 not found
+	... 3 more
+[ERROR] [2013-09-28 17:59:59]  [play.Logger] -
+
+@6fmadj4la
+smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png action not found
+
+Action not found
+Action smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png could not be found. Error raised is Controller controllers.smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_345fd47f0c7f46a28180f0b5d2b0f52e not found
+	... 3 more
+[ERROR] [2013-09-28 17:59:59]  [play.Logger] -
+
+@6fmadj4lb
+smallImages.st_83a3ce09b5424db396f15012a7075b9e.png action not found
+
+Action not found
+Action smallImages.st_83a3ce09b5424db396f15012a7075b9e.png could not be found. Error raised is Controller controllers.smallImages.st_83a3ce09b5424db396f15012a7075b9e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_83a3ce09b5424db396f15012a7075b9e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_83a3ce09b5424db396f15012a7075b9e not found
+	... 3 more
+[ERROR] [2013-09-28 17:59:59]  [play.Logger] -
+
+@6fmadj4lc
+smallImages.st_79661f6c56434089a576668756ed440b.png action not found
+
+Action not found
+Action smallImages.st_79661f6c56434089a576668756ed440b.png could not be found. Error raised is Controller controllers.smallImages.st_79661f6c56434089a576668756ed440b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_79661f6c56434089a576668756ed440b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_79661f6c56434089a576668756ed440b not found
+	... 3 more
+[ERROR] [2013-09-28 17:59:59]  [play.Logger] -
+
+@6fmadj4ld
+smallImages.st_20121101Test.png action not found
+
+Action not found
+Action smallImages.st_20121101Test.png could not be found. Error raised is Controller controllers.smallImages.st_20121101Test not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_20121101Test.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_20121101Test not found
+	... 3 more
+[ERROR] [2013-09-28 17:59:59]  [play.Logger] -
+
+@6fmadj4le
+smallImages.st_332837d06c86448b9ccbcc8064bab40c.png action not found
+
+Action not found
+Action smallImages.st_332837d06c86448b9ccbcc8064bab40c.png could not be found. Error raised is Controller controllers.smallImages.st_332837d06c86448b9ccbcc8064bab40c not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_332837d06c86448b9ccbcc8064bab40c.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_332837d06c86448b9ccbcc8064bab40c not found
+	... 3 more
+[ERROR] [2013-09-28 17:59:59]  [play.Logger] -
+
+@6fmadj4lf
+smallImages.st_b4028fda35e44105981421e892d5e52e.png action not found
+
+Action not found
+Action smallImages.st_b4028fda35e44105981421e892d5e52e.png could not be found. Error raised is Controller controllers.smallImages.st_b4028fda35e44105981421e892d5e52e not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_b4028fda35e44105981421e892d5e52e.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_b4028fda35e44105981421e892d5e52e not found
+	... 3 more
+[ERROR] [2013-09-28 17:59:59]  [play.Logger] -
+
+@6fmadj4lg
+smallImages.st_f04217f7f75b46c785dba615f3694316.png action not found
+
+Action not found
+Action smallImages.st_f04217f7f75b46c785dba615f3694316.png could not be found. Error raised is Controller controllers.smallImages.st_f04217f7f75b46c785dba615f3694316 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_f04217f7f75b46c785dba615f3694316.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_f04217f7f75b46c785dba615f3694316 not found
+	... 3 more
+[ERROR] [2013-09-28 17:59:59]  [play.Logger] -
+
+@6fmadj4lh
+smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png action not found
+
+Action not found
+Action smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png could not be found. Error raised is Controller controllers.smallImages.st_5911f2682a914fc892b72cb8497ae0a1 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_5911f2682a914fc892b72cb8497ae0a1.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_5911f2682a914fc892b72cb8497ae0a1 not found
+	... 3 more
+[ERROR] [2013-09-28 17:59:59]  [play.Logger] -
+
+@6fmadj4li
+smallImages.st_c10e41ae857d4310b4801690a6815e9f.png action not found
+
+Action not found
+Action smallImages.st_c10e41ae857d4310b4801690a6815e9f.png could not be found. Error raised is Controller controllers.smallImages.st_c10e41ae857d4310b4801690a6815e9f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_c10e41ae857d4310b4801690a6815e9f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_c10e41ae857d4310b4801690a6815e9f not found
+	... 3 more
+[ERROR] [2013-09-28 17:59:59]  [play.Logger] -
+
+@6fmadj4lj
+smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png action not found
+
+Action not found
+Action smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png could not be found. Error raised is Controller controllers.smallImages.st_bed4f5b554b44d03bfd5a311b412c008 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_bed4f5b554b44d03bfd5a311b412c008.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_bed4f5b554b44d03bfd5a311b412c008 not found
+	... 3 more
+[ERROR] [2013-09-28 17:59:59]  [play.Logger] -
+
+@6fmadj4lk
+smallImages.st_3bcdc46075b94ed58c004109556eab40.png action not found
+
+Action not found
+Action smallImages.st_3bcdc46075b94ed58c004109556eab40.png could not be found. Error raised is Controller controllers.smallImages.st_3bcdc46075b94ed58c004109556eab40 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_3bcdc46075b94ed58c004109556eab40.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_3bcdc46075b94ed58c004109556eab40 not found
+	... 3 more

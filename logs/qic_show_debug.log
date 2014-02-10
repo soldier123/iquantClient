@@ -1,0 +1,51 @@
+[ INFO] [2013-12-03 09:05:49]  [play.Logger] -Starting E:\iquant_ext\iquantClient
+[ INFO] [2013-12-03 09:05:52]  [play.Logger] -Module redis is available (E:\javaTools\play1\modules\redis-0.3)
+[ INFO] [2013-12-03 09:05:52]  [play.Logger] -Module excel is available (E:\javaTools\play1\modules\excel-1.2.3)
+[ INFO] [2013-12-03 09:05:52]  [play.Logger] -Module guice is available (E:\javaTools\play1\modules\guice-1.2)
+[ INFO] [2013-12-03 09:05:52]  [play.Logger] -Module iquantCommon is available (E:\iquant_ext\iquantClient\..\iquantCommon)
+[ WARN] [2013-12-03 09:05:56]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-12-03 09:05:56]  [play.Logger] -Listening for HTTP on port 9000 (Waiting a first request to start) ...
+[ERROR] [2013-12-03 09:08:30]  [play.Logger] -
+
+@6gejo1adm
+Internal Server Error (500) for request GET /
+
+Oops: UnsupportedClassVersionError
+An unexpected error occured caused by exception UnsupportedClassVersionError: models/iquantCommon/StockInfo : Unsupported major.minor version 51.0
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Invoker$Invocation.onException(Invoker.java:242)
+	at play.Invoker$Invocation.run(Invoker.java:284)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.UnsupportedClassVersionError: models/iquantCommon/StockInfo : Unsupported major.minor version 51.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(Unknown Source)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:152)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:429)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:649)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	... 1 more
+[ERROR] [2013-12-03 09:08:40]  [play.Logger] -
+
+@6gejo1adn
+Internal Server Error (500) for request GET /
+
+Oops: UnsupportedClassVersionError
+An unexpected error occured caused by exception UnsupportedClassVersionError: models/iquantCommon/StockInfo : Unsupported major.minor version 51.0
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Invoker$Invocation.onException(Invoker.java:242)
+	at play.Invoker$Invocation.run(Invoker.java:284)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.UnsupportedClassVersionError: models/iquantCommon/StockInfo : Unsupported major.minor version 51.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(Unknown Source)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:152)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:429)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	... 1 more

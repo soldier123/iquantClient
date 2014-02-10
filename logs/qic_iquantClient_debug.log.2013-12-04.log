@@ -1,0 +1,2212 @@
+[ INFO] [2013-12-04 12:23:34]  [play.Logger] -Starting E:\iquant_ext\iquantClient
+[ INFO] [2013-12-04 12:23:43]  [play.Logger] -Module redis is available (E:\javaTools\play1\modules\redis-0.3)
+[ INFO] [2013-12-04 12:23:43]  [play.Logger] -Module excel is available (E:\javaTools\play1\modules\excel-1.2.3)
+[ INFO] [2013-12-04 12:23:43]  [play.Logger] -Module guice is available (E:\javaTools\play1\modules\guice-1.2)
+[ INFO] [2013-12-04 12:23:43]  [play.Logger] -Module iquantCommon is available (E:\iquant_ext\iquantClient\..\iquantCommon)
+[ WARN] [2013-12-04 12:23:45]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-12-04 12:23:45]  [play.Logger] -Listening for HTTP on port 9000 (Waiting a first request to start) ...
+[ INFO] [2013-12-04 12:24:01]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[DEBUG] [2013-12-04 12:24:01]  [play.Logger] -Starting Guice modules scanning
+[DEBUG] [2013-12-04 12:24:01]  [play.Logger] -Guice modules cleared
+[ INFO] [2013-12-04 12:24:02]  [play.Logger] -Guice injector created with modules: 
+class binding.AppDefaultBindModule
+
+[ INFO] [2013-12-04 12:24:02]  [play.Logger] -Application 'iquantClient' is now started !
+[ERROR] [2013-12-04 12:24:04]  [play.Logger] -
+
+@6gf24kmm3
+Error during job execution (job.ClearCacheJob)
+
+Execution exception (In /app/job/ClearCacheJob.java around line 24)
+JedisConnectionException occured : java.net.SocketTimeoutException: Read timed out
+
+play.exceptions.JavaExecutionException: java.net.SocketTimeoutException: Read timed out
+	at play.jobs.Job.call(Job.java:155)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.jedis.Protocol.process(Protocol.java:74)
+	at redis.clients.jedis.Protocol.read(Protocol.java:122)
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:189)
+	at redis.clients.jedis.Jedis.keys(Jedis.java:177)
+	at play.modules.redis.Redis.keys(Redis.java:502)
+	at job.ClearCacheJob.clearPrevilegeFromRedis(ClearCacheJob.java:24)
+	at job.ClearCacheJob.doJob(ClearCacheJob.java:19)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 7 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at redis.clients.util.RedisInputStream.fill(RedisInputStream.java:110)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:46)
+	at redis.clients.jedis.Protocol.process(Protocol.java:59)
+	... 15 more
+[DEBUG] [2013-12-04 12:24:07]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+[DEBUG] [2013-12-04 12:24:08]  [play.Logger] -get响应数据:：{"success":true,"token":"caf213e93e451401947cf7f90f7fc0751f954d54fd4c1e295241d3f4529972dd29a7519fecb52868fb20881e2e9aa9b4"}
+[ERROR] [2013-12-04 12:24:17]  [play.Logger] -
+
+@6gf24kmm4
+Internal Server Error (500) for request GET /strategys/strategylist
+
+Execution exception (In /app/bussiness/UserInfoBaseService.java around line 167)
+UncheckedExecutionException occured : java.lang.ClassCastException: java.util.ArrayList cannot be cast to [B
+
+play.exceptions.JavaExecutionException: java.lang.ClassCastException: java.util.ArrayList cannot be cast to [B
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: com.google.common.util.concurrent.UncheckedExecutionException: java.lang.ClassCastException: java.util.ArrayList cannot be cast to [B
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2263)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4000)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache.getUserRoles(UserInfoBaseService.java:167)
+	at bussiness.UserInfoBaseService.getUserFunctionInfo(UserInfoBaseService.java:39)
+	at util.SimpleFunctionAuth.hasPrivilege(SimpleFunctionAuth.java:29)
+	at util.FunctionAuthManager.auth(FunctionAuthManager.java:20)
+	at controllers.FunctionInterceptor.doAuth(FunctionInterceptor.java:27)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:510)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.handleBefores(ActionInvoker.java:328)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:142)
+	... 1 more
+Caused by: java.lang.ClassCastException: java.util.ArrayList cannot be cast to [B
+	at redis.clients.jedis.Connection.getBinaryBulkReply(Connection.java:172)
+	at redis.clients.jedis.Connection.getBulkReply(Connection.java:161)
+	at redis.clients.jedis.Jedis.get(Jedis.java:65)
+	at play.modules.redis.Redis.get(Redis.java:268)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache$1.load(UserInfoBaseService.java:111)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache$1.load(UserInfoBaseService.java:1)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	... 14 more
+[ERROR] [2013-12-04 12:24:26]  [play.Logger] -
+
+@6gf24kmm5
+Internal Server Error (500) for request GET /strategys/strategylist
+
+Execution exception (In /app/bussiness/UserInfoBaseService.java around line 167)
+UncheckedExecutionException occured : redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+
+play.exceptions.JavaExecutionException: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: com.google.common.util.concurrent.UncheckedExecutionException: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2263)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4000)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache.getUserRoles(UserInfoBaseService.java:167)
+	at bussiness.UserInfoBaseService.getUserFunctionInfo(UserInfoBaseService.java:39)
+	at util.SimpleFunctionAuth.hasPrivilege(SimpleFunctionAuth.java:29)
+	at util.FunctionAuthManager.auth(FunctionAuthManager.java:20)
+	at controllers.FunctionInterceptor.doAuth(FunctionInterceptor.java:27)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:510)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.handleBefores(ActionInvoker.java:328)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:142)
+	... 1 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.jedis.Protocol.process(Protocol.java:74)
+	at redis.clients.jedis.Protocol.read(Protocol.java:122)
+	at redis.clients.jedis.Connection.getBinaryBulkReply(Connection.java:172)
+	at redis.clients.jedis.Connection.getBulkReply(Connection.java:161)
+	at redis.clients.jedis.Jedis.get(Jedis.java:65)
+	at play.modules.redis.Redis.get(Redis.java:268)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache$1.load(UserInfoBaseService.java:111)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache$1.load(UserInfoBaseService.java:1)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	... 14 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at redis.clients.util.RedisInputStream.fill(RedisInputStream.java:110)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:46)
+	at redis.clients.jedis.Protocol.process(Protocol.java:59)
+	... 25 more
+[ INFO] [2013-12-04 12:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 12:24:39]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 12:24:39]  [play.Logger] -get请求url：http://localhost:9100/strategyCt/fetchStrategyList?orderType=0&keyword=&pageNo=0
+[DEBUG] [2013-12-04 12:24:41]  [play.Logger] -get响应数据:：{"data":[{"uuid":"fa46e9ab3ebe4dd5a88d0e7cce4141e8","sname":"WeightDemo1","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":211.00821,"yomsd":0.0,"profitRatio":0.75,"status":0,"orderCount":0,"validOrderCount":0,"desp":"WeightDemo1","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":12.509927,"id":10193},{"uuid":"395aec1dc0124962b57196f238c21916","sname":"allstock1031","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":119.39168,"yomsd":0.0,"profitRatio":0.4,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":8.677191,"id":10148},{"uuid":"d9710b1b53f541419f6872ff51bce796","sname":"factorBacktest11","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-11","yield":17.162464,"yomsd":0.0,"profitRatio":0.55172414,"status":0,"orderCount":0,"validOrderCount":0,"desp":"........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":1.8795114,"id":10228},{"uuid":"216d4797b6af467e8884f1dac99ac3fa","sname":"factorRegress90","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-11","yield":3.029811,"yomsd":0.0,"profitRatio":0.5094716,"status":0,"orderCount":0,"validOrderCount":0,"desp":"sfdgsd","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.20756319,"id":10229},{"uuid":"92050568f32d42298bbf0bedb25bcd0b","sname":"strategyThreeInR","starLevel":0.0,"stype":3,"provider":"yangfen","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.3096041,"yomsd":0.0,"profitRatio":0.14285715,"status":0,"orderCount":0,"validOrderCount":0,"desp":"fgrdbvf","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":5.1675506,"id":10211},{"uuid":"1fcb2dcc6e244679b37adb279e684adc","sname":"KestnersMAS555","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.04539232,"yomsd":0.0,"profitRatio":0.46900827,"status":0,"orderCount":0,"validOrderCount":0,"desp":"..........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.082106754,"id":10215},{"uuid":"a8819e4447b244478899f7d7f310cd61","sname":"DailyTrade","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.018303838,"yomsd":0.0,"profitRatio":0.5,"status":0,"orderCount":0,"validOrderCount":0,"desp":"DailyTrade","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.63069534,"id":10191},{"uuid":"1ecbbf49a7ff46bbb9d13fa25f265c0f","sname":"Movavage05","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.008626692,"yomsd":0.0,"profitRatio":0.5,"status":0,"orderCount":0,"validOrderCount":0,"desp":"Movavage05","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":1.6218333,"id":10216},{"uuid":"a26174c3215b4ef9b88ecafe34f26076","sname":"MACD_Hist_Retr23","starLevel":0.0,"stype":2,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.006964145,"yomsd":0.0,"profitRatio":0.4752066,"status":0,"orderCount":0,"validOrderCount":0,"desp":"...........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.04881169,"id":10219},{"uuid":"ff53f950f6cd4cfba4d4162260d6c49f","sname":"Trade_ALL2","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0034651763,"yomsd":0.0,"profitRatio":0.75,"status":0,"orderCount":0,"validOrderCount":0,"desp":"API 综合测试","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":7.426484,"id":10156},{"uuid":"53e5c5353daa487299551bf76f2d64a8","sname":"weightV12","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"动态策略检验1.0兼容","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10161},{"uuid":"27dd703291e941df922d3bd7a12de480","sname":"testapi1102","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10151},{"uuid":"e66320a2fdbc48398004ff8987181ec5","sname":"futuretest","starLevel":0.0,"stype":3,"provider":"penghua","tradeVariety":2,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"test","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10153},{"uuid":"0270c8da17bb403aafb8395bc46e36a5","sname":"weightV1","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"动态策略检验1.0兼容","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10157},{"uuid":"56ee7602576e43af87932c7931b2c13a","sname":"ThreeInRow1106","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10197},{"uuid":"9e0bc2abd423435aba92f9948d40e3f4","sname":"compatibleV2","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"兼容1.0测试","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10160},{"uuid":"4bcb52f314964a1ea78a86eec67a950b","sname":"MIN01order1031","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"MIN01order","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10149},{"uuid":"ac9e1db3ed3146b58ffa5931d71c5a9a","sname":"futuretest1101","starLevel":0.0,"stype":4,"provider":"penghua","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"test","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10162},{"uuid":"787c872a33164b30ae516dbe60197899","sname":"ClearDemo","starLevel":0.0,"stype":3,"provider":"yangfen","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"refvd","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10152},{"uuid":"b373e5911f374275bec07bab8dfccbbd","sname":"ThreeInRow-1","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"strategyThreeInRowFun-1","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10196}],"status":0,"rowTotal":41,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 12:24:42]  [play.Logger] -get请求url：http://localhost:9100/userStrategyManageCt/fetchUserCollectById?ids=10193,10148,10228,10229,10211,10215,10191,10216,10219,10156,10161,10151,10153,10157,10197,10160,10149,10162,10152,10196&uid=1
+[DEBUG] [2013-12-04 12:24:42]  [play.Logger] -get响应数据:：{"data":[],"status":0}
+[DEBUG] [2013-12-04 12:24:42]  [play.Logger] -get请求url：http://localhost:9100/userTemplateCt/fetchUserTemplate?uid=1&type=1
+[DEBUG] [2013-12-04 12:24:42]  [play.Logger] -get响应数据:：{"data":[{"id":488,"name":"very good","type":1,"content":"{\"tradeType\":3,\"tradeVariety\":2,\"yieldDown\":1.0,\"yieldUp\":3.0,\"profitRatioDown\":1.0,\"profitRatioUp\":4.0,\"starDown\":1,\"starUp\":5}","uid":1},{"id":782,"name":"新搜索条件2","type":1,"content":"{\"tradeType\":-999,\"tradeVariety\":-999,\"starDown\":0,\"starUp\":5}","uid":1},{"id":826,"name":"新搜索条件3","type":1,"content":"{}","uid":1},{"id":827,"name":"新搜索条件4","type":1,"content":"{}","uid":1},{"id":828,"name":"新搜索条件5","type":1,"content":"{\"tradeType\":-999,\"tradeVariety\":-999,\"starDown\":0,\"starUp\":5}","uid":1}],"status":0}
+[ERROR] [2013-12-04 12:24:44]  [play.Logger] -
+
+@6gf24kmm6
+smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png action not found
+
+Action not found
+Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png could not be found. Error raised is Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:45]  [play.Logger] -
+
+@6gf24kmm7
+smallImages.st_395aec1dc0124962b57196f238c21916.png action not found
+
+Action not found
+Action smallImages.st_395aec1dc0124962b57196f238c21916.png could not be found. Error raised is Controller controllers.smallImages.st_395aec1dc0124962b57196f238c21916 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_395aec1dc0124962b57196f238c21916.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_395aec1dc0124962b57196f238c21916 not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:46]  [play.Logger] -
+
+@6gf24kmm8
+smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png action not found
+
+Action not found
+Action smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png could not be found. Error raised is Controller controllers.smallImages.st_92050568f32d42298bbf0bedb25bcd0b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_92050568f32d42298bbf0bedb25bcd0b not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:46]  [play.Logger] -
+
+@6gf24kmm9
+smallImages.st_d9710b1b53f541419f6872ff51bce796.png action not found
+
+Action not found
+Action smallImages.st_d9710b1b53f541419f6872ff51bce796.png could not be found. Error raised is Controller controllers.smallImages.st_d9710b1b53f541419f6872ff51bce796 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_d9710b1b53f541419f6872ff51bce796.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_d9710b1b53f541419f6872ff51bce796 not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:46]  [play.Logger] -
+
+@6gf24kmma
+smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png action not found
+
+Action not found
+Action smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png could not be found. Error raised is Controller controllers.smallImages.st_1fcb2dcc6e244679b37adb279e684adc not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_1fcb2dcc6e244679b37adb279e684adc not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:46]  [play.Logger] -
+
+@6gf24kmmb
+smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png action not found
+
+Action not found
+Action smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png could not be found. Error raised is Controller controllers.smallImages.st_216d4797b6af467e8884f1dac99ac3fa not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_216d4797b6af467e8884f1dac99ac3fa not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:46]  [play.Logger] -
+
+@6gf24kmmc
+smallImages.st_a8819e4447b244478899f7d7f310cd61.png action not found
+
+Action not found
+Action smallImages.st_a8819e4447b244478899f7d7f310cd61.png could not be found. Error raised is Controller controllers.smallImages.st_a8819e4447b244478899f7d7f310cd61 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_a8819e4447b244478899f7d7f310cd61.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_a8819e4447b244478899f7d7f310cd61 not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:46]  [play.Logger] -
+
+@6gf24kmmd
+smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png action not found
+
+Action not found
+Action smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png could not be found. Error raised is Controller controllers.smallImages.st_a26174c3215b4ef9b88ecafe34f26076 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_a26174c3215b4ef9b88ecafe34f26076 not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:46]  [play.Logger] -
+
+@6gf24kmme
+smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png action not found
+
+Action not found
+Action smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png could not be found. Error raised is Controller controllers.smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:46]  [play.Logger] -
+
+@6gf24kmmf
+smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png action not found
+
+Action not found
+Action smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png could not be found. Error raised is Controller controllers.smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:46]  [play.Logger] -
+
+@6gf24kmmg
+smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png action not found
+
+Action not found
+Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png could not be found. Error raised is Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:46]  [play.Logger] -
+
+@6gf24kmmh
+smallImages.st_53e5c5353daa487299551bf76f2d64a8.png action not found
+
+Action not found
+Action smallImages.st_53e5c5353daa487299551bf76f2d64a8.png could not be found. Error raised is Controller controllers.smallImages.st_53e5c5353daa487299551bf76f2d64a8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_53e5c5353daa487299551bf76f2d64a8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_53e5c5353daa487299551bf76f2d64a8 not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:47]  [play.Logger] -
+
+@6gf24kmmi
+smallImages.st_0270c8da17bb403aafb8395bc46e36a5.png action not found
+
+Action not found
+Action smallImages.st_0270c8da17bb403aafb8395bc46e36a5.png could not be found. Error raised is Controller controllers.smallImages.st_0270c8da17bb403aafb8395bc46e36a5 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_0270c8da17bb403aafb8395bc46e36a5.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_0270c8da17bb403aafb8395bc46e36a5 not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:47]  [play.Logger] -
+
+@6gf24kmmj
+smallImages.st_27dd703291e941df922d3bd7a12de480.png action not found
+
+Action not found
+Action smallImages.st_27dd703291e941df922d3bd7a12de480.png could not be found. Error raised is Controller controllers.smallImages.st_27dd703291e941df922d3bd7a12de480 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_27dd703291e941df922d3bd7a12de480.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_27dd703291e941df922d3bd7a12de480 not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:47]  [play.Logger] -
+
+@6gf24kmmk
+smallImages.st_e66320a2fdbc48398004ff8987181ec5.png action not found
+
+Action not found
+Action smallImages.st_e66320a2fdbc48398004ff8987181ec5.png could not be found. Error raised is Controller controllers.smallImages.st_e66320a2fdbc48398004ff8987181ec5 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_e66320a2fdbc48398004ff8987181ec5.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_e66320a2fdbc48398004ff8987181ec5 not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:47]  [play.Logger] -
+
+@6gf24kmml
+smallImages.st_56ee7602576e43af87932c7931b2c13a.png action not found
+
+Action not found
+Action smallImages.st_56ee7602576e43af87932c7931b2c13a.png could not be found. Error raised is Controller controllers.smallImages.st_56ee7602576e43af87932c7931b2c13a not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_56ee7602576e43af87932c7931b2c13a.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_56ee7602576e43af87932c7931b2c13a not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:47]  [play.Logger] -
+
+@6gf24kmmm
+smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png action not found
+
+Action not found
+Action smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png could not be found. Error raised is Controller controllers.smallImages.st_9e0bc2abd423435aba92f9948d40e3f4 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_9e0bc2abd423435aba92f9948d40e3f4 not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:47]  [play.Logger] -
+
+@6gf24kmmn
+smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png action not found
+
+Action not found
+Action smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png could not be found. Error raised is Controller controllers.smallImages.st_4bcb52f314964a1ea78a86eec67a950b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_4bcb52f314964a1ea78a86eec67a950b not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:47]  [play.Logger] -
+
+@6gf24kmmo
+smallImages.st_787c872a33164b30ae516dbe60197899.png action not found
+
+Action not found
+Action smallImages.st_787c872a33164b30ae516dbe60197899.png could not be found. Error raised is Controller controllers.smallImages.st_787c872a33164b30ae516dbe60197899 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_787c872a33164b30ae516dbe60197899.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_787c872a33164b30ae516dbe60197899 not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:47]  [play.Logger] -
+
+@6gf24kmmp
+smallImages.st_b373e5911f374275bec07bab8dfccbbd.png action not found
+
+Action not found
+Action smallImages.st_b373e5911f374275bec07bab8dfccbbd.png could not be found. Error raised is Controller controllers.smallImages.st_b373e5911f374275bec07bab8dfccbbd not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_b373e5911f374275bec07bab8dfccbbd.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_b373e5911f374275bec07bab8dfccbbd not found
+	... 3 more
+[ERROR] [2013-12-04 12:24:47]  [play.Logger] -
+
+@6gf24kmn0
+smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png action not found
+
+Action not found
+Action smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png could not be found. Error raised is Controller controllers.smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a not found
+	... 3 more
+[ INFO] [2013-12-04 12:27:00]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 12:27:00]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 12:27:00]  [play.Logger] -get请求url：http://localhost:9100/strategyCt/fetchStrategyList?orderType=0&keyword=&pageNo=0
+[DEBUG] [2013-12-04 12:27:00]  [play.Logger] -get响应数据:：{"data":[{"uuid":"fa46e9ab3ebe4dd5a88d0e7cce4141e8","sname":"WeightDemo1","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":211.00821,"yomsd":0.0,"profitRatio":0.75,"status":0,"orderCount":0,"validOrderCount":0,"desp":"WeightDemo1","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":12.509927,"id":10193},{"uuid":"395aec1dc0124962b57196f238c21916","sname":"allstock1031","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":119.39168,"yomsd":0.0,"profitRatio":0.4,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":8.677191,"id":10148},{"uuid":"d9710b1b53f541419f6872ff51bce796","sname":"factorBacktest11","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-11","yield":17.162464,"yomsd":0.0,"profitRatio":0.55172414,"status":0,"orderCount":0,"validOrderCount":0,"desp":"........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":1.8795114,"id":10228},{"uuid":"216d4797b6af467e8884f1dac99ac3fa","sname":"factorRegress90","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-11","yield":3.029811,"yomsd":0.0,"profitRatio":0.5094716,"status":0,"orderCount":0,"validOrderCount":0,"desp":"sfdgsd","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.20756319,"id":10229},{"uuid":"92050568f32d42298bbf0bedb25bcd0b","sname":"strategyThreeInR","starLevel":0.0,"stype":3,"provider":"yangfen","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.3096041,"yomsd":0.0,"profitRatio":0.14285715,"status":0,"orderCount":0,"validOrderCount":0,"desp":"fgrdbvf","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":5.1675506,"id":10211},{"uuid":"1fcb2dcc6e244679b37adb279e684adc","sname":"KestnersMAS555","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.04539232,"yomsd":0.0,"profitRatio":0.46900827,"status":0,"orderCount":0,"validOrderCount":0,"desp":"..........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.082106754,"id":10215},{"uuid":"a8819e4447b244478899f7d7f310cd61","sname":"DailyTrade","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.018303838,"yomsd":0.0,"profitRatio":0.5,"status":0,"orderCount":0,"validOrderCount":0,"desp":"DailyTrade","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.63069534,"id":10191},{"uuid":"1ecbbf49a7ff46bbb9d13fa25f265c0f","sname":"Movavage05","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.008626692,"yomsd":0.0,"profitRatio":0.5,"status":0,"orderCount":0,"validOrderCount":0,"desp":"Movavage05","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":1.6218333,"id":10216},{"uuid":"a26174c3215b4ef9b88ecafe34f26076","sname":"MACD_Hist_Retr23","starLevel":0.0,"stype":2,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.006964145,"yomsd":0.0,"profitRatio":0.4752066,"status":0,"orderCount":0,"validOrderCount":0,"desp":"...........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.04881169,"id":10219},{"uuid":"ff53f950f6cd4cfba4d4162260d6c49f","sname":"Trade_ALL2","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0034651763,"yomsd":0.0,"profitRatio":0.75,"status":0,"orderCount":0,"validOrderCount":0,"desp":"API 综合测试","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":7.426484,"id":10156},{"uuid":"53e5c5353daa487299551bf76f2d64a8","sname":"weightV12","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"动态策略检验1.0兼容","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10161},{"uuid":"27dd703291e941df922d3bd7a12de480","sname":"testapi1102","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10151},{"uuid":"e66320a2fdbc48398004ff8987181ec5","sname":"futuretest","starLevel":0.0,"stype":3,"provider":"penghua","tradeVariety":2,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"test","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10153},{"uuid":"0270c8da17bb403aafb8395bc46e36a5","sname":"weightV1","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"动态策略检验1.0兼容","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10157},{"uuid":"56ee7602576e43af87932c7931b2c13a","sname":"ThreeInRow1106","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10197},{"uuid":"9e0bc2abd423435aba92f9948d40e3f4","sname":"compatibleV2","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"兼容1.0测试","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10160},{"uuid":"4bcb52f314964a1ea78a86eec67a950b","sname":"MIN01order1031","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"MIN01order","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10149},{"uuid":"ac9e1db3ed3146b58ffa5931d71c5a9a","sname":"futuretest1101","starLevel":0.0,"stype":4,"provider":"penghua","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"test","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10162},{"uuid":"787c872a33164b30ae516dbe60197899","sname":"ClearDemo","starLevel":0.0,"stype":3,"provider":"yangfen","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"refvd","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10152},{"uuid":"b373e5911f374275bec07bab8dfccbbd","sname":"ThreeInRow-1","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"strategyThreeInRowFun-1","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10196}],"status":0,"rowTotal":41,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 12:27:00]  [play.Logger] -get请求url：http://localhost:9100/userStrategyManageCt/fetchUserCollectById?ids=10193,10148,10228,10229,10211,10215,10191,10216,10219,10156,10161,10151,10153,10157,10197,10160,10149,10162,10152,10196&uid=1
+[DEBUG] [2013-12-04 12:27:00]  [play.Logger] -get响应数据:：{"data":[],"status":0}
+[DEBUG] [2013-12-04 12:27:00]  [play.Logger] -get请求url：http://localhost:9100/userTemplateCt/fetchUserTemplate?uid=1&type=1
+[DEBUG] [2013-12-04 12:27:00]  [play.Logger] -get响应数据:：{"data":[{"id":488,"name":"very good","type":1,"content":"{\"tradeType\":3,\"tradeVariety\":2,\"yieldDown\":1.0,\"yieldUp\":3.0,\"profitRatioDown\":1.0,\"profitRatioUp\":4.0,\"starDown\":1,\"starUp\":5}","uid":1},{"id":782,"name":"新搜索条件2","type":1,"content":"{\"tradeType\":-999,\"tradeVariety\":-999,\"starDown\":0,\"starUp\":5}","uid":1},{"id":826,"name":"新搜索条件3","type":1,"content":"{}","uid":1},{"id":827,"name":"新搜索条件4","type":1,"content":"{}","uid":1},{"id":828,"name":"新搜索条件5","type":1,"content":"{\"tradeType\":-999,\"tradeVariety\":-999,\"starDown\":0,\"starUp\":5}","uid":1}],"status":0}
+[ERROR] [2013-12-04 12:27:01]  [play.Logger] -
+
+@6gf24kmn1
+smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png action not found
+
+Action not found
+Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png could not be found. Error raised is Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:01]  [play.Logger] -
+
+@6gf24kmn2
+smallImages.st_395aec1dc0124962b57196f238c21916.png action not found
+
+Action not found
+Action smallImages.st_395aec1dc0124962b57196f238c21916.png could not be found. Error raised is Controller controllers.smallImages.st_395aec1dc0124962b57196f238c21916 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_395aec1dc0124962b57196f238c21916.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_395aec1dc0124962b57196f238c21916 not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:01]  [play.Logger] -
+
+@6gf24kmn3
+smallImages.st_d9710b1b53f541419f6872ff51bce796.png action not found
+
+Action not found
+Action smallImages.st_d9710b1b53f541419f6872ff51bce796.png could not be found. Error raised is Controller controllers.smallImages.st_d9710b1b53f541419f6872ff51bce796 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_d9710b1b53f541419f6872ff51bce796.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_d9710b1b53f541419f6872ff51bce796 not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:01]  [play.Logger] -
+
+@6gf24kmn4
+smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png action not found
+
+Action not found
+Action smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png could not be found. Error raised is Controller controllers.smallImages.st_216d4797b6af467e8884f1dac99ac3fa not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_216d4797b6af467e8884f1dac99ac3fa not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:01]  [play.Logger] -
+
+@6gf24kmn5
+smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png action not found
+
+Action not found
+Action smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png could not be found. Error raised is Controller controllers.smallImages.st_92050568f32d42298bbf0bedb25bcd0b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_92050568f32d42298bbf0bedb25bcd0b not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:01]  [play.Logger] -
+
+@6gf24kmn6
+smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png action not found
+
+Action not found
+Action smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png could not be found. Error raised is Controller controllers.smallImages.st_1fcb2dcc6e244679b37adb279e684adc not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_1fcb2dcc6e244679b37adb279e684adc not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:02]  [play.Logger] -
+
+@6gf24kmn7
+smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png action not found
+
+Action not found
+Action smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png could not be found. Error raised is Controller controllers.smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:02]  [play.Logger] -
+
+@6gf24kmn8
+smallImages.st_a8819e4447b244478899f7d7f310cd61.png action not found
+
+Action not found
+Action smallImages.st_a8819e4447b244478899f7d7f310cd61.png could not be found. Error raised is Controller controllers.smallImages.st_a8819e4447b244478899f7d7f310cd61 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_a8819e4447b244478899f7d7f310cd61.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_a8819e4447b244478899f7d7f310cd61 not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:02]  [play.Logger] -
+
+@6gf24kmn9
+smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png action not found
+
+Action not found
+Action smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png could not be found. Error raised is Controller controllers.smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:02]  [play.Logger] -
+
+@6gf24kmna
+smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png action not found
+
+Action not found
+Action smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png could not be found. Error raised is Controller controllers.smallImages.st_a26174c3215b4ef9b88ecafe34f26076 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_a26174c3215b4ef9b88ecafe34f26076 not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:02]  [play.Logger] -
+
+@6gf24kmnb
+smallImages.st_53e5c5353daa487299551bf76f2d64a8.png action not found
+
+Action not found
+Action smallImages.st_53e5c5353daa487299551bf76f2d64a8.png could not be found. Error raised is Controller controllers.smallImages.st_53e5c5353daa487299551bf76f2d64a8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_53e5c5353daa487299551bf76f2d64a8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_53e5c5353daa487299551bf76f2d64a8 not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:02]  [play.Logger] -
+
+@6gf24kmnc
+smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png action not found
+
+Action not found
+Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png could not be found. Error raised is Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:02]  [play.Logger] -
+
+@6gf24kmnd
+smallImages.st_e66320a2fdbc48398004ff8987181ec5.png action not found
+
+Action not found
+Action smallImages.st_e66320a2fdbc48398004ff8987181ec5.png could not be found. Error raised is Controller controllers.smallImages.st_e66320a2fdbc48398004ff8987181ec5 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_e66320a2fdbc48398004ff8987181ec5.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_e66320a2fdbc48398004ff8987181ec5 not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:02]  [play.Logger] -
+
+@6gf24kmne
+smallImages.st_27dd703291e941df922d3bd7a12de480.png action not found
+
+Action not found
+Action smallImages.st_27dd703291e941df922d3bd7a12de480.png could not be found. Error raised is Controller controllers.smallImages.st_27dd703291e941df922d3bd7a12de480 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_27dd703291e941df922d3bd7a12de480.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_27dd703291e941df922d3bd7a12de480 not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:03]  [play.Logger] -
+
+@6gf24kmnf
+smallImages.st_56ee7602576e43af87932c7931b2c13a.png action not found
+
+Action not found
+Action smallImages.st_56ee7602576e43af87932c7931b2c13a.png could not be found. Error raised is Controller controllers.smallImages.st_56ee7602576e43af87932c7931b2c13a not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_56ee7602576e43af87932c7931b2c13a.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_56ee7602576e43af87932c7931b2c13a not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:03]  [play.Logger] -
+
+@6gf24kmng
+smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png action not found
+
+Action not found
+Action smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png could not be found. Error raised is Controller controllers.smallImages.st_9e0bc2abd423435aba92f9948d40e3f4 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_9e0bc2abd423435aba92f9948d40e3f4 not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:03]  [play.Logger] -
+
+@6gf24kmnh
+smallImages.st_0270c8da17bb403aafb8395bc46e36a5.png action not found
+
+Action not found
+Action smallImages.st_0270c8da17bb403aafb8395bc46e36a5.png could not be found. Error raised is Controller controllers.smallImages.st_0270c8da17bb403aafb8395bc46e36a5 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_0270c8da17bb403aafb8395bc46e36a5.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_0270c8da17bb403aafb8395bc46e36a5 not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:03]  [play.Logger] -
+
+@6gf24kmni
+smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png action not found
+
+Action not found
+Action smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png could not be found. Error raised is Controller controllers.smallImages.st_4bcb52f314964a1ea78a86eec67a950b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_4bcb52f314964a1ea78a86eec67a950b not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:03]  [play.Logger] -
+
+@6gf24kmnj
+smallImages.st_787c872a33164b30ae516dbe60197899.png action not found
+
+Action not found
+Action smallImages.st_787c872a33164b30ae516dbe60197899.png could not be found. Error raised is Controller controllers.smallImages.st_787c872a33164b30ae516dbe60197899 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_787c872a33164b30ae516dbe60197899.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_787c872a33164b30ae516dbe60197899 not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:03]  [play.Logger] -
+
+@6gf24kmnk
+smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png action not found
+
+Action not found
+Action smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png could not be found. Error raised is Controller controllers.smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a not found
+	... 3 more
+[ERROR] [2013-12-04 12:27:03]  [play.Logger] -
+
+@6gf24kmnl
+smallImages.st_b373e5911f374275bec07bab8dfccbbd.png action not found
+
+Action not found
+Action smallImages.st_b373e5911f374275bec07bab8dfccbbd.png could not be found. Error raised is Controller controllers.smallImages.st_b373e5911f374275bec07bab8dfccbbd not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_b373e5911f374275bec07bab8dfccbbd.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_b373e5911f374275bec07bab8dfccbbd not found
+	... 3 more
+[DEBUG] [2013-12-04 12:27:25]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+[DEBUG] [2013-12-04 12:27:26]  [play.Logger] -get响应数据:：{"success":true,"token":"d6a0668569309782cf6fea6f2d63c601e146dbd5e94f8f8b22c0b17f3f36f94729a7519fecb52868fb20881e2e9aa9b4"}
+[ INFO] [2013-12-04 12:27:27]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 12:27:27]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 12:27:27]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchUpStrategyList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 12:27:27]  [play.Logger] -post with body 响应数据:：{"data":[],"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[ INFO] [2013-12-04 12:30:48]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 12:30:48]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 12:30:48]  [play.Logger] -get请求url：http://localhost:9100/strategyCt/fetchStrategyList?orderType=0&keyword=&pageNo=0
+[DEBUG] [2013-12-04 12:30:48]  [play.Logger] -get响应数据:：{"data":[{"uuid":"fa46e9ab3ebe4dd5a88d0e7cce4141e8","sname":"WeightDemo1","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":211.00821,"yomsd":0.0,"profitRatio":0.75,"status":0,"orderCount":0,"validOrderCount":0,"desp":"WeightDemo1","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":12.509927,"id":10193},{"uuid":"395aec1dc0124962b57196f238c21916","sname":"allstock1031","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":119.39168,"yomsd":0.0,"profitRatio":0.4,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":8.677191,"id":10148},{"uuid":"d9710b1b53f541419f6872ff51bce796","sname":"factorBacktest11","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-11","yield":17.162464,"yomsd":0.0,"profitRatio":0.55172414,"status":0,"orderCount":0,"validOrderCount":0,"desp":"........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":1.8795114,"id":10228},{"uuid":"216d4797b6af467e8884f1dac99ac3fa","sname":"factorRegress90","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-11","yield":3.029811,"yomsd":0.0,"profitRatio":0.5094716,"status":0,"orderCount":0,"validOrderCount":0,"desp":"sfdgsd","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.20756319,"id":10229},{"uuid":"92050568f32d42298bbf0bedb25bcd0b","sname":"strategyThreeInR","starLevel":0.0,"stype":3,"provider":"yangfen","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.3096041,"yomsd":0.0,"profitRatio":0.14285715,"status":0,"orderCount":0,"validOrderCount":0,"desp":"fgrdbvf","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":5.1675506,"id":10211},{"uuid":"1fcb2dcc6e244679b37adb279e684adc","sname":"KestnersMAS555","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.04539232,"yomsd":0.0,"profitRatio":0.46900827,"status":0,"orderCount":0,"validOrderCount":0,"desp":"..........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.082106754,"id":10215},{"uuid":"a8819e4447b244478899f7d7f310cd61","sname":"DailyTrade","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.018303838,"yomsd":0.0,"profitRatio":0.5,"status":0,"orderCount":0,"validOrderCount":0,"desp":"DailyTrade","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.63069534,"id":10191},{"uuid":"1ecbbf49a7ff46bbb9d13fa25f265c0f","sname":"Movavage05","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.008626692,"yomsd":0.0,"profitRatio":0.5,"status":0,"orderCount":0,"validOrderCount":0,"desp":"Movavage05","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":1.6218333,"id":10216},{"uuid":"a26174c3215b4ef9b88ecafe34f26076","sname":"MACD_Hist_Retr23","starLevel":0.0,"stype":2,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.006964145,"yomsd":0.0,"profitRatio":0.4752066,"status":0,"orderCount":0,"validOrderCount":0,"desp":"...........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.04881169,"id":10219},{"uuid":"ff53f950f6cd4cfba4d4162260d6c49f","sname":"Trade_ALL2","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0034651763,"yomsd":0.0,"profitRatio":0.75,"status":0,"orderCount":0,"validOrderCount":0,"desp":"API 综合测试","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":7.426484,"id":10156},{"uuid":"56ee7602576e43af87932c7931b2c13a","sname":"ThreeInRow1106","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10197},{"uuid":"9e0bc2abd423435aba92f9948d40e3f4","sname":"compatibleV2","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"兼容1.0测试","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10160},{"uuid":"4bcb52f314964a1ea78a86eec67a950b","sname":"MIN01order1031","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"MIN01order","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10149},{"uuid":"ac9e1db3ed3146b58ffa5931d71c5a9a","sname":"futuretest1101","starLevel":0.0,"stype":4,"provider":"penghua","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"test","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10162},{"uuid":"787c872a33164b30ae516dbe60197899","sname":"ClearDemo","starLevel":0.0,"stype":3,"provider":"yangfen","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"refvd","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10152},{"uuid":"b373e5911f374275bec07bab8dfccbbd","sname":"ThreeInRow-1","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"strategyThreeInRowFun-1","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10196},{"uuid":"7913c3e7756f4af99358999e1140174c","sname":"compatibleV1","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"兼容1.0测试","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10158},{"uuid":"f31ad8574bb14c44856c6b26e8a3dc88","sname":"testapi1111","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-11","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10225},{"uuid":"076efa0e33a64cfd8174568c56b543d8","sname":"ThreeInRowwhq","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10198},{"uuid":"53e5c5353daa487299551bf76f2d64a8","sname":"weightV12","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"动态策略检验1.0兼容","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10161}],"status":0,"rowTotal":41,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 12:30:48]  [play.Logger] -get请求url：http://localhost:9100/userStrategyManageCt/fetchUserCollectById?ids=10193,10148,10228,10229,10211,10215,10191,10216,10219,10156,10197,10160,10149,10162,10152,10196,10158,10225,10198,10161&uid=1
+[DEBUG] [2013-12-04 12:30:48]  [play.Logger] -get响应数据:：{"data":[],"status":0}
+[DEBUG] [2013-12-04 12:30:48]  [play.Logger] -get请求url：http://localhost:9100/userTemplateCt/fetchUserTemplate?uid=1&type=1
+[DEBUG] [2013-12-04 12:30:48]  [play.Logger] -get响应数据:：{"data":[{"id":488,"name":"very good","type":1,"content":"{\"tradeType\":3,\"tradeVariety\":2,\"yieldDown\":1.0,\"yieldUp\":3.0,\"profitRatioDown\":1.0,\"profitRatioUp\":4.0,\"starDown\":1,\"starUp\":5}","uid":1},{"id":782,"name":"新搜索条件2","type":1,"content":"{\"tradeType\":-999,\"tradeVariety\":-999,\"starDown\":0,\"starUp\":5}","uid":1},{"id":826,"name":"新搜索条件3","type":1,"content":"{}","uid":1},{"id":827,"name":"新搜索条件4","type":1,"content":"{}","uid":1},{"id":828,"name":"新搜索条件5","type":1,"content":"{\"tradeType\":-999,\"tradeVariety\":-999,\"starDown\":0,\"starUp\":5}","uid":1}],"status":0}
+[ERROR] [2013-12-04 12:30:49]  [play.Logger] -
+
+@6gf24kmnm
+smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png action not found
+
+Action not found
+Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png could not be found. Error raised is Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:49]  [play.Logger] -
+
+@6gf24kmnn
+smallImages.st_395aec1dc0124962b57196f238c21916.png action not found
+
+Action not found
+Action smallImages.st_395aec1dc0124962b57196f238c21916.png could not be found. Error raised is Controller controllers.smallImages.st_395aec1dc0124962b57196f238c21916 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_395aec1dc0124962b57196f238c21916.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_395aec1dc0124962b57196f238c21916 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:49]  [play.Logger] -
+
+@6gf24kmno
+smallImages.st_d9710b1b53f541419f6872ff51bce796.png action not found
+
+Action not found
+Action smallImages.st_d9710b1b53f541419f6872ff51bce796.png could not be found. Error raised is Controller controllers.smallImages.st_d9710b1b53f541419f6872ff51bce796 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_d9710b1b53f541419f6872ff51bce796.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_d9710b1b53f541419f6872ff51bce796 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:49]  [play.Logger] -
+
+@6gf24kmnp
+smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png action not found
+
+Action not found
+Action smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png could not be found. Error raised is Controller controllers.smallImages.st_216d4797b6af467e8884f1dac99ac3fa not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_216d4797b6af467e8884f1dac99ac3fa not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:49]  [play.Logger] -
+
+@6gf24kmo0
+smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png action not found
+
+Action not found
+Action smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png could not be found. Error raised is Controller controllers.smallImages.st_92050568f32d42298bbf0bedb25bcd0b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_92050568f32d42298bbf0bedb25bcd0b not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:49]  [play.Logger] -
+
+@6gf24kmo1
+smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png action not found
+
+Action not found
+Action smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png could not be found. Error raised is Controller controllers.smallImages.st_1fcb2dcc6e244679b37adb279e684adc not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_1fcb2dcc6e244679b37adb279e684adc not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:49]  [play.Logger] -
+
+@6gf24kmo2
+smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png action not found
+
+Action not found
+Action smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png could not be found. Error raised is Controller controllers.smallImages.st_a26174c3215b4ef9b88ecafe34f26076 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_a26174c3215b4ef9b88ecafe34f26076 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:49]  [play.Logger] -
+
+@6gf24kmo3
+smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png action not found
+
+Action not found
+Action smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png could not be found. Error raised is Controller controllers.smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:49]  [play.Logger] -
+
+@6gf24kmo4
+smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png action not found
+
+Action not found
+Action smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png could not be found. Error raised is Controller controllers.smallImages.st_4bcb52f314964a1ea78a86eec67a950b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_4bcb52f314964a1ea78a86eec67a950b not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:49]  [play.Logger] -
+
+@6gf24kmo5
+smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png action not found
+
+Action not found
+Action smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png could not be found. Error raised is Controller controllers.smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:49]  [play.Logger] -
+
+@6gf24kmo6
+smallImages.st_787c872a33164b30ae516dbe60197899.png action not found
+
+Action not found
+Action smallImages.st_787c872a33164b30ae516dbe60197899.png could not be found. Error raised is Controller controllers.smallImages.st_787c872a33164b30ae516dbe60197899 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_787c872a33164b30ae516dbe60197899.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_787c872a33164b30ae516dbe60197899 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:49]  [play.Logger] -
+
+@6gf24kmo7
+smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png action not found
+
+Action not found
+Action smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png could not be found. Error raised is Controller controllers.smallImages.st_9e0bc2abd423435aba92f9948d40e3f4 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_9e0bc2abd423435aba92f9948d40e3f4 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:49]  [play.Logger] -
+
+@6gf24kmo8
+smallImages.st_56ee7602576e43af87932c7931b2c13a.png action not found
+
+Action not found
+Action smallImages.st_56ee7602576e43af87932c7931b2c13a.png could not be found. Error raised is Controller controllers.smallImages.st_56ee7602576e43af87932c7931b2c13a not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_56ee7602576e43af87932c7931b2c13a.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_56ee7602576e43af87932c7931b2c13a not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:49]  [play.Logger] -
+
+@6gf24kmo9
+smallImages.st_b373e5911f374275bec07bab8dfccbbd.png action not found
+
+Action not found
+Action smallImages.st_b373e5911f374275bec07bab8dfccbbd.png could not be found. Error raised is Controller controllers.smallImages.st_b373e5911f374275bec07bab8dfccbbd not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_b373e5911f374275bec07bab8dfccbbd.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_b373e5911f374275bec07bab8dfccbbd not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:50]  [play.Logger] -
+
+@6gf24kmoa
+smallImages.st_7913c3e7756f4af99358999e1140174c.png action not found
+
+Action not found
+Action smallImages.st_7913c3e7756f4af99358999e1140174c.png could not be found. Error raised is Controller controllers.smallImages.st_7913c3e7756f4af99358999e1140174c not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_7913c3e7756f4af99358999e1140174c.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_7913c3e7756f4af99358999e1140174c not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:50]  [play.Logger] -
+
+@6gf24kmob
+smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png action not found
+
+Action not found
+Action smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png could not be found. Error raised is Controller controllers.smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:50]  [play.Logger] -
+
+@6gf24kmoc
+smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88.png action not found
+
+Action not found
+Action smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88.png could not be found. Error raised is Controller controllers.smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:50]  [play.Logger] -
+
+@6gf24kmod
+smallImages.st_076efa0e33a64cfd8174568c56b543d8.png action not found
+
+Action not found
+Action smallImages.st_076efa0e33a64cfd8174568c56b543d8.png could not be found. Error raised is Controller controllers.smallImages.st_076efa0e33a64cfd8174568c56b543d8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_076efa0e33a64cfd8174568c56b543d8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_076efa0e33a64cfd8174568c56b543d8 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:50]  [play.Logger] -
+
+@6gf24kmoe
+smallImages.st_53e5c5353daa487299551bf76f2d64a8.png action not found
+
+Action not found
+Action smallImages.st_53e5c5353daa487299551bf76f2d64a8.png could not be found. Error raised is Controller controllers.smallImages.st_53e5c5353daa487299551bf76f2d64a8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_53e5c5353daa487299551bf76f2d64a8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_53e5c5353daa487299551bf76f2d64a8 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:50]  [play.Logger] -
+
+@6gf24kmof
+smallImages.st_a8819e4447b244478899f7d7f310cd61.png action not found
+
+Action not found
+Action smallImages.st_a8819e4447b244478899f7d7f310cd61.png could not be found. Error raised is Controller controllers.smallImages.st_a8819e4447b244478899f7d7f310cd61 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_a8819e4447b244478899f7d7f310cd61.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_a8819e4447b244478899f7d7f310cd61 not found
+	... 3 more
+[ INFO] [2013-12-04 12:30:53]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 12:30:53]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 12:30:53]  [play.Logger] -get请求url：http://localhost:9100/strategyCt/fetchStrategyList?orderType=0&keyword=&pageNo=0
+[DEBUG] [2013-12-04 12:30:53]  [play.Logger] -get响应数据:：{"data":[{"uuid":"fa46e9ab3ebe4dd5a88d0e7cce4141e8","sname":"WeightDemo1","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":211.00821,"yomsd":0.0,"profitRatio":0.75,"status":0,"orderCount":0,"validOrderCount":0,"desp":"WeightDemo1","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":12.509927,"id":10193},{"uuid":"395aec1dc0124962b57196f238c21916","sname":"allstock1031","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":119.39168,"yomsd":0.0,"profitRatio":0.4,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":8.677191,"id":10148},{"uuid":"d9710b1b53f541419f6872ff51bce796","sname":"factorBacktest11","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-11","yield":17.162464,"yomsd":0.0,"profitRatio":0.55172414,"status":0,"orderCount":0,"validOrderCount":0,"desp":"........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":1.8795114,"id":10228},{"uuid":"216d4797b6af467e8884f1dac99ac3fa","sname":"factorRegress90","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-11","yield":3.029811,"yomsd":0.0,"profitRatio":0.5094716,"status":0,"orderCount":0,"validOrderCount":0,"desp":"sfdgsd","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.20756319,"id":10229},{"uuid":"92050568f32d42298bbf0bedb25bcd0b","sname":"strategyThreeInR","starLevel":0.0,"stype":3,"provider":"yangfen","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.3096041,"yomsd":0.0,"profitRatio":0.14285715,"status":0,"orderCount":0,"validOrderCount":0,"desp":"fgrdbvf","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":5.1675506,"id":10211},{"uuid":"1fcb2dcc6e244679b37adb279e684adc","sname":"KestnersMAS555","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.04539232,"yomsd":0.0,"profitRatio":0.46900827,"status":0,"orderCount":0,"validOrderCount":0,"desp":"..........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.082106754,"id":10215},{"uuid":"a8819e4447b244478899f7d7f310cd61","sname":"DailyTrade","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.018303838,"yomsd":0.0,"profitRatio":0.5,"status":0,"orderCount":0,"validOrderCount":0,"desp":"DailyTrade","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.63069534,"id":10191},{"uuid":"1ecbbf49a7ff46bbb9d13fa25f265c0f","sname":"Movavage05","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.008626692,"yomsd":0.0,"profitRatio":0.5,"status":0,"orderCount":0,"validOrderCount":0,"desp":"Movavage05","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":1.6218333,"id":10216},{"uuid":"a26174c3215b4ef9b88ecafe34f26076","sname":"MACD_Hist_Retr23","starLevel":0.0,"stype":2,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.006964145,"yomsd":0.0,"profitRatio":0.4752066,"status":0,"orderCount":0,"validOrderCount":0,"desp":"...........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.04881169,"id":10219},{"uuid":"ff53f950f6cd4cfba4d4162260d6c49f","sname":"Trade_ALL2","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0034651763,"yomsd":0.0,"profitRatio":0.75,"status":0,"orderCount":0,"validOrderCount":0,"desp":"API 综合测试","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":7.426484,"id":10156},{"uuid":"56ee7602576e43af87932c7931b2c13a","sname":"ThreeInRow1106","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10197},{"uuid":"9e0bc2abd423435aba92f9948d40e3f4","sname":"compatibleV2","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"兼容1.0测试","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10160},{"uuid":"4bcb52f314964a1ea78a86eec67a950b","sname":"MIN01order1031","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"MIN01order","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10149},{"uuid":"ac9e1db3ed3146b58ffa5931d71c5a9a","sname":"futuretest1101","starLevel":0.0,"stype":4,"provider":"penghua","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"test","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10162},{"uuid":"787c872a33164b30ae516dbe60197899","sname":"ClearDemo","starLevel":0.0,"stype":3,"provider":"yangfen","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"refvd","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10152},{"uuid":"b373e5911f374275bec07bab8dfccbbd","sname":"ThreeInRow-1","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"strategyThreeInRowFun-1","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10196},{"uuid":"7913c3e7756f4af99358999e1140174c","sname":"compatibleV1","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"兼容1.0测试","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10158},{"uuid":"f31ad8574bb14c44856c6b26e8a3dc88","sname":"testapi1111","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-11","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10225},{"uuid":"076efa0e33a64cfd8174568c56b543d8","sname":"ThreeInRowwhq","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10198},{"uuid":"53e5c5353daa487299551bf76f2d64a8","sname":"weightV12","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"动态策略检验1.0兼容","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10161}],"status":0,"rowTotal":41,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 12:30:53]  [play.Logger] -get请求url：http://localhost:9100/userStrategyManageCt/fetchUserCollectById?ids=10193,10148,10228,10229,10211,10215,10191,10216,10219,10156,10197,10160,10149,10162,10152,10196,10158,10225,10198,10161&uid=1
+[DEBUG] [2013-12-04 12:30:53]  [play.Logger] -get响应数据:：{"data":[],"status":0}
+[DEBUG] [2013-12-04 12:30:53]  [play.Logger] -get请求url：http://localhost:9100/userTemplateCt/fetchUserTemplate?uid=1&type=1
+[DEBUG] [2013-12-04 12:30:53]  [play.Logger] -get响应数据:：{"data":[{"id":488,"name":"very good","type":1,"content":"{\"tradeType\":3,\"tradeVariety\":2,\"yieldDown\":1.0,\"yieldUp\":3.0,\"profitRatioDown\":1.0,\"profitRatioUp\":4.0,\"starDown\":1,\"starUp\":5}","uid":1},{"id":782,"name":"新搜索条件2","type":1,"content":"{\"tradeType\":-999,\"tradeVariety\":-999,\"starDown\":0,\"starUp\":5}","uid":1},{"id":826,"name":"新搜索条件3","type":1,"content":"{}","uid":1},{"id":827,"name":"新搜索条件4","type":1,"content":"{}","uid":1},{"id":828,"name":"新搜索条件5","type":1,"content":"{\"tradeType\":-999,\"tradeVariety\":-999,\"starDown\":0,\"starUp\":5}","uid":1}],"status":0}
+[ERROR] [2013-12-04 12:30:53]  [play.Logger] -
+
+@6gf24kmog
+smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png action not found
+
+Action not found
+Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png could not be found. Error raised is Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:53]  [play.Logger] -
+
+@6gf24kmoh
+smallImages.st_395aec1dc0124962b57196f238c21916.png action not found
+
+Action not found
+Action smallImages.st_395aec1dc0124962b57196f238c21916.png could not be found. Error raised is Controller controllers.smallImages.st_395aec1dc0124962b57196f238c21916 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_395aec1dc0124962b57196f238c21916.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_395aec1dc0124962b57196f238c21916 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:53]  [play.Logger] -
+
+@6gf24kmoi
+smallImages.st_d9710b1b53f541419f6872ff51bce796.png action not found
+
+Action not found
+Action smallImages.st_d9710b1b53f541419f6872ff51bce796.png could not be found. Error raised is Controller controllers.smallImages.st_d9710b1b53f541419f6872ff51bce796 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_d9710b1b53f541419f6872ff51bce796.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_d9710b1b53f541419f6872ff51bce796 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmoj
+smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png action not found
+
+Action not found
+Action smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png could not be found. Error raised is Controller controllers.smallImages.st_216d4797b6af467e8884f1dac99ac3fa not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_216d4797b6af467e8884f1dac99ac3fa not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmok
+smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png action not found
+
+Action not found
+Action smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png could not be found. Error raised is Controller controllers.smallImages.st_1fcb2dcc6e244679b37adb279e684adc not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_1fcb2dcc6e244679b37adb279e684adc not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmol
+smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png action not found
+
+Action not found
+Action smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png could not be found. Error raised is Controller controllers.smallImages.st_92050568f32d42298bbf0bedb25bcd0b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_92050568f32d42298bbf0bedb25bcd0b not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmom
+smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png action not found
+
+Action not found
+Action smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png could not be found. Error raised is Controller controllers.smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmon
+smallImages.st_a8819e4447b244478899f7d7f310cd61.png action not found
+
+Action not found
+Action smallImages.st_a8819e4447b244478899f7d7f310cd61.png could not be found. Error raised is Controller controllers.smallImages.st_a8819e4447b244478899f7d7f310cd61 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_a8819e4447b244478899f7d7f310cd61.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_a8819e4447b244478899f7d7f310cd61 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmoo
+smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png action not found
+
+Action not found
+Action smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png could not be found. Error raised is Controller controllers.smallImages.st_a26174c3215b4ef9b88ecafe34f26076 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_a26174c3215b4ef9b88ecafe34f26076 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmop
+smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png action not found
+
+Action not found
+Action smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png could not be found. Error raised is Controller controllers.smallImages.st_4bcb52f314964a1ea78a86eec67a950b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_4bcb52f314964a1ea78a86eec67a950b not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmp0
+smallImages.st_787c872a33164b30ae516dbe60197899.png action not found
+
+Action not found
+Action smallImages.st_787c872a33164b30ae516dbe60197899.png could not be found. Error raised is Controller controllers.smallImages.st_787c872a33164b30ae516dbe60197899 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_787c872a33164b30ae516dbe60197899.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_787c872a33164b30ae516dbe60197899 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmp1
+smallImages.st_56ee7602576e43af87932c7931b2c13a.png action not found
+
+Action not found
+Action smallImages.st_56ee7602576e43af87932c7931b2c13a.png could not be found. Error raised is Controller controllers.smallImages.st_56ee7602576e43af87932c7931b2c13a not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_56ee7602576e43af87932c7931b2c13a.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_56ee7602576e43af87932c7931b2c13a not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmp2
+smallImages.st_7913c3e7756f4af99358999e1140174c.png action not found
+
+Action not found
+Action smallImages.st_7913c3e7756f4af99358999e1140174c.png could not be found. Error raised is Controller controllers.smallImages.st_7913c3e7756f4af99358999e1140174c not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_7913c3e7756f4af99358999e1140174c.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_7913c3e7756f4af99358999e1140174c not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmp3
+smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png action not found
+
+Action not found
+Action smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png could not be found. Error raised is Controller controllers.smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmp4
+smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88.png action not found
+
+Action not found
+Action smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88.png could not be found. Error raised is Controller controllers.smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmp5
+smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png action not found
+
+Action not found
+Action smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png could not be found. Error raised is Controller controllers.smallImages.st_9e0bc2abd423435aba92f9948d40e3f4 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_9e0bc2abd423435aba92f9948d40e3f4 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmp6
+smallImages.st_b373e5911f374275bec07bab8dfccbbd.png action not found
+
+Action not found
+Action smallImages.st_b373e5911f374275bec07bab8dfccbbd.png could not be found. Error raised is Controller controllers.smallImages.st_b373e5911f374275bec07bab8dfccbbd not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_b373e5911f374275bec07bab8dfccbbd.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_b373e5911f374275bec07bab8dfccbbd not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmp7
+smallImages.st_076efa0e33a64cfd8174568c56b543d8.png action not found
+
+Action not found
+Action smallImages.st_076efa0e33a64cfd8174568c56b543d8.png could not be found. Error raised is Controller controllers.smallImages.st_076efa0e33a64cfd8174568c56b543d8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_076efa0e33a64cfd8174568c56b543d8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_076efa0e33a64cfd8174568c56b543d8 not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmp8
+smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png action not found
+
+Action not found
+Action smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png could not be found. Error raised is Controller controllers.smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a not found
+	... 3 more
+[ERROR] [2013-12-04 12:30:54]  [play.Logger] -
+
+@6gf24kmp9
+smallImages.st_53e5c5353daa487299551bf76f2d64a8.png action not found
+
+Action not found
+Action smallImages.st_53e5c5353daa487299551bf76f2d64a8.png could not be found. Error raised is Controller controllers.smallImages.st_53e5c5353daa487299551bf76f2d64a8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_53e5c5353daa487299551bf76f2d64a8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_53e5c5353daa487299551bf76f2d64a8 not found
+	... 3 more
+[ INFO] [2013-12-04 13:06:43]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 13:06:43]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 13:06:43]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchUpStrategyList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 13:06:43]  [play.Logger] -post with body 响应数据:：{"data":[],"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 13:07:18]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+[DEBUG] [2013-12-04 13:07:18]  [play.Logger] -get响应数据:：{"success":true,"token":"006b4ec1a410cef3c494ae4ab94ce1e178d960af383af57d6f44efadc0e0ef5b29a7519fecb52868fb20881e2e9aa9b4"}
+[ INFO] [2013-12-04 13:07:22]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 13:07:22]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 13:07:22]  [play.Logger] -get请求url：http://localhost:9100/strategyCt/fetchStrategyList?orderType=0&keyword=&pageNo=0
+[DEBUG] [2013-12-04 13:07:22]  [play.Logger] -get响应数据:：{"data":[{"uuid":"fa46e9ab3ebe4dd5a88d0e7cce4141e8","sname":"WeightDemo1","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":211.00821,"yomsd":0.0,"profitRatio":0.75,"status":0,"orderCount":0,"validOrderCount":0,"desp":"WeightDemo1","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":12.509927,"id":10193},{"uuid":"395aec1dc0124962b57196f238c21916","sname":"allstock1031","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":119.39168,"yomsd":0.0,"profitRatio":0.4,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":8.677191,"id":10148},{"uuid":"d9710b1b53f541419f6872ff51bce796","sname":"factorBacktest11","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-11","yield":17.162464,"yomsd":0.0,"profitRatio":0.55172414,"status":0,"orderCount":0,"validOrderCount":0,"desp":"........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":1.8795114,"id":10228},{"uuid":"216d4797b6af467e8884f1dac99ac3fa","sname":"factorRegress90","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-11","yield":3.029811,"yomsd":0.0,"profitRatio":0.5094716,"status":0,"orderCount":0,"validOrderCount":0,"desp":"sfdgsd","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.20756319,"id":10229},{"uuid":"92050568f32d42298bbf0bedb25bcd0b","sname":"strategyThreeInR","starLevel":0.0,"stype":3,"provider":"yangfen","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.3096041,"yomsd":0.0,"profitRatio":0.14285715,"status":0,"orderCount":0,"validOrderCount":0,"desp":"fgrdbvf","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":5.1675506,"id":10211},{"uuid":"1fcb2dcc6e244679b37adb279e684adc","sname":"KestnersMAS555","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.04539232,"yomsd":0.0,"profitRatio":0.46900827,"status":0,"orderCount":0,"validOrderCount":0,"desp":"..........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.082106754,"id":10215},{"uuid":"a8819e4447b244478899f7d7f310cd61","sname":"DailyTrade","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.018303838,"yomsd":0.0,"profitRatio":0.5,"status":0,"orderCount":0,"validOrderCount":0,"desp":"DailyTrade","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.63069534,"id":10191},{"uuid":"1ecbbf49a7ff46bbb9d13fa25f265c0f","sname":"Movavage05","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.008626692,"yomsd":0.0,"profitRatio":0.5,"status":0,"orderCount":0,"validOrderCount":0,"desp":"Movavage05","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":1.6218333,"id":10216},{"uuid":"a26174c3215b4ef9b88ecafe34f26076","sname":"MACD_Hist_Retr23","starLevel":0.0,"stype":2,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.006964145,"yomsd":0.0,"profitRatio":0.4752066,"status":0,"orderCount":0,"validOrderCount":0,"desp":"...........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.04881169,"id":10219},{"uuid":"ff53f950f6cd4cfba4d4162260d6c49f","sname":"Trade_ALL2","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0034651763,"yomsd":0.0,"profitRatio":0.75,"status":0,"orderCount":0,"validOrderCount":0,"desp":"API 综合测试","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":7.426484,"id":10156},{"uuid":"56ee7602576e43af87932c7931b2c13a","sname":"ThreeInRow1106","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10197},{"uuid":"9e0bc2abd423435aba92f9948d40e3f4","sname":"compatibleV2","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"兼容1.0测试","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10160},{"uuid":"4bcb52f314964a1ea78a86eec67a950b","sname":"MIN01order1031","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"MIN01order","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10149},{"uuid":"ac9e1db3ed3146b58ffa5931d71c5a9a","sname":"futuretest1101","starLevel":0.0,"stype":4,"provider":"penghua","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"test","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10162},{"uuid":"787c872a33164b30ae516dbe60197899","sname":"ClearDemo","starLevel":0.0,"stype":3,"provider":"yangfen","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"refvd","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10152},{"uuid":"b373e5911f374275bec07bab8dfccbbd","sname":"ThreeInRow-1","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"strategyThreeInRowFun-1","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10196},{"uuid":"7913c3e7756f4af99358999e1140174c","sname":"compatibleV1","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"兼容1.0测试","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10158},{"uuid":"f31ad8574bb14c44856c6b26e8a3dc88","sname":"testapi1111","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-11","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10225},{"uuid":"076efa0e33a64cfd8174568c56b543d8","sname":"ThreeInRowwhq","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10198},{"uuid":"53e5c5353daa487299551bf76f2d64a8","sname":"weightV12","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"动态策略检验1.0兼容","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10161}],"status":0,"rowTotal":41,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 13:07:22]  [play.Logger] -get请求url：http://localhost:9100/userStrategyManageCt/fetchUserCollectById?ids=10193,10148,10228,10229,10211,10215,10191,10216,10219,10156,10197,10160,10149,10162,10152,10196,10158,10225,10198,10161&uid=1
+[DEBUG] [2013-12-04 13:07:22]  [play.Logger] -get响应数据:：{"data":[],"status":0}
+[DEBUG] [2013-12-04 13:07:22]  [play.Logger] -get请求url：http://localhost:9100/userTemplateCt/fetchUserTemplate?uid=1&type=1
+[DEBUG] [2013-12-04 13:07:23]  [play.Logger] -get响应数据:：{"data":[{"id":488,"name":"very good","type":1,"content":"{\"tradeType\":3,\"tradeVariety\":2,\"yieldDown\":1.0,\"yieldUp\":3.0,\"profitRatioDown\":1.0,\"profitRatioUp\":4.0,\"starDown\":1,\"starUp\":5}","uid":1},{"id":782,"name":"新搜索条件2","type":1,"content":"{\"tradeType\":-999,\"tradeVariety\":-999,\"starDown\":0,\"starUp\":5}","uid":1},{"id":826,"name":"新搜索条件3","type":1,"content":"{}","uid":1},{"id":827,"name":"新搜索条件4","type":1,"content":"{}","uid":1},{"id":828,"name":"新搜索条件5","type":1,"content":"{\"tradeType\":-999,\"tradeVariety\":-999,\"starDown\":0,\"starUp\":5}","uid":1}],"status":0}
+[ERROR] [2013-12-04 13:07:24]  [play.Logger] -
+
+@6gf24kmpa
+smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png action not found
+
+Action not found
+Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png could not be found. Error raised is Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:24]  [play.Logger] -
+
+@6gf24kmpb
+smallImages.st_395aec1dc0124962b57196f238c21916.png action not found
+
+Action not found
+Action smallImages.st_395aec1dc0124962b57196f238c21916.png could not be found. Error raised is Controller controllers.smallImages.st_395aec1dc0124962b57196f238c21916 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_395aec1dc0124962b57196f238c21916.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_395aec1dc0124962b57196f238c21916 not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:25]  [play.Logger] -
+
+@6gf24kmpc
+smallImages.st_d9710b1b53f541419f6872ff51bce796.png action not found
+
+Action not found
+Action smallImages.st_d9710b1b53f541419f6872ff51bce796.png could not be found. Error raised is Controller controllers.smallImages.st_d9710b1b53f541419f6872ff51bce796 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_d9710b1b53f541419f6872ff51bce796.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_d9710b1b53f541419f6872ff51bce796 not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:25]  [play.Logger] -
+
+@6gf24kmpd
+smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png action not found
+
+Action not found
+Action smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png could not be found. Error raised is Controller controllers.smallImages.st_216d4797b6af467e8884f1dac99ac3fa not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_216d4797b6af467e8884f1dac99ac3fa not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:25]  [play.Logger] -
+
+@6gf24kmpe
+smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png action not found
+
+Action not found
+Action smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png could not be found. Error raised is Controller controllers.smallImages.st_92050568f32d42298bbf0bedb25bcd0b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_92050568f32d42298bbf0bedb25bcd0b not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:25]  [play.Logger] -
+
+@6gf24kmpf
+smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png action not found
+
+Action not found
+Action smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png could not be found. Error raised is Controller controllers.smallImages.st_1fcb2dcc6e244679b37adb279e684adc not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_1fcb2dcc6e244679b37adb279e684adc not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:25]  [play.Logger] -
+
+@6gf24kmpg
+smallImages.st_a8819e4447b244478899f7d7f310cd61.png action not found
+
+Action not found
+Action smallImages.st_a8819e4447b244478899f7d7f310cd61.png could not be found. Error raised is Controller controllers.smallImages.st_a8819e4447b244478899f7d7f310cd61 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_a8819e4447b244478899f7d7f310cd61.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_a8819e4447b244478899f7d7f310cd61 not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:25]  [play.Logger] -
+
+@6gf24kmph
+smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png action not found
+
+Action not found
+Action smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png could not be found. Error raised is Controller controllers.smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:26]  [play.Logger] -
+
+@6gf24kmpi
+smallImages.st_56ee7602576e43af87932c7931b2c13a.png action not found
+
+Action not found
+Action smallImages.st_56ee7602576e43af87932c7931b2c13a.png could not be found. Error raised is Controller controllers.smallImages.st_56ee7602576e43af87932c7931b2c13a not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_56ee7602576e43af87932c7931b2c13a.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_56ee7602576e43af87932c7931b2c13a not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:26]  [play.Logger] -
+
+@6gf24kmpj
+smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png action not found
+
+Action not found
+Action smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png could not be found. Error raised is Controller controllers.smallImages.st_a26174c3215b4ef9b88ecafe34f26076 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_a26174c3215b4ef9b88ecafe34f26076 not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:26]  [play.Logger] -
+
+@6gf24kmpk
+smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png action not found
+
+Action not found
+Action smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png could not be found. Error raised is Controller controllers.smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:26]  [play.Logger] -
+
+@6gf24kmpl
+smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png action not found
+
+Action not found
+Action smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png could not be found. Error raised is Controller controllers.smallImages.st_4bcb52f314964a1ea78a86eec67a950b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_4bcb52f314964a1ea78a86eec67a950b not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:26]  [play.Logger] -
+
+@6gf24kmpm
+smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png action not found
+
+Action not found
+Action smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png could not be found. Error raised is Controller controllers.smallImages.st_9e0bc2abd423435aba92f9948d40e3f4 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_9e0bc2abd423435aba92f9948d40e3f4 not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:26]  [play.Logger] -
+
+@6gf24kmpn
+smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png action not found
+
+Action not found
+Action smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png could not be found. Error raised is Controller controllers.smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:26]  [play.Logger] -
+
+@6gf24kmpo
+smallImages.st_787c872a33164b30ae516dbe60197899.png action not found
+
+Action not found
+Action smallImages.st_787c872a33164b30ae516dbe60197899.png could not be found. Error raised is Controller controllers.smallImages.st_787c872a33164b30ae516dbe60197899 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_787c872a33164b30ae516dbe60197899.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_787c872a33164b30ae516dbe60197899 not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:26]  [play.Logger] -
+
+@6gf24kmpp
+smallImages.st_7913c3e7756f4af99358999e1140174c.png action not found
+
+Action not found
+Action smallImages.st_7913c3e7756f4af99358999e1140174c.png could not be found. Error raised is Controller controllers.smallImages.st_7913c3e7756f4af99358999e1140174c not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_7913c3e7756f4af99358999e1140174c.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_7913c3e7756f4af99358999e1140174c not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:26]  [play.Logger] -
+
+@6gf24kn00
+smallImages.st_b373e5911f374275bec07bab8dfccbbd.png action not found
+
+Action not found
+Action smallImages.st_b373e5911f374275bec07bab8dfccbbd.png could not be found. Error raised is Controller controllers.smallImages.st_b373e5911f374275bec07bab8dfccbbd not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_b373e5911f374275bec07bab8dfccbbd.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_b373e5911f374275bec07bab8dfccbbd not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:26]  [play.Logger] -
+
+@6gf24kn01
+smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png action not found
+
+Action not found
+Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png could not be found. Error raised is Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:26]  [play.Logger] -
+
+@6gf24kn02
+smallImages.st_395aec1dc0124962b57196f238c21916.png action not found
+
+Action not found
+Action smallImages.st_395aec1dc0124962b57196f238c21916.png could not be found. Error raised is Controller controllers.smallImages.st_395aec1dc0124962b57196f238c21916 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_395aec1dc0124962b57196f238c21916.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_395aec1dc0124962b57196f238c21916 not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:27]  [play.Logger] -
+
+@6gf24kn03
+smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png action not found
+
+Action not found
+Action smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png could not be found. Error raised is Controller controllers.smallImages.st_216d4797b6af467e8884f1dac99ac3fa not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_216d4797b6af467e8884f1dac99ac3fa not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:27]  [play.Logger] -
+
+@6gf24kn04
+smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png action not found
+
+Action not found
+Action smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png could not be found. Error raised is Controller controllers.smallImages.st_92050568f32d42298bbf0bedb25bcd0b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_92050568f32d42298bbf0bedb25bcd0b not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:27]  [play.Logger] -
+
+@6gf24kn05
+smallImages.st_d9710b1b53f541419f6872ff51bce796.png action not found
+
+Action not found
+Action smallImages.st_d9710b1b53f541419f6872ff51bce796.png could not be found. Error raised is Controller controllers.smallImages.st_d9710b1b53f541419f6872ff51bce796 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_d9710b1b53f541419f6872ff51bce796.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_d9710b1b53f541419f6872ff51bce796 not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:27]  [play.Logger] -
+
+@6gf24kn06
+smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png action not found
+
+Action not found
+Action smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png could not be found. Error raised is Controller controllers.smallImages.st_1fcb2dcc6e244679b37adb279e684adc not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_1fcb2dcc6e244679b37adb279e684adc not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:27]  [play.Logger] -
+
+@6gf24kn07
+smallImages.st_a8819e4447b244478899f7d7f310cd61.png action not found
+
+Action not found
+Action smallImages.st_a8819e4447b244478899f7d7f310cd61.png could not be found. Error raised is Controller controllers.smallImages.st_a8819e4447b244478899f7d7f310cd61 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_a8819e4447b244478899f7d7f310cd61.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_a8819e4447b244478899f7d7f310cd61 not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:27]  [play.Logger] -
+
+@6gf24kn08
+smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88.png action not found
+
+Action not found
+Action smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88.png could not be found. Error raised is Controller controllers.smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88 not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:27]  [play.Logger] -
+
+@6gf24kn09
+smallImages.st_076efa0e33a64cfd8174568c56b543d8.png action not found
+
+Action not found
+Action smallImages.st_076efa0e33a64cfd8174568c56b543d8.png could not be found. Error raised is Controller controllers.smallImages.st_076efa0e33a64cfd8174568c56b543d8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_076efa0e33a64cfd8174568c56b543d8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_076efa0e33a64cfd8174568c56b543d8 not found
+	... 3 more
+[ERROR] [2013-12-04 13:07:27]  [play.Logger] -
+
+@6gf24kn0a
+smallImages.st_53e5c5353daa487299551bf76f2d64a8.png action not found
+
+Action not found
+Action smallImages.st_53e5c5353daa487299551bf76f2d64a8.png could not be found. Error raised is Controller controllers.smallImages.st_53e5c5353daa487299551bf76f2d64a8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_53e5c5353daa487299551bf76f2d64a8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_53e5c5353daa487299551bf76f2d64a8 not found
+	... 3 more
+[ INFO] [2013-12-04 13:08:28]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 13:08:28]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 13:08:28]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchUpStrategyList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 13:08:28]  [play.Logger] -post with body 响应数据:：{"data":[],"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[ INFO] [2013-12-04 13:08:40]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 13:08:40]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 13:08:40]  [play.Logger] -get请求url：http://localhost:9100/strategyCt/fetchStrategyList?orderType=0&keyword=&pageNo=0
+[DEBUG] [2013-12-04 13:08:40]  [play.Logger] -get响应数据:：{"data":[{"uuid":"fa46e9ab3ebe4dd5a88d0e7cce4141e8","sname":"WeightDemo1","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":211.00821,"yomsd":0.0,"profitRatio":0.75,"status":0,"orderCount":0,"validOrderCount":0,"desp":"WeightDemo1","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":12.509927,"id":10193},{"uuid":"395aec1dc0124962b57196f238c21916","sname":"allstock1031","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":119.39168,"yomsd":0.0,"profitRatio":0.4,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":8.677191,"id":10148},{"uuid":"d9710b1b53f541419f6872ff51bce796","sname":"factorBacktest11","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-11","yield":17.162464,"yomsd":0.0,"profitRatio":0.55172414,"status":0,"orderCount":0,"validOrderCount":0,"desp":"........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":1.8795114,"id":10228},{"uuid":"216d4797b6af467e8884f1dac99ac3fa","sname":"factorRegress90","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-11","yield":3.029811,"yomsd":0.0,"profitRatio":0.5094716,"status":0,"orderCount":0,"validOrderCount":0,"desp":"sfdgsd","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.20756319,"id":10229},{"uuid":"92050568f32d42298bbf0bedb25bcd0b","sname":"strategyThreeInR","starLevel":0.0,"stype":3,"provider":"yangfen","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.3096041,"yomsd":0.0,"profitRatio":0.14285715,"status":0,"orderCount":0,"validOrderCount":0,"desp":"fgrdbvf","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":5.1675506,"id":10211},{"uuid":"1fcb2dcc6e244679b37adb279e684adc","sname":"KestnersMAS555","starLevel":0.0,"stype":3,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.04539232,"yomsd":0.0,"profitRatio":0.46900827,"status":0,"orderCount":0,"validOrderCount":0,"desp":"..........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.082106754,"id":10215},{"uuid":"a8819e4447b244478899f7d7f310cd61","sname":"DailyTrade","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.018303838,"yomsd":0.0,"profitRatio":0.5,"status":0,"orderCount":0,"validOrderCount":0,"desp":"DailyTrade","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.63069534,"id":10191},{"uuid":"1ecbbf49a7ff46bbb9d13fa25f265c0f","sname":"Movavage05","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.008626692,"yomsd":0.0,"profitRatio":0.5,"status":0,"orderCount":0,"validOrderCount":0,"desp":"Movavage05","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":1.6218333,"id":10216},{"uuid":"a26174c3215b4ef9b88ecafe34f26076","sname":"MACD_Hist_Retr23","starLevel":0.0,"stype":2,"provider":"sunyg","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-08","yield":0.006964145,"yomsd":0.0,"profitRatio":0.4752066,"status":0,"orderCount":0,"validOrderCount":0,"desp":"...........","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":0.04881169,"id":10219},{"uuid":"ff53f950f6cd4cfba4d4162260d6c49f","sname":"Trade_ALL2","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0034651763,"yomsd":0.0,"profitRatio":0.75,"status":0,"orderCount":0,"validOrderCount":0,"desp":"API 综合测试","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":7.426484,"id":10156},{"uuid":"56ee7602576e43af87932c7931b2c13a","sname":"ThreeInRow1106","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10197},{"uuid":"9e0bc2abd423435aba92f9948d40e3f4","sname":"compatibleV2","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"兼容1.0测试","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10160},{"uuid":"4bcb52f314964a1ea78a86eec67a950b","sname":"MIN01order1031","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"MIN01order","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10149},{"uuid":"ac9e1db3ed3146b58ffa5931d71c5a9a","sname":"futuretest1101","starLevel":0.0,"stype":4,"provider":"penghua","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"test","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10162},{"uuid":"787c872a33164b30ae516dbe60197899","sname":"ClearDemo","starLevel":0.0,"stype":3,"provider":"yangfen","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-10-31","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"refvd","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10152},{"uuid":"b373e5911f374275bec07bab8dfccbbd","sname":"ThreeInRow-1","starLevel":0.0,"stype":3,"provider":"liujinglan","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"strategyThreeInRowFun-1","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10196},{"uuid":"7913c3e7756f4af99358999e1140174c","sname":"compatibleV1","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"兼容1.0测试","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10158},{"uuid":"f31ad8574bb14c44856c6b26e8a3dc88","sname":"testapi1111","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-11","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10225},{"uuid":"076efa0e33a64cfd8174568c56b543d8","sname":"ThreeInRowwhq","starLevel":0.0,"stype":3,"provider":"wanghq","tradeVariety":1,"collectCount":0,"tradeCount":0,"upTime":"2013-11-06","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"whq","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10198},{"uuid":"53e5c5353daa487299551bf76f2d64a8","sname":"weightV12","starLevel":0.0,"stype":3,"provider":"zouht","tradeVariety":3,"collectCount":0,"tradeCount":0,"upTime":"2013-11-01","yield":0.0,"yomsd":0.0,"profitRatio":0.0,"status":0,"orderCount":0,"validOrderCount":0,"desp":"动态策略检验1.0兼容","discussCount":0,"discussTotal":0,"enginetypeId":2,"sharpe":999999.0,"id":10161}],"status":0,"rowTotal":41,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 13:08:40]  [play.Logger] -get请求url：http://localhost:9100/userStrategyManageCt/fetchUserCollectById?ids=10193,10148,10228,10229,10211,10215,10191,10216,10219,10156,10197,10160,10149,10162,10152,10196,10158,10225,10198,10161&uid=1
+[DEBUG] [2013-12-04 13:08:40]  [play.Logger] -get响应数据:：{"data":[],"status":0}
+[DEBUG] [2013-12-04 13:08:40]  [play.Logger] -get请求url：http://localhost:9100/userTemplateCt/fetchUserTemplate?uid=1&type=1
+[DEBUG] [2013-12-04 13:08:40]  [play.Logger] -get响应数据:：{"data":[{"id":488,"name":"very good","type":1,"content":"{\"tradeType\":3,\"tradeVariety\":2,\"yieldDown\":1.0,\"yieldUp\":3.0,\"profitRatioDown\":1.0,\"profitRatioUp\":4.0,\"starDown\":1,\"starUp\":5}","uid":1},{"id":782,"name":"新搜索条件2","type":1,"content":"{\"tradeType\":-999,\"tradeVariety\":-999,\"starDown\":0,\"starUp\":5}","uid":1},{"id":826,"name":"新搜索条件3","type":1,"content":"{}","uid":1},{"id":827,"name":"新搜索条件4","type":1,"content":"{}","uid":1},{"id":828,"name":"新搜索条件5","type":1,"content":"{\"tradeType\":-999,\"tradeVariety\":-999,\"starDown\":0,\"starUp\":5}","uid":1}],"status":0}
+[ERROR] [2013-12-04 13:08:40]  [play.Logger] -
+
+@6gf24kn0b
+smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png action not found
+
+Action not found
+Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png could not be found. Error raised is Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_fa46e9ab3ebe4dd5a88d0e7cce4141e8 not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:40]  [play.Logger] -
+
+@6gf24kn0c
+smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png action not found
+
+Action not found
+Action smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png could not be found. Error raised is Controller controllers.smallImages.st_1fcb2dcc6e244679b37adb279e684adc not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_1fcb2dcc6e244679b37adb279e684adc.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_1fcb2dcc6e244679b37adb279e684adc not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:40]  [play.Logger] -
+
+@6gf24kn0d
+smallImages.st_395aec1dc0124962b57196f238c21916.png action not found
+
+Action not found
+Action smallImages.st_395aec1dc0124962b57196f238c21916.png could not be found. Error raised is Controller controllers.smallImages.st_395aec1dc0124962b57196f238c21916 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_395aec1dc0124962b57196f238c21916.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_395aec1dc0124962b57196f238c21916 not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:41]  [play.Logger] -
+
+@6gf24kn0e
+smallImages.st_d9710b1b53f541419f6872ff51bce796.png action not found
+
+Action not found
+Action smallImages.st_d9710b1b53f541419f6872ff51bce796.png could not be found. Error raised is Controller controllers.smallImages.st_d9710b1b53f541419f6872ff51bce796 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_d9710b1b53f541419f6872ff51bce796.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_d9710b1b53f541419f6872ff51bce796 not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:41]  [play.Logger] -
+
+@6gf24kn0f
+smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png action not found
+
+Action not found
+Action smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png could not be found. Error raised is Controller controllers.smallImages.st_92050568f32d42298bbf0bedb25bcd0b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_92050568f32d42298bbf0bedb25bcd0b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_92050568f32d42298bbf0bedb25bcd0b not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:41]  [play.Logger] -
+
+@6gf24kn0g
+smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png action not found
+
+Action not found
+Action smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png could not be found. Error raised is Controller controllers.smallImages.st_216d4797b6af467e8884f1dac99ac3fa not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_216d4797b6af467e8884f1dac99ac3fa.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_216d4797b6af467e8884f1dac99ac3fa not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:41]  [play.Logger] -
+
+@6gf24kn0h
+smallImages.st_a8819e4447b244478899f7d7f310cd61.png action not found
+
+Action not found
+Action smallImages.st_a8819e4447b244478899f7d7f310cd61.png could not be found. Error raised is Controller controllers.smallImages.st_a8819e4447b244478899f7d7f310cd61 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_a8819e4447b244478899f7d7f310cd61.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_a8819e4447b244478899f7d7f310cd61 not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:41]  [play.Logger] -
+
+@6gf24kn0i
+smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png action not found
+
+Action not found
+Action smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png could not be found. Error raised is Controller controllers.smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_1ecbbf49a7ff46bbb9d13fa25f265c0f not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:41]  [play.Logger] -
+
+@6gf24kn0j
+smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png action not found
+
+Action not found
+Action smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png could not be found. Error raised is Controller controllers.smallImages.st_a26174c3215b4ef9b88ecafe34f26076 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_a26174c3215b4ef9b88ecafe34f26076.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_a26174c3215b4ef9b88ecafe34f26076 not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:41]  [play.Logger] -
+
+@6gf24kn0k
+smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png action not found
+
+Action not found
+Action smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png could not be found. Error raised is Controller controllers.smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ff53f950f6cd4cfba4d4162260d6c49f not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:41]  [play.Logger] -
+
+@6gf24kn0l
+smallImages.st_56ee7602576e43af87932c7931b2c13a.png action not found
+
+Action not found
+Action smallImages.st_56ee7602576e43af87932c7931b2c13a.png could not be found. Error raised is Controller controllers.smallImages.st_56ee7602576e43af87932c7931b2c13a not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_56ee7602576e43af87932c7931b2c13a.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_56ee7602576e43af87932c7931b2c13a not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:41]  [play.Logger] -
+
+@6gf24kn0m
+smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png action not found
+
+Action not found
+Action smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png could not be found. Error raised is Controller controllers.smallImages.st_4bcb52f314964a1ea78a86eec67a950b not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_4bcb52f314964a1ea78a86eec67a950b.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_4bcb52f314964a1ea78a86eec67a950b not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:41]  [play.Logger] -
+
+@6gf24kn0n
+smallImages.st_787c872a33164b30ae516dbe60197899.png action not found
+
+Action not found
+Action smallImages.st_787c872a33164b30ae516dbe60197899.png could not be found. Error raised is Controller controllers.smallImages.st_787c872a33164b30ae516dbe60197899 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_787c872a33164b30ae516dbe60197899.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_787c872a33164b30ae516dbe60197899 not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:41]  [play.Logger] -
+
+@6gf24kn0o
+smallImages.st_b373e5911f374275bec07bab8dfccbbd.png action not found
+
+Action not found
+Action smallImages.st_b373e5911f374275bec07bab8dfccbbd.png could not be found. Error raised is Controller controllers.smallImages.st_b373e5911f374275bec07bab8dfccbbd not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_b373e5911f374275bec07bab8dfccbbd.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_b373e5911f374275bec07bab8dfccbbd not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:41]  [play.Logger] -
+
+@6gf24kn0p
+smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png action not found
+
+Action not found
+Action smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png could not be found. Error raised is Controller controllers.smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_ac9e1db3ed3146b58ffa5931d71c5a9a not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:41]  [play.Logger] -
+
+@6gf24kn10
+smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png action not found
+
+Action not found
+Action smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png could not be found. Error raised is Controller controllers.smallImages.st_9e0bc2abd423435aba92f9948d40e3f4 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_9e0bc2abd423435aba92f9948d40e3f4.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_9e0bc2abd423435aba92f9948d40e3f4 not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:41]  [play.Logger] -
+
+@6gf24kn11
+smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88.png action not found
+
+Action not found
+Action smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88.png could not be found. Error raised is Controller controllers.smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_f31ad8574bb14c44856c6b26e8a3dc88 not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:42]  [play.Logger] -
+
+@6gf24kn12
+smallImages.st_7913c3e7756f4af99358999e1140174c.png action not found
+
+Action not found
+Action smallImages.st_7913c3e7756f4af99358999e1140174c.png could not be found. Error raised is Controller controllers.smallImages.st_7913c3e7756f4af99358999e1140174c not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_7913c3e7756f4af99358999e1140174c.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_7913c3e7756f4af99358999e1140174c not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:42]  [play.Logger] -
+
+@6gf24kn13
+smallImages.st_53e5c5353daa487299551bf76f2d64a8.png action not found
+
+Action not found
+Action smallImages.st_53e5c5353daa487299551bf76f2d64a8.png could not be found. Error raised is Controller controllers.smallImages.st_53e5c5353daa487299551bf76f2d64a8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_53e5c5353daa487299551bf76f2d64a8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_53e5c5353daa487299551bf76f2d64a8 not found
+	... 3 more
+[ERROR] [2013-12-04 13:08:42]  [play.Logger] -
+
+@6gf24kn14
+smallImages.st_076efa0e33a64cfd8174568c56b543d8.png action not found
+
+Action not found
+Action smallImages.st_076efa0e33a64cfd8174568c56b543d8.png could not be found. Error raised is Controller controllers.smallImages.st_076efa0e33a64cfd8174568c56b543d8 not found
+
+play.exceptions.ActionNotFoundException: Action smallImages.st_076efa0e33a64cfd8174568c56b543d8.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.smallImages.st_076efa0e33a64cfd8174568c56b543d8 not found
+	... 3 more
+[DEBUG] [2013-12-04 13:50:39]  [play.Logger] -ignoring method: public volatile controllers.BackTestServers$1.doJobWithResult() (local vars numbers differs : 0 != -1)
+[DEBUG] [2013-12-04 13:50:40]  [play.Logger] -ignoring method: public volatile controllers.BackTestServers$2.doJobWithResult() (local vars numbers differs : 0 != -1)
+[DEBUG] [2013-12-04 13:50:40]  [play.Logger] -ignoring method: public volatile controllers.BackTestServers$3.doJobWithResult() (local vars numbers differs : 0 != -1)
+[ INFO] [2013-12-04 13:50:43]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[DEBUG] [2013-12-04 13:50:43]  [play.Logger] -Starting Guice modules scanning
+[DEBUG] [2013-12-04 13:50:43]  [play.Logger] -Guice modules cleared
+[ INFO] [2013-12-04 13:50:43]  [play.Logger] -Guice injector created with modules: 
+class binding.AppDefaultBindModule
+
+[DEBUG] [2013-12-04 13:50:53]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+[DEBUG] [2013-12-04 13:51:10]  [play.Logger] -get响应数据:：{"success":true,"token":"af621af0bd3f511c5e7ccf11e3c6df712bebcafd2b7c0e74f06fb5dac7c3594929a7519fecb52868fb20881e2e9aa9b4"}
+[ INFO] [2013-12-04 13:51:17]  [play.Logger] -miss 用户-->角色
+[DEBUG] [2013-12-04 13:51:17]  [play.Logger] -get请求url：http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+[DEBUG] [2013-12-04 13:51:17]  [play.Logger] -get响应数据:：{"data":[{"rid":1,"uid":1,"name":"系统管理员"}],"status":0}
+[ INFO] [2013-12-04 13:51:17]  [play.Logger] -miss 角色-->权限
+[DEBUG] [2013-12-04 13:51:17]  [play.Logger] -get请求url：http://localhost:9100/RoleInfoCt/findRoleFunctionInfo?rid=1
+[DEBUG] [2013-12-04 13:51:17]  [play.Logger] -get响应数据:：{"data":[{"id":1,"name":"菜单根节点","fpid":0},{"id":2,"name":"策略超市","fpid":1},{"id":3,"name":"策略浏览","fpid":2},{"id":4,"name":"策略订阅及评价","fpid":2},{"id":5,"name":"我的收藏，(取消) ","fpid":2},{"id":6,"name":"策略编写","fpid":2},{"id":7,"name":"策略上传","fpid":2},{"id":8,"name":"信号查看","fpid":2},{"id":9,"name":"股票池","fpid":1},{"id":10,"name":"我的收藏和评价","fpid":9},{"id":11,"name":"组合浏览","fpid":9},{"id":12,"name":"行情报价","fpid":1},{"id":13,"name":"指数","fpid":12},{"id":14,"name":"沪深股票","fpid":12},{"id":15,"name":"债券","fpid":12},{"id":16,"name":"基金","fpid":12},{"id":17,"name":"期货","fpid":12},{"id":18,"name":"外汇","fpid":12},{"id":19,"name":"f10","fpid":12},{"id":20,"name":"用户管理","fpid":1},{"id":21,"name":"用户权限管理","fpid":20},{"id":22,"name":"角色管理","fpid":20},{"id":23,"name":"策略管理","fpid":1},{"id":24,"name":"配置管理","fpid":1},{"id":25,"name":"操作日志","fpid":1},{"id":26,"name":"管理所有策略","fpid":23},{"id":27,"name":"管理个人策略","fpid":23}],"status":0}
+[DEBUG] [2013-12-04 13:51:18]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchUpStrategyList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 13:51:18]  [play.Logger] -post with body 响应数据:：{"data":[],"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[ INFO] [2013-12-04 13:52:24]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 13:52:24]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 13:52:24]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchWaitList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 13:52:24]  [play.Logger] -post with body 响应数据:：{"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 13:52:24]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=srategy.up.server.switch
+[DEBUG] [2013-12-04 13:52:24]  [play.Logger] -get响应数据:：{"data":"3","status":0}
+[DEBUG] [2013-12-04 13:52:24]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=srategy.up.server.switch
+[DEBUG] [2013-12-04 13:52:24]  [play.Logger] -get响应数据:：{"data":"3","status":0}
+[DEBUG] [2013-12-04 13:52:40]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+[DEBUG] [2013-12-04 13:52:40]  [play.Logger] -get响应数据:：{"success":true,"token":"2e0c2848d190ac20af824e7047985469d3dba0e2a4e393e84fa14ac60df75dde29a7519fecb52868fb20881e2e9aa9b4"}
+[ INFO] [2013-12-04 13:52:45]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 13:52:45]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 13:52:45]  [play.Logger] -post with body 请求url：http://localhost:9100/UserInfoCt/activateUsersList?pageNo=0
+[DEBUG] [2013-12-04 13:52:45]  [play.Logger] -post with body 响应数据:：{"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 13:52:45]  [play.Logger] -get请求url：http://localhost:9100/UserInfoCt/findAllDepartment
+[DEBUG] [2013-12-04 13:52:46]  [play.Logger] -get响应数据:：{"data":[{"name":"营业部","id":1}],"status":0}
+[DEBUG] [2013-12-04 13:52:46]  [play.Logger] -get请求url：http://localhost:9100/RoleInfoCt/findAllRole
+[DEBUG] [2013-12-04 13:52:46]  [play.Logger] -get响应数据:：{"data":[{"id":3,"name":"大赛用户"},{"id":2,"name":"所有权限"},{"id":1,"name":"系统管理员"}],"status":0}
+[DEBUG] [2013-12-04 13:52:46]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=user.excel.template.dir
+[DEBUG] [2013-12-04 13:52:46]  [play.Logger] -get响应数据:：{"data":"public/attachment/template.xls","status":0}
+[ INFO] [2013-12-04 13:52:47]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 13:52:47]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 13:52:47]  [play.Logger] -post with body 请求url：http://localhost:9100/UserInfoCt/activateUsersList?pageNo=0
+[DEBUG] [2013-12-04 13:52:48]  [play.Logger] -post with body 响应数据:：{"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 13:52:48]  [play.Logger] -get请求url：http://localhost:9100/UserInfoCt/findAllDepartment
+[DEBUG] [2013-12-04 13:52:48]  [play.Logger] -get响应数据:：{"data":[{"name":"营业部","id":1}],"status":0}
+[DEBUG] [2013-12-04 13:52:48]  [play.Logger] -get请求url：http://localhost:9100/RoleInfoCt/findAllRole
+[DEBUG] [2013-12-04 13:52:48]  [play.Logger] -get响应数据:：{"data":[{"id":3,"name":"大赛用户"},{"id":2,"name":"所有权限"},{"id":1,"name":"系统管理员"}],"status":0}
+[DEBUG] [2013-12-04 13:52:48]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=user.excel.template.dir
+[DEBUG] [2013-12-04 13:52:49]  [play.Logger] -get响应数据:：{"data":"public/attachment/template.xls","status":0}
+[ INFO] [2013-12-04 13:53:00]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 13:53:00]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 13:53:00]  [play.Logger] -post with body 请求url：http://localhost:9100/UserInfoCt/usersList?pageNo=0
+[DEBUG] [2013-12-04 13:53:01]  [play.Logger] -post with body 响应数据:：{"data":[{"id":"1","account":"admin","name":"管理员","idCard":"","phone":"","saleName":"营业部","capitalAccount":"","applyDate":"2013-03-01","status":10,"roleName":"系统管理员","startDate":"2013-03-01","endDate":"2099-01-01"},{"id":"887","account":"liuz","name":"liuz","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"888","account":"zengxh","name":"zengxh","idCard":"","phone":"","capitalAccount":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"889","account":"daibs","name":"daibs","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"890","account":"zhangf","name":"zhangf","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"891","account":"chenh","name":"chenh","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"892","account":"gaojl","name":"gaojl","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员,所有权限,大赛用户","startDate":"2013-11-15","endDate":"2015-11-15"},{"id":"893","account":"zhougj","name":"zhougj","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"894","account":"zhuxh","name":"zhuxh","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"895","account":"zhousq","name":"zhousq","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"896","account":"wena","name":"wena","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"897","account":"lizp","name":"lizp","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"898","account":"liub","name":"liub","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"899","account":"yezd","name":"yezd","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"900","account":"wangzb","name":"wangzb","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"901","account":"liaofz","name":"liaofz","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"902","account":"haoy","name":"haoy","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"903","account":"dtc001","name":"dtc","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"904","account":"quick001","name":"quick","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"},{"id":"905","account":"quick002","name":"quickdf","idCard":"","phone":"","applyDate":"2013-09-29","status":10,"roleName":"系统管理员","startDate":"2013-09-29","endDate":"2099-09-09"}],"status":0,"rowTotal":55,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 13:53:01]  [play.Logger] -get请求url：http://localhost:9100/UserInfoCt/findAllDepartment
+[DEBUG] [2013-12-04 13:53:01]  [play.Logger] -get响应数据:：{"data":[{"name":"营业部","id":1}],"status":0}
+[DEBUG] [2013-12-04 13:53:01]  [play.Logger] -get请求url：http://localhost:9100/RoleInfoCt/findAllRole
+[DEBUG] [2013-12-04 13:53:01]  [play.Logger] -get响应数据:：{"data":[{"id":3,"name":"大赛用户"},{"id":2,"name":"所有权限"},{"id":1,"name":"系统管理员"}],"status":0}
+[ INFO] [2013-12-04 13:53:10]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 13:53:10]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 13:53:10]  [play.Logger] -post with body 请求url：http://localhost:9100/UserInfoCt/activateUsersList?pageNo=0
+[DEBUG] [2013-12-04 13:53:10]  [play.Logger] -post with body 响应数据:：{"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 13:53:10]  [play.Logger] -get请求url：http://localhost:9100/UserInfoCt/findAllDepartment
+[DEBUG] [2013-12-04 13:53:10]  [play.Logger] -get响应数据:：{"data":[{"name":"营业部","id":1}],"status":0}
+[DEBUG] [2013-12-04 13:53:10]  [play.Logger] -get请求url：http://localhost:9100/RoleInfoCt/findAllRole
+[DEBUG] [2013-12-04 13:53:10]  [play.Logger] -get响应数据:：{"data":[{"id":3,"name":"大赛用户"},{"id":2,"name":"所有权限"},{"id":1,"name":"系统管理员"}],"status":0}
+[DEBUG] [2013-12-04 13:53:10]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=user.excel.template.dir
+[DEBUG] [2013-12-04 13:53:10]  [play.Logger] -get响应数据:：{"data":"public/attachment/template.xls","status":0}
+[ INFO] [2013-12-04 13:53:25]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 13:53:25]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 13:53:25]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchUpStrategyList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 13:53:25]  [play.Logger] -post with body 响应数据:：{"data":[],"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[ INFO] [2013-12-04 13:53:35]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 13:53:35]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 13:53:35]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchWaitList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 13:53:35]  [play.Logger] -post with body 响应数据:：{"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 13:53:35]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=srategy.up.server.switch
+[DEBUG] [2013-12-04 13:53:35]  [play.Logger] -get响应数据:：{"data":"3","status":0}
+[DEBUG] [2013-12-04 13:53:35]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=srategy.up.server.switch
+[DEBUG] [2013-12-04 13:53:35]  [play.Logger] -get响应数据:：{"data":"3","status":0}
+[DEBUG] [2013-12-04 13:53:44]  [play.Logger] -get请求url：http://localhost:9100/StrategyServerManageCt/fetchStategyServer?serverType=0&egineType=2
+[DEBUG] [2013-12-04 13:53:44]  [play.Logger] -get响应数据:：{"data":[{"enginetypeId":2,"ip":"192.168.102.106","status":0,"name":"192.168.102.106","type":0,"id":4},{"enginetypeId":2,"ip":"192.168.102.171","status":0,"name":"171-QIA","type":0,"id":30}],"status":0}
+[DEBUG] [2013-12-04 13:53:51]  [play.Logger] -get请求url：http://localhost:9100/StrategyServerManageCt/fetchAllServer
+[DEBUG] [2013-12-04 13:53:52]  [play.Logger] -get响应数据:：{"data":[{"enginetypeId":1,"ip":"192.168.102.106","status":0,"name":"192.168.102.106","type":0,"id":3},{"enginetypeId":2,"ip":"192.168.102.106","status":0,"name":"192.168.102.106","type":0,"id":4},{"enginetypeId":2,"ip":"192.168.102.106","status":0,"name":"192.168.102.106","type":2,"id":29},{"enginetypeId":2,"ip":"192.168.102.171","status":0,"name":"171-QIA","type":0,"id":30},{"enginetypeId":1,"ip":"192.168.102.171","status":0,"name":"171-qicore","type":0,"id":31},{"enginetypeId":2,"ip":"192.168.102.141","status":0,"name":"141-agent","type":1,"id":32},{"enginetypeId":1,"ip":"192.168.102.141","status":0,"name":"141--qicore-agent","type":1,"id":33},{"enginetypeId":2,"ip":"192.168.102.171","status":0,"name":"192.168.102.171","type":2,"id":34},{"enginetypeId":1,"ip":"192.168.102.116","status":0,"name":"116-qicore-agent","type":1,"id":35},{"enginetypeId":2,"ip":"192.168.102.116","status":0,"name":"116-qia-agent","type":1,"id":36},{"enginetypeId":2,"ip":"192.168.102.105","status":0,"name":"102-105","type":1,"id":37},{"enginetypeId":1,"ip":"192.168.102.105","status":0,"name":"102-105-agent-qicore","type":1,"id":38},{"enginetypeId":2,"ip":"192.168.102.142","status":0,"name":"102-142-qia-agent","type":1,"id":39},{"enginetypeId":1,"ip":"192.168.102.142","status":0,"name":"102-142-qicore-agent","type":1,"id":40},{"enginetypeId":2,"ip":"192.168.100.48","status":0,"name":"100-48-agent","type":1,"id":41},{"enginetypeId":1,"ip":"192.168.100.48","status":0,"name":"100-48-qicore","type":1,"id":42}],"status":0}
+[DEBUG] [2013-12-04 13:53:53]  [play.Logger] -服务器:id=[30],ip=[192.168.102.171]:状态：离线中
+[ INFO] [2013-12-04 13:54:04]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 13:54:04]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 13:54:04]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchUpStrategyList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 13:54:04]  [play.Logger] -post with body 响应数据:：{"data":[],"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[ INFO] [2013-12-04 13:54:15]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 13:54:15]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 13:54:15]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchWaitList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 13:54:15]  [play.Logger] -post with body 响应数据:：{"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 13:54:15]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=srategy.up.server.switch
+[DEBUG] [2013-12-04 13:54:15]  [play.Logger] -get响应数据:：{"data":"3","status":0}
+[DEBUG] [2013-12-04 13:54:15]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=srategy.up.server.switch
+[DEBUG] [2013-12-04 13:54:15]  [play.Logger] -get响应数据:：{"data":"3","status":0}
+[ INFO] [2013-12-04 13:54:32]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 13:54:32]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 13:54:32]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchRecycleList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 13:54:32]  [play.Logger] -post with body 响应数据:：{"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 14:44:28]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+[DEBUG] [2013-12-04 14:44:30]  [play.Logger] -get响应数据:：{"success":true,"token":"15d992fa13010c407f6c47fdd1339d85e6eb5fd2ee5758594bfcd19305b487ea29a7519fecb52868fb20881e2e9aa9b4"}
+[ INFO] [2013-12-04 14:44:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 14:44:34]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 14:44:34]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchUpStrategyList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 14:44:37]  [play.Logger] -post with body 响应数据:：{"data":[],"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[ INFO] [2013-12-04 14:44:47]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 14:44:47]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 14:44:47]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchUpStrategyList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 14:44:47]  [play.Logger] -post with body 响应数据:：{"data":[],"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[ INFO] [2013-12-04 14:45:02]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 14:45:02]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 14:45:02]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchWaitList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 14:45:02]  [play.Logger] -post with body 响应数据:：{"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 14:45:02]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=srategy.up.server.switch
+[DEBUG] [2013-12-04 14:45:02]  [play.Logger] -get响应数据:：{"data":"3","status":0}
+[DEBUG] [2013-12-04 14:45:02]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=srategy.up.server.switch
+[DEBUG] [2013-12-04 14:45:02]  [play.Logger] -get响应数据:：{"data":"3","status":0}
+[ INFO] [2013-12-04 14:45:48]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 14:45:48]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 14:45:48]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchWaitList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 14:46:38]  [play.Logger] -post with body 响应数据:：{"status":-1,"message":"server internal error"}
+[ERROR] [2013-12-04 14:46:39]  [play.Logger] -
+
+@6gf24kn17
+Internal Server Error (500) for request GET /StrategyInfos/grounding
+
+Execution exception (In /app/bussiness/StrategyService.java around line 220)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at bussiness.StrategyService.waitList(StrategyService.java:220)
+	at controllers.StrategyInfos.grounding(StrategyInfos.java:73)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[DEBUG] [2013-12-04 14:46:57]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+[DEBUG] [2013-12-04 14:47:23]  [play.Logger] -get响应数据:：{"message":"api.login.user.nofound","success":false}
+[DEBUG] [2013-12-04 14:47:36]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=admin&p=123123&mac=123&pid=2
+[DEBUG] [2013-12-04 14:48:13]  [play.Logger] -get响应数据:：{"message":"api.login.user.nofound","success":false}
+[DEBUG] [2013-12-04 14:48:31]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=yy1user1%20&p=123&mac=123&pid=2
+[DEBUG] [2013-12-04 14:48:42]  [play.Logger] -get响应数据:：{"message":"api.login.user.nofound","success":false}
+[DEBUG] [2013-12-04 14:49:16]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=yy1user1%20&p=123&mac=123&pid=2
+[DEBUG] [2013-12-04 14:49:33]  [play.Logger] -get响应数据:：{"message":"api.login.user.nofound","success":false}
+[DEBUG] [2013-12-04 14:50:25]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=test&p=123&mac=123&pid=2
+[DEBUG] [2013-12-04 14:50:39]  [play.Logger] -get响应数据:：{"message":"api.login.user.nofound","success":false}
+[DEBUG] [2013-12-04 14:50:56]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+[DEBUG] [2013-12-04 14:51:05]  [play.Logger] -get响应数据:：{"message":"api.login.user.nofound","success":false}
+[DEBUG] [2013-12-04 14:51:20]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=admin&p=123456&mac=123&pid=2
+[DEBUG] [2013-12-04 14:51:29]  [play.Logger] -get响应数据:：{"message":"api.login.user.nofound","success":false}
+[DEBUG] [2013-12-04 14:51:43]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+[DEBUG] [2013-12-04 14:51:57]  [play.Logger] -get响应数据:：{"message":"api.login.user.nofound","success":false}
+[DEBUG] [2013-12-04 14:53:26]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+[DEBUG] [2013-12-04 14:53:26]  [play.Logger] -get响应数据:：{"success":true,"token":"7d33074b8136ec27458ad43afe5666d3edf5879447c64a6c25f1a3d8a46a07a729a7519fecb52868fb20881e2e9aa9b4"}
+[ INFO] [2013-12-04 14:53:29]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 14:53:29]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 14:53:29]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchUpStrategyList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 14:53:29]  [play.Logger] -post with body 响应数据:：{"data":[],"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[ INFO] [2013-12-04 14:53:32]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 14:53:32]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 14:53:32]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchWaitList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 14:53:32]  [play.Logger] -post with body 响应数据:：{"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 14:53:32]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=srategy.up.server.switch
+[DEBUG] [2013-12-04 14:53:32]  [play.Logger] -get响应数据:：{"data":"3","status":0}
+[DEBUG] [2013-12-04 14:53:32]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=srategy.up.server.switch
+[DEBUG] [2013-12-04 14:53:32]  [play.Logger] -get响应数据:：{"data":"3","status":0}
+[ INFO] [2013-12-04 14:53:40]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 14:53:40]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 14:53:40]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchUpStrategyList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 14:53:40]  [play.Logger] -post with body 响应数据:：{"data":[],"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[ INFO] [2013-12-04 14:53:41]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 14:53:41]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 14:53:41]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchWaitList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 14:53:42]  [play.Logger] -post with body 响应数据:：{"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 14:53:42]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=srategy.up.server.switch
+[DEBUG] [2013-12-04 14:53:42]  [play.Logger] -get响应数据:：{"data":"3","status":0}
+[DEBUG] [2013-12-04 14:53:42]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=srategy.up.server.switch
+[DEBUG] [2013-12-04 14:53:42]  [play.Logger] -get响应数据:：{"data":"3","status":0}
+[DEBUG] [2013-12-04 14:54:09]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=test&p=123&mac=123&pid=2
+[DEBUG] [2013-12-04 14:54:09]  [play.Logger] -get响应数据:：{"message":"api.login.user.nofound","success":false}
+[DEBUG] [2013-12-04 14:54:48]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=delzhihong_1379664879937&p=123&mac=123&pid=2
+[DEBUG] [2013-12-04 14:54:48]  [play.Logger] -get响应数据:：{"message":"api.login.user.nofound","success":false}
+[DEBUG] [2013-12-04 14:54:57]  [play.Logger] -get请求url：http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+[DEBUG] [2013-12-04 14:54:58]  [play.Logger] -get响应数据:：{"success":true,"token":"e93b90ebaade5da51d6f643d79ce31073b366275e6fccf5fa9c55963bb61bb4529a7519fecb52868fb20881e2e9aa9b4"}
+[ INFO] [2013-12-04 14:55:01]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 14:55:01]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 14:55:01]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchUpStrategyList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 14:55:01]  [play.Logger] -post with body 响应数据:：{"data":[],"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[ INFO] [2013-12-04 14:55:03]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-12-04 14:55:03]  [play.Logger] -hit 角色-->权限
+[DEBUG] [2013-12-04 14:55:03]  [play.Logger] -post with body 请求url：http://localhost:9100/strategyCt/fetchWaitList?pageNo=0&uid=1
+[DEBUG] [2013-12-04 14:55:03]  [play.Logger] -post with body 响应数据:：{"status":0,"rowTotal":0,"pageSize":20,"pageNo":1}
+[DEBUG] [2013-12-04 14:55:03]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=srategy.up.server.switch
+[DEBUG] [2013-12-04 14:55:03]  [play.Logger] -get响应数据:：{"data":"3","status":0}
+[DEBUG] [2013-12-04 14:55:03]  [play.Logger] -get请求url：http://localhost:9100/sysConfigCt/fetchValue?key=srategy.up.server.switch
+[DEBUG] [2013-12-04 14:55:03]  [play.Logger] -get响应数据:：{"data":"3","status":0}

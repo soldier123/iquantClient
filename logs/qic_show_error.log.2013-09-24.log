@@ -1,0 +1,567 @@
+[ERROR] [2013-09-24 08:49:15]  [play.Logger] -Bad JSON: 
+token失效, 请重新取token
+[ERROR] [2013-09-24 08:49:15]  [play.Logger] -
+
+@6fl080111
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoService.fetchTradeAccount(UserInfoService.java:232)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:215)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 10 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 12 more
+[ERROR] [2013-09-24 08:49:42]  [play.Logger] -Bad JSON: 
+token失效, 请重新取token
+[ERROR] [2013-09-24 08:49:42]  [play.Logger] -
+
+@6fl080112
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoService.fetchTradeAccount(UserInfoService.java:232)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:215)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 10 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 12 more
+[ERROR] [2013-09-24 08:50:29]  [play.Logger] -Bad JSON: 
+token失效, 请重新取token
+[ERROR] [2013-09-24 08:50:29]  [play.Logger] -
+
+@6fl080113
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoService.fetchTradeAccount(UserInfoService.java:232)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:215)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 10 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 12 more
+[ERROR] [2013-09-24 08:59:09]  [play.Logger] -Bad JSON: 
+token失效, 请重新取token
+[ERROR] [2013-09-24 08:59:09]  [play.Logger] -
+
+@6fl080114
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoService.fetchTradeAccount(UserInfoService.java:232)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:215)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 10 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 12 more
+[ERROR] [2013-09-24 10:00:02]  [play.Logger] -
+
+@6fl080115
+Internal Server Error (500) for request GET /strategydetail/detail?stid=15&enginetypeId=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getBean(DefaultRemoteRequestServiceSupport.java:85)
+	at bussiness.StrategyDetailService.getStrategyDetail(StrategyDetailService.java:25)
+	at controllers.StrategyDetail.detail(StrategyDetail.java:26)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 10 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 12 more
+[ERROR] [2013-09-24 10:09:17]  [play.Logger] -
+
+@6fl080116
+Internal Server Error (500) for request GET /strategydetail/detail?stid=15&enginetypeId=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getBean(DefaultRemoteRequestServiceSupport.java:85)
+	at bussiness.StrategyDetailService.getStrategyDetail(StrategyDetailService.java:25)
+	at controllers.StrategyDetail.detail(StrategyDetail.java:26)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 10 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 12 more
+[ERROR] [2013-09-24 10:24:03]  [play.Logger] -
+
+@6fl080117
+Internal Server Error (500) for request GET /strategydetail/detail?stid=15&enginetypeId=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getBean(DefaultRemoteRequestServiceSupport.java:85)
+	at bussiness.StrategyDetailService.getStrategyDetail(StrategyDetailService.java:25)
+	at controllers.StrategyDetail.detail(StrategyDetail.java:26)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 10 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 12 more
+[ERROR] [2013-09-24 10:46:45]  [play.Logger] -
+
+@6fl080118
+Internal Server Error (500) for request GET /strategydetail/detail?stid=15&enginetypeId=1
+
+Execution exception (In /app/bussiness/StrategyDetailService.java around line 30)
+NullPointerException occured : Try to read discussCount on null object models.iquantCommon.StrategyBaseDto (bussiness.StrategyDetailService.getStrategyDetail, line 30)
+
+play.exceptions.JavaExecutionException: Try to read discussCount on null object models.iquantCommon.StrategyBaseDto (bussiness.StrategyDetailService.getStrategyDetail, line 30)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read discussCount on null object models.iquantCommon.StrategyBaseDto (bussiness.StrategyDetailService.getStrategyDetail, line 30)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at bussiness.StrategyDetailService.getStrategyDetail(StrategyDetailService.java:30)
+	at controllers.StrategyDetail.detail(StrategyDetail.java:26)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-09-24 13:58:11]  [play.Logger] -
+
+@6fl696keh
+Internal Server Error (500) for request GET /strategydetail/detail?stid=15&enginetypeId=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getSingleValue(DefaultRemoteRequestServiceSupport.java:196)
+	at bussiness.StrategyDetailService.judgeDiscusses(StrategyDetailService.java:159)
+	at controllers.StrategyDetail.detail(StrategyDetail.java:76)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 10 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 12 more
+[ERROR] [2013-09-24 14:33:24]  [play.Logger] -
+
+@6fl696kei
+Internal Server Error (500) for request POST /strategydetail/delayStrategyOrder
+
+Execution exception (In /app/controllers/StrategyDetail.java around line 209)
+NullPointerException occured : Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+
+play.exceptions.JavaExecutionException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at controllers.StrategyDetail.delayStrategyOrder(StrategyDetail.java:209)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-09-24 14:50:51]  [play.Logger] -
+
+@6fl696kej
+Internal Server Error (500) for request POST /strategydetail/addStrategyOrder
+
+Execution exception (In /app/controllers/StrategyDetail.java around line 192)
+NullPointerException occured : Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.addStrategyOrder, line 192)
+
+play.exceptions.JavaExecutionException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.addStrategyOrder, line 192)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.addStrategyOrder, line 192)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at controllers.StrategyDetail.addStrategyOrder(StrategyDetail.java:192)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-09-24 15:02:18]  [play.Logger] -
+
+@6fl696kek
+Internal Server Error (500) for request POST /strategydetail/delayStrategyOrder
+
+Execution exception (In /app/controllers/StrategyDetail.java around line 209)
+NullPointerException occured : Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+
+play.exceptions.JavaExecutionException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at controllers.StrategyDetail.delayStrategyOrder(StrategyDetail.java:209)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-09-24 15:59:51]  [play.Logger] -
+
+@6fl696kel
+Internal Server Error (500) for request POST /strategydetail/delayStrategyOrder
+
+Execution exception (In /app/controllers/StrategyDetail.java around line 209)
+NullPointerException occured : Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+
+play.exceptions.JavaExecutionException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at controllers.StrategyDetail.delayStrategyOrder(StrategyDetail.java:209)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-09-24 16:02:12]  [play.Logger] -
+
+@6fl696kem
+Internal Server Error (500) for request POST /strategydetail/delayStrategyOrder
+
+Execution exception (In /app/controllers/StrategyDetail.java around line 209)
+NullPointerException occured : Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+
+play.exceptions.JavaExecutionException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at controllers.StrategyDetail.delayStrategyOrder(StrategyDetail.java:209)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-09-24 16:03:41]  [play.Logger] -
+
+@6fl6pj4ll
+Internal Server Error (500) for request POST /strategydetail/delayStrategyOrder
+
+Execution exception (In /app/controllers/StrategyDetail.java around line 209)
+NullPointerException occured : Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+
+play.exceptions.JavaExecutionException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at controllers.StrategyDetail.delayStrategyOrder(StrategyDetail.java:209)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-09-24 16:06:04]  [play.Logger] -
+
+@6fl6pj4lm
+Internal Server Error (500) for request POST /strategydetail/delayStrategyOrder
+
+Execution exception (In /app/controllers/StrategyDetail.java around line 209)
+NullPointerException occured : Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+
+play.exceptions.JavaExecutionException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at controllers.StrategyDetail.delayStrategyOrder(StrategyDetail.java:209)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-09-24 16:06:19]  [play.Logger] -
+
+@6fl6pj4ln
+Internal Server Error (500) for request POST /strategydetail/delayStrategyOrder
+
+Execution exception (In /app/controllers/StrategyDetail.java around line 209)
+NullPointerException occured : Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+
+play.exceptions.JavaExecutionException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at controllers.StrategyDetail.delayStrategyOrder(StrategyDetail.java:209)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-09-24 16:16:08]  [play.Logger] -
+
+@6fl6pj4lo
+Internal Server Error (500) for request POST /strategydetail/delayStrategyOrder
+
+Execution exception (In /app/controllers/StrategyDetail.java around line 209)
+NullPointerException occured : Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+
+play.exceptions.JavaExecutionException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at controllers.StrategyDetail.delayStrategyOrder(StrategyDetail.java:209)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-09-24 16:17:10]  [play.Logger] -
+
+@6fl6pj4lp
+Internal Server Error (500) for request POST /strategydetail/delayStrategyOrder
+
+Execution exception (In /app/controllers/StrategyDetail.java around line 209)
+NullPointerException occured : Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+
+play.exceptions.JavaExecutionException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at controllers.StrategyDetail.delayStrategyOrder(StrategyDetail.java:209)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-09-24 16:35:16]  [play.Logger] -
+
+@6fl6pj4m0
+Internal Server Error (500) for request POST /strategydetail/delayStrategyOrder
+
+Execution exception (In /app/controllers/StrategyDetail.java around line 209)
+NullPointerException occured : Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+
+play.exceptions.JavaExecutionException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read message on null object models.iquantCommon.OrderMsgDto (controllers.StrategyDetail.delayStrategyOrder, line 209)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at controllers.StrategyDetail.delayStrategyOrder(StrategyDetail.java:209)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-09-24 17:30:25]  [play.Logger] -
+
+@6fl6pj4m1
+Internal Server Error (500) for request GET /userStrategycollects/addstrategycollect?sid=15
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getSingleValue(DefaultRemoteRequestServiceSupport.java:196)
+	at bussiness.StrategyService.addstrategycollect(StrategyService.java:104)
+	at controllers.UserStrategyCollects.addstrategycollect(UserStrategyCollects.java:25)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 10 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 12 more
+[ERROR] [2013-09-24 17:36:28]  [play.Logger] -
+
+@6fl6pj4m2
+Internal Server Error (500) for request GET /strategys/strategylist
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getListWithoutField(DefaultRemoteRequestServiceSupport.java:154)
+	at bussiness.StrategyService.queryUserCollectSet(StrategyService.java:62)
+	at controllers.Strategys.strategyList(Strategys.java:41)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 10 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 12 more

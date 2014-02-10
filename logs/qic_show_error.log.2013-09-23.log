@@ -1,0 +1,1161 @@
+[ERROR] [2013-09-23 13:47:00]  [play.Logger] -Could not bind on port 9000
+[ERROR] [2013-09-23 14:12:04]  [play.Logger] -Cannot connected to the database : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1116)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:348)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2391)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBConfig.configure(DBConfig.java:239)
+	at play.db.DB.setConfigurations(DB.java:67)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:72)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:533)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:298)
+	... 18 more
+[ERROR] [2013-09-23 14:12:06]  [play.Logger] -
+
+@6fkp40918
+Internal Server Error (500) for request GET /
+
+Database error
+A database error occured : Cannot connected to the database, Communications link failure  The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+play.exceptions.DatabaseException: Cannot connected to the database, Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at play.db.DBConfig.configure(DBConfig.java:289)
+	at play.db.DB.setConfigurations(DB.java:67)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:72)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:533)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at Invocation.HTTP Request(Play!)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1116)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:348)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2391)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBConfig.configure(DBConfig.java:239)
+	... 7 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:298)
+	... 18 more
+[ERROR] [2013-09-23 14:21:10]  [play.Logger] -Cannot connected to the database : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1116)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:348)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2391)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBConfig.configure(DBConfig.java:239)
+	at play.db.DB.setConfigurations(DB.java:67)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:72)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:533)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:298)
+	... 18 more
+[ERROR] [2013-09-23 14:21:10]  [play.Logger] -
+
+@6fkp40919
+Internal Server Error (500) for request GET /
+
+Database error
+A database error occured : Cannot connected to the database, Communications link failure  The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+play.exceptions.DatabaseException: Cannot connected to the database, Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at play.db.DBConfig.configure(DBConfig.java:289)
+	at play.db.DB.setConfigurations(DB.java:67)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:72)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:525)
+	at play.Play.start(Play.java:533)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at Invocation.HTTP Request(Play!)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1116)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:348)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2391)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at play.db.DBConfig.configure(DBConfig.java:239)
+	... 7 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:298)
+	... 18 more
+[ERROR] [2013-09-23 14:23:55]  [play.Logger] -
+
+@6fkp4091a
+Internal Server Error (500) for request GET /activateuser/list
+
+Execution exception (In /app/bussiness/UserInfoBaseService.java around line 167)
+UncheckedExecutionException occured : java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+
+play.exceptions.JavaExecutionException: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: com.google.common.util.concurrent.UncheckedExecutionException: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2263)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4000)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache.getUserRoles(UserInfoBaseService.java:167)
+	at bussiness.UserInfoBaseService.getUserFunctionInfo(UserInfoBaseService.java:39)
+	at util.SimpleFunctionAuth.hasPrivilege(SimpleFunctionAuth.java:29)
+	at util.FunctionAuthManager.auth(FunctionAuthManager.java:20)
+	at controllers.FunctionInterceptor.doAuth(FunctionInterceptor.java:27)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:510)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.handleBefores(ActionInvoker.java:328)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:142)
+	... 1 more
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoBaseService.findUserRole(UserInfoBaseService.java:33)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache$1.load(UserInfoBaseService.java:115)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache$1.load(UserInfoBaseService.java:1)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	... 14 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ERROR] [2013-09-23 14:24:22]  [play.Logger] -
+
+@6fkp4091b
+Internal Server Error (500) for request GET /strategys/strategylist
+
+Execution exception (In /app/bussiness/UserInfoBaseService.java around line 167)
+UncheckedExecutionException occured : java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+
+play.exceptions.JavaExecutionException: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: com.google.common.util.concurrent.UncheckedExecutionException: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2263)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4000)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache.getUserRoles(UserInfoBaseService.java:167)
+	at bussiness.UserInfoBaseService.getUserFunctionInfo(UserInfoBaseService.java:39)
+	at util.SimpleFunctionAuth.hasPrivilege(SimpleFunctionAuth.java:29)
+	at util.FunctionAuthManager.auth(FunctionAuthManager.java:20)
+	at controllers.FunctionInterceptor.doAuth(FunctionInterceptor.java:27)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:510)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.handleBefores(ActionInvoker.java:328)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:142)
+	... 1 more
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoBaseService.findUserRole(UserInfoBaseService.java:33)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache$1.load(UserInfoBaseService.java:115)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache$1.load(UserInfoBaseService.java:1)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	... 14 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ERROR] [2013-09-23 14:36:49]  [play.Logger] -
+
+@6fkp4091c
+Internal Server Error (500) for request POST /userct/login?x-http-method-override=POST
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getJson(DefaultRemoteRequestServiceSupport.java:102)
+	at bussiness.UserService.validateLogin(UserService.java:42)
+	at controllers.UserCt.login(UserCt.java:36)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ERROR] [2013-09-23 14:37:08]  [play.Logger] -
+
+@6fkp4091d
+Internal Server Error (500) for request POST /userct/login?x-http-method-override=POST
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getJson(DefaultRemoteRequestServiceSupport.java:102)
+	at bussiness.UserService.validateLogin(UserService.java:42)
+	at controllers.UserCt.login(UserCt.java:36)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ERROR] [2013-09-23 14:39:21]  [play.Logger] -
+
+@6fkp7fc62
+Internal Server Error (500) for request POST /userct/login?x-http-method-override=POST
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getJson(DefaultRemoteRequestServiceSupport.java:102)
+	at bussiness.UserService.validateLogin(UserService.java:42)
+	at controllers.UserCt.login(UserCt.java:36)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ERROR] [2013-09-23 14:44:45]  [play.Logger] -没有取到客户端ip, 给个默认值:256
+[ERROR] [2013-09-23 14:44:45]  [play.Logger] -
+
+@6fkp7fc63
+Internal Server Error (500) for request POST /userct/login?x-http-method-override=POST
+
+Execution exception (In /app/bussiness/UserService.java around line 47)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at bussiness.UserService.validateLogin(UserService.java:47)
+	at controllers.UserCt.login(UserCt.java:36)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-09-23 17:08:33]  [play.Logger] -
+
+@6fkp7fc64
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In /app/controllers/UserInfos.java around line 217)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:217)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 7 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 9 more
+[ERROR] [2013-09-23 17:14:57]  [play.Logger] -
+
+@6fkp7fc67
+Internal Server Error (500) for request GET /activateuser/users?ap.flag=2
+
+No route found (In /app/views/ActivateUser/list.html around line 1728)
+No route able to invoke action UserInfos.fetchTradeAccountList was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:82)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:257)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:661)
+	at play.mvc.Controller.renderTemplate(Controller.java:641)
+	at play.mvc.Controller.render(Controller.java:698)
+	at controllers.ActivateUser.users(ActivateUser.java:87)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+[ERROR] [2013-09-23 17:30:36]  [play.Logger] -
+
+@6fkp7fc68
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In /app/controllers/UserInfos.java around line 217)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:217)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 7 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 9 more
+[ERROR] [2013-09-23 17:40:42]  [play.Logger] -
+
+@6fkp7fc69
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In /app/controllers/UserInfos.java around line 217)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:217)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 7 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 9 more
+[ERROR] [2013-09-23 17:55:22]  [play.Logger] -Bad JSON: 
+token失效, 请重新取token
+[ERROR] [2013-09-23 17:55:22]  [play.Logger] -
+
+@6fkp7fc6a
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoService.fetchTradeAccount(UserInfoService.java:232)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:219)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 10 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 12 more
+[ERROR] [2013-09-23 17:56:57]  [play.Logger] -Bad JSON: 
+token失效, 请重新取token
+[ERROR] [2013-09-23 17:56:57]  [play.Logger] -
+
+@6fkp7fc6b
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoService.fetchTradeAccount(UserInfoService.java:232)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:219)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 10 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 12 more
+[ERROR] [2013-09-23 18:00:27]  [play.Logger] -Bad JSON: 
+token失效, 请重新取token
+[ERROR] [2013-09-23 18:00:29]  [play.Logger] -
+
+@6fl08010f
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoService.fetchTradeAccount(UserInfoService.java:232)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:219)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 10 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 12 more
+[ERROR] [2013-09-23 18:01:09]  [play.Logger] -
+
+@6fl08010g
+Error during job execution (job.ClearCacheJob)
+
+Execution exception (In /app/job/ClearCacheJob.java around line 24)
+JedisConnectionException occured : java.net.SocketTimeoutException: Read timed out
+
+play.exceptions.JavaExecutionException: java.net.SocketTimeoutException: Read timed out
+	at play.jobs.Job.call(Job.java:155)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.jedis.Protocol.process(Protocol.java:74)
+	at redis.clients.jedis.Protocol.read(Protocol.java:122)
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:189)
+	at redis.clients.jedis.Jedis.keys(Jedis.java:177)
+	at play.modules.redis.Redis.keys(Redis.java:502)
+	at job.ClearCacheJob.clearPrevilegeFromRedis(ClearCacheJob.java:24)
+	at job.ClearCacheJob.doJob(ClearCacheJob.java:19)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 7 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at redis.clients.util.RedisInputStream.fill(RedisInputStream.java:110)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:46)
+	at redis.clients.jedis.Protocol.process(Protocol.java:59)
+	... 15 more
+[ERROR] [2013-09-23 18:01:13]  [play.Logger] -Bad JSON: 
+token失效, 请重新取token
+[ERROR] [2013-09-23 18:01:13]  [play.Logger] -
+
+@6fl08010h
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoService.fetchTradeAccount(UserInfoService.java:232)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:215)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 10 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 12 more
+[ERROR] [2013-09-23 18:07:01]  [play.Logger] -
+
+@6fl08010i
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoService.fetchTradeAccount(UserInfoService.java:232)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:215)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ERROR] [2013-09-23 18:10:02]  [play.Logger] -
+
+@6fl08010j
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoService.fetchTradeAccount(UserInfoService.java:232)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:215)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ERROR] [2013-09-23 18:10:15]  [play.Logger] -
+
+@6fl08010k
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoService.fetchTradeAccount(UserInfoService.java:232)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:215)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ERROR] [2013-09-23 18:10:26]  [play.Logger] -
+
+@6fl08010l
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoService.fetchTradeAccount(UserInfoService.java:232)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:215)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/productCt/fetchTradeAccountList?ntToken=%25s
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ERROR] [2013-09-23 18:10:34]  [play.Logger] -
+
+@6fl08010m
+Internal Server Error (500) for request GET /activateuser/users?ap.flag=2
+
+Execution exception (In /app/bussiness/UserInfoBaseService.java around line 167)
+UncheckedExecutionException occured : java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+
+play.exceptions.JavaExecutionException: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: com.google.common.util.concurrent.UncheckedExecutionException: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2263)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4000)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache.getUserRoles(UserInfoBaseService.java:167)
+	at bussiness.UserInfoBaseService.getUserFunctionInfo(UserInfoBaseService.java:39)
+	at util.SimpleFunctionAuth.hasPrivilege(SimpleFunctionAuth.java:29)
+	at util.FunctionAuthManager.auth(FunctionAuthManager.java:20)
+	at controllers.FunctionInterceptor.doAuth(FunctionInterceptor.java:27)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:510)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.handleBefores(ActionInvoker.java:328)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:142)
+	... 1 more
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoBaseService.findUserRole(UserInfoBaseService.java:33)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache$1.load(UserInfoBaseService.java:115)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache$1.load(UserInfoBaseService.java:1)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	... 14 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ERROR] [2013-09-23 18:10:40]  [play.Logger] -
+
+@6fl08010n
+Internal Server Error (500) for request GET /activateuser/users?ap.flag=2
+
+Execution exception (In /app/bussiness/UserInfoBaseService.java around line 167)
+UncheckedExecutionException occured : java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+
+play.exceptions.JavaExecutionException: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: com.google.common.util.concurrent.UncheckedExecutionException: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2263)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4000)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4004)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4874)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache.getUserRoles(UserInfoBaseService.java:167)
+	at bussiness.UserInfoBaseService.getUserFunctionInfo(UserInfoBaseService.java:39)
+	at util.SimpleFunctionAuth.hasPrivilege(SimpleFunctionAuth.java:29)
+	at util.FunctionAuthManager.auth(FunctionAuthManager.java:20)
+	at controllers.FunctionInterceptor.doAuth(FunctionInterceptor.java:27)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:510)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.handleBefores(ActionInvoker.java:328)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:142)
+	... 1 more
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoBaseService.findUserRole(UserInfoBaseService.java:33)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache$1.load(UserInfoBaseService.java:115)
+	at bussiness.UserInfoBaseService$PrevilegeRemoteCache$1.load(UserInfoBaseService.java:1)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3599)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2379)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2342)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2257)
+	... 14 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9100/UserInfoCt/findUserRoleInfoById?uid=1
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ERROR] [2013-09-23 18:12:52]  [play.Logger] -Bad JSON: 
+token失效, 请重新取token
+[ERROR] [2013-09-23 18:12:52]  [play.Logger] -
+
+@6fl08010o
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoService.fetchTradeAccount(UserInfoService.java:232)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:215)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 10 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 12 more
+[ERROR] [2013-09-23 18:13:06]  [play.Logger] -Bad JSON: 
+token失效, 请重新取token
+[ERROR] [2013-09-23 18:13:06]  [play.Logger] -
+
+@6fl08010p
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoService.fetchTradeAccount(UserInfoService.java:232)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:215)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 10 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 12 more
+[ERROR] [2013-09-23 18:13:36]  [play.Logger] -Bad JSON: 
+token失效, 请重新取token
+[ERROR] [2013-09-23 18:13:40]  [play.Logger] -
+
+@6fl080110
+Internal Server Error (500) for request GET /userinfos/fetchtradeaccount?opUid=1
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getList(DefaultRemoteRequestServiceSupport.java:121)
+	at bussiness.UserInfoService.fetchTradeAccount(UserInfoService.java:232)
+	at controllers.UserInfos.fetchTradeAccount(UserInfos.java:215)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 10 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 8
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 12 more

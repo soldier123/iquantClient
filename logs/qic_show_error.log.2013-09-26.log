@@ -1,0 +1,637 @@
+[ERROR] [2013-09-26 09:22:37]  [play.Logger] -
+
+@6fljd5g6f
+Error during job execution (job.ClearCacheJob)
+
+Execution exception (In /app/job/ClearCacheJob.java around line 24)
+JedisConnectionException occured : Could not get a resource from the pool
+
+play.exceptions.JavaExecutionException: Could not get a resource from the pool
+	at play.jobs.Job.call(Job.java:155)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22)
+	at play.modules.redis.RedisConnectionManager.getRawConnectionInternal(RedisConnectionManager.java:40)
+	at play.modules.redis.Redis.keys(Redis.java:501)
+	at job.ClearCacheJob.clearPrevilegeFromRedis(ClearCacheJob.java:24)
+	at job.ClearCacheJob.doJob(ClearCacheJob.java:19)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 7 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:124)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:54)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1657)
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:63)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:1158)
+	at redis.clients.util.Pool.getResource(Pool.java:20)
+	... 13 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:119)
+	... 18 more
+[ERROR] [2013-09-26 09:22:43]  [play.Logger] -
+
+@6fljd5g6g
+Internal Server Error (500) for request POST /userct/login?x-http-method-override=POST
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getJson(DefaultRemoteRequestServiceSupport.java:102)
+	at bussiness.UserService.validateLogin(UserService.java:42)
+	at controllers.UserCt.login(UserCt.java:36)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ERROR] [2013-09-26 09:22:53]  [play.Logger] -
+
+@6fljd5g6h
+Internal Server Error (500) for request POST /userct/login?x-http-method-override=POST
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getJson(DefaultRemoteRequestServiceSupport.java:102)
+	at bussiness.UserService.validateLogin(UserService.java:42)
+	at controllers.UserCt.login(UserCt.java:36)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ERROR] [2013-09-26 09:23:02]  [play.Logger] -
+
+@6fljd5g6i
+Internal Server Error (500) for request POST /userct/login?x-http-method-override=POST
+
+Execution exception (In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java around line 38)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at business.DefaultRemoteRequestServiceSupport.doGet(DefaultRemoteRequestServiceSupport.java:38)
+	at business.DefaultRemoteRequestServiceSupport.getJson(DefaultRemoteRequestServiceSupport.java:102)
+	at bussiness.UserService.validateLogin(UserService.java:42)
+	at controllers.UserCt.login(UserCt.java:36)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123&mac=123&pid=2
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ERROR] [2013-09-26 10:31:54]  [play.Logger] -
+
+@6fljm83c9
+Internal Server Error (500) for request POST /strategyinfos/upstrategy
+
+Execution exception (In /app/controllers/StrategyInfos.java around line 207)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.StrategyInfos.upStrategy(StrategyInfos.java:207)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 7 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 9 more
+[ERROR] [2013-09-26 10:31:54]  [play.Logger] -
+
+@6fljm83ca
+createOneStrategyPic.doRun action not found
+
+Action not found
+Action createOneStrategyPic.doRun could not be found. Error raised is Controller controllers.createOneStrategyPic not found
+
+play.exceptions.ActionNotFoundException: Action createOneStrategyPic.doRun not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.createOneStrategyPic not found
+	... 3 more
+[ERROR] [2013-09-26 10:45:00]  [play.Logger] -
+
+@6fljm83cb
+Internal Server Error (500) for request GET /StrategyInfos/grounding
+
+Execution exception (In /app/bussiness/StrategyService.java around line 220)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at bussiness.StrategyService.waitList(StrategyService.java:220)
+	at controllers.StrategyInfos.grounding(StrategyInfos.java:66)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-09-26 11:43:33]  [play.Logger] -
+
+@6fljm83cc
+Internal Server Error (500) for request POST /strategyinfos/upstrategy
+
+Execution exception (In /app/controllers/StrategyInfos.java around line 207)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.StrategyInfos.upStrategy(StrategyInfos.java:207)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 7 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 9 more
+[ERROR] [2013-09-26 11:43:33]  [play.Logger] -
+
+@6fljm83cd
+createOneStrategyPic.doRun action not found
+
+Action not found
+Action createOneStrategyPic.doRun could not be found. Error raised is Controller controllers.createOneStrategyPic not found
+
+play.exceptions.ActionNotFoundException: Action createOneStrategyPic.doRun not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.createOneStrategyPic not found
+	... 3 more
+[ERROR] [2013-09-26 11:44:42]  [play.Logger] -
+
+@6fljm83ce
+Internal Server Error (500) for request POST /strategyinfos/upstrategy
+
+Execution exception (In /app/controllers/StrategyInfos.java around line 207)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.StrategyInfos.upStrategy(StrategyInfos.java:207)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 7 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 9 more
+[ERROR] [2013-09-26 11:44:42]  [play.Logger] -
+
+@6fljm83cf
+createOneStrategyPic.doRun action not found
+
+Action not found
+Action createOneStrategyPic.doRun could not be found. Error raised is Controller controllers.createOneStrategyPic not found
+
+play.exceptions.ActionNotFoundException: Action createOneStrategyPic.doRun not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.createOneStrategyPic not found
+	... 3 more
+[ERROR] [2013-09-26 13:22:04]  [play.Logger] -
+
+@6fljm83cn
+Internal Server Error (500) for request POST /strategyinfos/upstrategy
+
+Execution exception (In /app/controllers/StrategyInfos.java around line 207)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.StrategyInfos.upStrategy(StrategyInfos.java:207)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 7 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 9 more
+[ERROR] [2013-09-26 13:22:04]  [play.Logger] -
+
+@6fljm83co
+createOneStrategyPic.doRun action not found
+
+Action not found
+Action createOneStrategyPic.doRun could not be found. Error raised is Controller controllers.createOneStrategyPic not found
+
+play.exceptions.ActionNotFoundException: Action createOneStrategyPic.doRun not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.createOneStrategyPic not found
+	... 3 more
+[ERROR] [2013-09-26 13:45:47]  [play.Logger] -
+
+@6fljm83cp
+Internal Server Error (500) for request POST /strategyinfos/upstrategy
+
+Execution exception (In /app/controllers/StrategyInfos.java around line 207)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.StrategyInfos.upStrategy(StrategyInfos.java:207)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 7 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 9 more
+[ERROR] [2013-09-26 13:45:47]  [play.Logger] -
+
+@6fljm83d0
+createOneStrategyPic.doRun action not found
+
+Action not found
+Action createOneStrategyPic.doRun could not be found. Error raised is Controller controllers.createOneStrategyPic not found
+
+play.exceptions.ActionNotFoundException: Action createOneStrategyPic.doRun not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.createOneStrategyPic not found
+	... 3 more
+[ERROR] [2013-09-26 15:51:17]  [play.Logger] -
+
+@6fljm83d1
+Internal Server Error (500) for request POST /strategyinfos/upstrategy
+
+Execution exception (In /app/controllers/StrategyInfos.java around line 207)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.StrategyInfos.upStrategy(StrategyInfos.java:207)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 7 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 9 more
+[ERROR] [2013-09-26 15:51:17]  [play.Logger] -
+
+@6fljm83d2
+createOneStrategyPic.doRun action not found
+
+Action not found
+Action createOneStrategyPic.doRun could not be found. Error raised is Controller controllers.createOneStrategyPic not found
+
+play.exceptions.ActionNotFoundException: Action createOneStrategyPic.doRun not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.createOneStrategyPic not found
+	... 3 more
+[ERROR] [2013-09-26 15:54:06]  [play.Logger] -
+
+@6fljm83d3
+Internal Server Error (500) for request POST /strategyinfos/upstrategy
+
+Execution exception (In /app/controllers/StrategyInfos.java around line 207)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.StrategyInfos.upStrategy(StrategyInfos.java:207)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 7 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 9 more
+[ERROR] [2013-09-26 15:54:06]  [play.Logger] -
+
+@6fljm83d4
+createOneStrategyPic.doRun action not found
+
+Action not found
+Action createOneStrategyPic.doRun could not be found. Error raised is Controller controllers.createOneStrategyPic not found
+
+play.exceptions.ActionNotFoundException: Action createOneStrategyPic.doRun not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.createOneStrategyPic not found
+	... 3 more
+[ERROR] [2013-09-26 16:11:23]  [play.Logger] -
+
+@6fljm83d5
+Internal Server Error (500) for request POST /strategyinfos/upstrategy
+
+Execution exception (In /app/controllers/StrategyInfos.java around line 207)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.StrategyInfos.upStrategy(StrategyInfos.java:207)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:223)
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:187)
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:213)
+	... 7 more
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.get(NettyResponseFuture.java:215)
+	... 9 more
+[ERROR] [2013-09-26 16:11:23]  [play.Logger] -
+
+@6fljm83d6
+createOneStrategyPic.doRun action not found
+
+Action not found
+Action createOneStrategyPic.doRun could not be found. Error raised is Controller controllers.createOneStrategyPic not found
+
+play.exceptions.ActionNotFoundException: Action createOneStrategyPic.doRun not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.createOneStrategyPic not found
+	... 3 more
+[ERROR] [2013-09-26 16:18:11]  [play.Logger] -
+
+@6fljm83d7
+Internal Server Error (500) for request POST /strategyinfos/upstrategy
+
+Execution exception (In /app/controllers/StrategyInfos.java around line 207)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.StrategyInfos.upStrategy(StrategyInfos.java:207)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.abort(NettyAsyncHttpProvider.java:1321)
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.access$700(NettyAsyncHttpProvider.java:137)
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.run(NettyAsyncHttpProvider.java:1804)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.runPeriodic(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	... 10 more
+[ERROR] [2013-09-26 16:18:11]  [play.Logger] -
+
+@6fljm83d8
+createOneStrategyPic.doRun action not found
+
+Action not found
+Action createOneStrategyPic.doRun could not be found. Error raised is Controller controllers.createOneStrategyPic not found
+
+play.exceptions.ActionNotFoundException: Action createOneStrategyPic.doRun not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.createOneStrategyPic not found
+	... 3 more
+[ERROR] [2013-09-26 16:21:04]  [play.Logger] -
+
+@6fljm83d9
+Internal Server Error (500) for request POST /strategyinfos/upstrategy
+
+Execution exception (In /app/controllers/StrategyInfos.java around line 207)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.StrategyInfos.upStrategy(StrategyInfos.java:207)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.abort(NettyAsyncHttpProvider.java:1321)
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.access$700(NettyAsyncHttpProvider.java:137)
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.run(NettyAsyncHttpProvider.java:1804)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.runPeriodic(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.TimeoutException: No response received after 60000
+	... 10 more
+[ERROR] [2013-09-26 16:21:04]  [play.Logger] -
+
+@6fljm83da
+createOneStrategyPic.doRun action not found
+
+Action not found
+Action createOneStrategyPic.doRun could not be found. Error raised is Controller controllers.createOneStrategyPic not found
+
+play.exceptions.ActionNotFoundException: Action createOneStrategyPic.doRun not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.createOneStrategyPic not found
+	... 3 more
